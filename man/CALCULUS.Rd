@@ -1,0 +1,35 @@
+\docType{data}
+\name{CALCULUS}
+\alias{CALCULUS}
+\title{Calculus Assessment Scores}
+\format{A data frame with 18 observations on the following 2 variables:
+\itemize{
+\item \code{score} (assessment score for each student)
+\item \code{calculus} (a factor with levels \code{NO} and \code{YES} for students who did not  and did successfully complete calculus prior to enrolling in the biostatistics course)
+}}
+\usage{
+CALCULUS
+}
+\description{
+Mathematical assessment scores for 36 students enrolled in
+a biostatistics course according to whether or not the
+students had successfully completed a calculus course prior
+to enrolling in the biostatistics course
+}
+\examples{
+# ggplot2 approach
+ggplot(data = CALCULUS, aes(sample = score)) + stat_qq() + facet_grid(. ~ calculus)
+ggplot(data = CALCULUS, aes(x = calculus, y = score, fill = calculus)) + geom_boxplot() +
+guides(fill = FALSE) + scale_fill_brewer()
+ggplot(data = CALCULUS, aes(sample = score, color = calculus)) + stat_qq()
+# lattice approach
+qqmath(~score|calculus, data = CALCULUS)
+qqmath(~score, group = calculus, type = c('p', 'r'), auto.key=TRUE, data = CALCULUS)
+}
+\references{
+Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014.
+\emph{Probability and Statistics with R}, Second Edition.
+Chapman & Hall / CRC.
+}
+\keyword{datasets}
+

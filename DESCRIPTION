@@ -1,0 +1,16 @@
+Package: PASWR2
+Type: Package
+Title: Probability  and Statistics with R, Second Edition
+Version: 0.1
+Date: 2013-12-22
+Author: Alan T. Arnholt
+Maintainer: Alan T. Arnholt <arnholtat@appstate.edu>
+Description: Functions and data sets for the text Probability and Statistics
+    with R, Second Edition
+Depends:
+    ggplot2,
+    lattice,
+    e1071
+LazyLoad: yes
+LazyData: yes
+License: GPL-2

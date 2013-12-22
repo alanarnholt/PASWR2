@@ -1,0 +1,39 @@
+\docType{data}
+\name{FCD}
+\alias{FCD}
+\title{Fat Cats}
+\format{A data frame with 36 observations on the following 2 variables:
+\itemize{
+\item \code{weight} (difference in weight (grams))
+\item \code{diet} (a factor with levels \code{A}, \code{B}, and \code{C})
+}}
+\usage{
+FCD
+}
+\description{
+In a weight loss study on obese cats, overweight cats were
+randomly assigned to one of three groups and boarded in a
+kennel.  In each of the three groups, the cats' total
+caloric intake was strictly controlled (1 cup of generic
+cat food) and monitored for 10 days. The difference between
+the groups was that group A was given 1/4 of a cup of cat
+food every six hours, group B was given 1/3 a cup of cat
+food every eight hours, and group C was given 1/2 a cup of
+cat food every twelve hours. The weights of the cats at the
+beginning and end of the study were recorded, and the
+difference in weights (grams) was stored in the variable
+\code{Weight} of the data frame \code{FCD}.
+}
+\examples{
+# checking.plots()?
+p <- ggplot(data = FCD, aes(x = diet, y = weight))
+p + geom_violin(fill = "blue")
+aov(weight ~ diet, data = FCD)
+}
+\references{
+Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014.
+\emph{Probability and Statistics with R}, Second Edition.
+Chapman & Hall / CRC.
+}
+\keyword{datasets}
+

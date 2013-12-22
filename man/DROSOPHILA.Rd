@@ -1,0 +1,44 @@
+\docType{data}
+\name{DROSOPHILA}
+\alias{DROSOPHILA}
+\title{Drosophila Melanogaster}
+\format{A data frame with 75 observations on the following 2 variables:
+\itemize{
+\item \code{fecundity} (number of eggs laid per female per day for the first 14 days of life)
+\item \code{line} (a factor with levels \code{Nonselected}, \code{Resistant}, and \code{Susceptible})
+}}
+\source{
+The original measurements are from an experiment conducted
+by R. R. Sokal (\emph{Biometry} by Sokal and Rohlf, 1994,
+p. 237).
+}
+\usage{
+DROSOPHILA
+}
+\description{
+\code{DROSOPHILA} contains per diem fecundity (number of
+eggs laid per female per day for the first 14 days of life)
+for 25 females from each of three lines of \emph{Drosophila
+melanogaster}. The three lines are \code{Nonselected}
+(control), \code{Resistant}, and \code{Susceptible}.
+}
+\examples{
+ggplot(data = DROSOPHILA, aes(x = reorder(line, fecundity, FUN = median),
+y = fecundity, fill = line)) + geom_boxplot() + guides(fill = FALSE) +
+labs(y ="number of eggs laid per female \\n per day for the first 14 days of life",
+x = "") + scale_fill_brewer()
+ggplot(data = DROSOPHILA, aes(x = reorder(line, fecundity, FUN = median),
+y = fecundity, fill = line)) + geom_violin() + guides(fill = FALSE) +
+labs(y ="number of eggs laid per female \\n per day for the first 14 days of life",
+x = "") + scale_fill_brewer()
+summary(aov(fecundity ~ line, data = DROSOPHILA))
+}
+\references{
+\itemize{ \item Sokal, R. R. and Rohlf, F. J. 1994.
+\emph{Biometry}.  W. H. Freeman, New York, third edition.
+\item Ugarte, M. D., Militino, A. F., and Arnholt, A. T.
+2014. \emph{Probability and Statistics with R}, Second
+Edition. Chapman & Hall / CRC.}
+}
+\keyword{datasets}
+

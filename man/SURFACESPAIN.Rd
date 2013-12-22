@@ -1,0 +1,33 @@
+\docType{data}
+\name{SURFACESPAIN}
+\alias{SURFACESPAIN}
+\title{Surface Area for Spanish Communities}
+\format{A data frame with 17 observations on the following 2 variables:
+\itemize{
+\item \code{community} (a factor with levels \code{Andalucia}, \code{Aragon},\code{Asturias}, \code{Baleares}, \code{C.Valenciana}, \code{Canarias}, \code{Cantabria}, \code{Castilla-La Mancha}, \code{Castilla-Leon}, \code{Cataluna}, \code{Extremadura}, \code{Galicia}, \code{La Rioja}, \code{Madrid}, \code{Murcia}, \code{Navarra}, and \code{P.Vasco})
+\item \code{surface} (surface area in \eqn{\texttt{km}^2})
+}}
+\usage{
+SURFACESPAIN
+}
+\description{
+Surface area (\eqn{\texttt{km}^2}) for seventeen autonomous
+Spanish communities.
+}
+\examples{
+# Base Graphs
+with(data = SURFACESPAIN, barplot(surface, names.arg = community, las = 2))
+# ggplot2
+ggplot(data = SURFACESPAIN, aes(x = reorder(community, surface), y = surface)) +
+geom_bar(stat = "identity", fill = "yellow", color = "gold") + coord_flip() +
+labs(x = "", y = "squared kilometers")
+# Trellis Approach
+barchart(community ~ surface, data = SURFACESPAIN)
+}
+\references{
+Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014.
+\emph{Probability and Statistics with R}, Second Edition.
+Chapman & Hall / CRC.
+}
+\keyword{datasets}
+

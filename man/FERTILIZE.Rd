@@ -1,0 +1,35 @@
+\docType{data}
+\name{FERTILIZE}
+\alias{FERTILIZE}
+\title{Cross and Auto Fertilization}
+\format{A data frame with 30 observations on the following 2 variables:
+\itemize{
+\item \code{height} (height of plant in inches)
+\item \code{fertilization} (a factor with levels \code{cross} and \code{self})
+}}
+\source{
+Darwin, C. 1876. \emph{The Effect of Cross and
+Self-Fertilization in the Vegetable Kingdom.} D. Appleton
+and Company.
+}
+\usage{
+FERTILIZE
+}
+\description{
+Plants' heights in inches obtained from two seeds, one
+obtained by cross fertilization and the other by auto
+fertilization, in two opposite but separate locations of a
+pot are recorded.
+}
+\examples{
+p <- ggplot(data = FERTILIZE, aes(x = height, color = fertilization))
+p + geom_density()
+t.test(height ~ fertilization, data = FERTILIZE)
+}
+\references{
+Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014.
+\emph{Probability and Statistics with R}, Second Edition.
+Chapman & Hall / CRC.
+}
+\keyword{datasets}
+

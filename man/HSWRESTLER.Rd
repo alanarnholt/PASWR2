@@ -1,0 +1,48 @@
+\docType{data}
+\name{HSWRESTLER}
+\alias{HSWRESTLER}
+\title{High School Wrestlers}
+\format{A data frame with 78 observations on the following 9 variables:
+\itemize{
+\item \code{age} (age of wrestler in years)
+\item \code{ht} (height of wrestler in inches)
+\item \code{wt} (weight of wrestler in pounds)
+\item \code{abs} (abdominal fat)
+\item \code{triceps} (tricep fat)
+\item \code{subscap} (subscapular fat)
+\item \code{hwfat} (hydrostatic measure of percent fat)
+\item \code{tanfat} (Tanita measure of percent fat)
+\item \code{skfat} (skin fold measure of percent fat)
+}}
+\source{
+Data provided by Dr. Alan Utter, Department of Health
+Leisure and Exercise Science, Appalachian State University
+}
+\usage{
+HSWRESTLER
+}
+\description{
+The body fat percentage of 78 high school wrestlers was
+measured using three separate techniques, and the results
+are stored in the data frame \code{HSWRESTLER}. The
+techniques used were hydrostatic weighing (\code{hwfat}),
+skin fold measurements (\code{skfat}), and the Tanita body
+fat scale (\code{tanfat}).
+}
+\examples{
+FAT <- c(HSWRESTLER$hwfat, HSWRESTLER$tanfat, HSWRESTLER$skfat)
+GROUP <- factor(rep(c("hwfat", "tanfat", "skfat"), rep(78, 3)))
+BLOCK <- factor(rep(1:78, 3))
+friedman.test(FAT ~ GROUP | BLOCK)
+rm(FAT, BLOCK, GROUP)
+ggplot(data = HSWRESTLER, aes(x = tanfat, y = hwfat, color = age)) + geom_point() +
+geom_smooth() + labs(x = "Tanita measure of percent fat",
+y = "hydrostatic measure of percent fat")
+}
+\references{
+Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014.
+\emph{Probability and Statistics with R}, Second Edition.
+Chapman & Hall / CRC.
+}
+\keyword{datasets}
+

@@ -1,0 +1,52 @@
+\docType{data}
+\name{AGGRESSION}
+\alias{AGGRESSION}
+\title{TV and Behavior}
+\format{A data frame with 16 observations on the following two variables:
+\itemize{
+\item \code{violence} (an integer vector)
+\item \code{noviolence} (an integer vector)
+}}
+\source{
+Gibbons, J. D. (1977) \emph{Nonparametric Methods for
+Quantitavie Analysis}. American Science Press.
+}
+\usage{
+AGGRESSION
+}
+\description{
+Data regarding the aggressive behavior in relation to
+exposure to violent television programs.
+}
+\details{
+This is data regarding aggressive behavior in relation to
+exposure to violent television programs from Gibbons (1997)
+with the following exposition: \dQuote{\ldots a group of
+children are matched as well as possible as regards home
+environment, genetic factors, intelligence, parental
+attitudes, and so forth, in an effort to minimize factors
+other than TV that might influence a tendency for
+aggressive behavior.  In each of the resulting 16 pairs,
+one child is randomly selected to view the most violent
+shows on TV, while the other watches cartoons, situation
+comedies, and the like.  The children are then subjected to
+a series of tests designed to produce an ordinal measure of
+their aggression factors.} (pages 143-144)
+}
+\examples{
+AL <- reshape(AGGRESSION, varying = c("violence", "noviolence"),
+v.names = "aggression", direction = "long")
+ggplot(data = AL, aes(x = factor(time), y = aggression, fill = factor(time))) +
+geom_boxplot() + labs(x = "") + scale_x_discrete(breaks = c(1, 2),
+labels = c("Violence", "No Violence")) + guides(fill = FALSE) + scale_fill_brewer()
+rm(AL)
+with(data = AGGRESSION,
+wilcox.test(violence, noviolence, paired = TRUE, alternative = "greater"))
+}
+\references{
+Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014.
+\emph{Probability and Statistics with R}, Second Edition.
+Chapman & Hall / CRC.
+}
+\keyword{datasets}
+

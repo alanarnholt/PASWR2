@@ -1,0 +1,37 @@
+\docType{data}
+\name{CIRCUIT}
+\alias{CIRCUIT}
+\title{Circuit Design Lifetime}
+\format{A data frame with 26 observations on the following 2 variables:
+\itemize{
+\item \code{lifetime} (lifetimes in thousands of hours)
+\item \code{design} (a factor with levels \code{DesignI} and \code{DesignII})
+}}
+\usage{
+CIRCUIT
+}
+\description{
+Results from an accelerated life test used to estimate the
+lifetime of four different circuit designs (lifetimes in
+thousands of hours)
+}
+\examples{
+# ggplot2 approach
+ggplot(data = CIRCUIT, aes(x = design, y = lifetime, fill = design)) + geom_boxplot() +
+labs(x = "", y = "Lifetime in thousands of hours") + guides(fill = FALSE) +
+scale_fill_brewer()
+ggplot(data = CIRCUIT, aes(x = design, y = lifetime, fill = design)) + geom_violin() +
+labs(x = "", y = "Lifetime in thousands of hours") + guides(fill = FALSE) +
+scale_fill_brewer()
+# Reorder the boxplots by medians
+ggplot(data = CIRCUIT, aes(x = reorder(design, lifetime, FUN = median),  lifetime,
+fill = design)) + geom_boxplot() + labs(x = "", y = "Lifetime in thousands of hours") +
+guides(fill = FALSE) + scale_fill_brewer()
+}
+\references{
+Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014.
+\emph{Probability and Statistics with R}, Second Edition.
+Chapman & Hall / CRC.
+}
+\keyword{datasets}
+

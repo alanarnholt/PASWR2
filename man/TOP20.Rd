@@ -1,0 +1,32 @@
+\docType{data}
+\name{TOP20}
+\alias{TOP20}
+\title{Tennis Income}
+\format{A data frame with 15 observations on the following variable:
+\itemize{
+\item \code{income} (yearly income in millions of dollars)
+}}
+\source{
+\url{http://www.atptennis.com/en/}
+}
+\usage{
+TOP20
+}
+\description{
+\code{TOP20} contains data (in millions of dollars)
+corresponding to the earnings of 15 randomly selected
+tennis players whose earnings fall somewhere in positions
+20 through 100 of ranked earnings.
+}
+\examples{
+ggplot(data = TOP20, aes(x = income)) +
+geom_histogram(binwidth = 1, fill = "lightblue", color = "blue") +
+labs(x = "yearly income in millions of dollars")
+}
+\references{
+Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014.
+\emph{Probability and Statistics with R}, Second Edition.
+Chapman & Hall / CRC.
+}
+\keyword{datasets}
+

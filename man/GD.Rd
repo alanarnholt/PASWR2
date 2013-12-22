@@ -1,0 +1,28 @@
+\docType{data}
+\name{GD}
+\alias{GD}
+\title{Times Until Failure}
+\format{A data frame with 100 observations on the following variable:
+\itemize{
+\item \code{attf} (times until failure in hours)
+}}
+\usage{
+GD
+}
+\description{
+Contains time until failure in hours for a particular
+electronic component subjected to an accelerated stress
+test
+}
+\examples{
+ggplot(data = GD, aes(x = attf, y = ..density..)) +
+geom_histogram(binwidth = 2, fill = "cornsilk", color = "orange") +
+geom_density(color = "gray", size = 1) + labs( x = "time until failure in hours")
+}
+\references{
+Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014.
+\emph{Probability and Statistics with R}, Second Edition.
+Chapman & Hall / CRC.
+}
+\keyword{datasets}
+

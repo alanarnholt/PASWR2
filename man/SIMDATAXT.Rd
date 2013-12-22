@@ -1,0 +1,28 @@
+\docType{data}
+\name{SIMDATAXT}
+\alias{SIMDATAXT}
+\title{Simulated Data (Logarithms)}
+\format{A data frame with 200 observations on the following 4 variables:
+\itemize{
+\item \code{y1} (a numeric vector)
+\item \code{y2} (a numeric vector)
+\item \code{x1} (a numeric vector)
+\item \code{x2} (a numeric vector)
+\item \code{x3} (a numeric vector)
+}}
+\usage{
+SIMDATAXT
+}
+\description{
+Simulated data for four variables
+}
+\examples{
+ggplot(data = SIMDATAXT, aes(x = x1, y = y)) + geom_point() + geom_smooth()
+}
+\references{
+Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014.
+\emph{Probability and Statistics with R}, Second Edition.
+Chapman & Hall / CRC.
+}
+\keyword{datasets}
+

@@ -1,0 +1,33 @@
+\docType{data}
+\name{DEPEND}
+\alias{DEPEND}
+\title{Number of Dependent Children for 50 Families}
+\format{A data frame with 50 observations on 1 variable:
+\itemize{
+\item \code{number} (number of dependent children)
+}}
+\source{
+Kitchens, L. J. 2003. \emph{Basic Statistics and Data
+Analysis}. Duxbury.
+}
+\usage{
+DEPEND
+}
+\description{
+Number of dependent children for 50 randomly selected
+families
+}
+\examples{
+xtabs(~number, data = DEPEND)
+ggplot(data = DEPEND, aes(x = factor(number))) +
+geom_bar(fill = "cornsilk", color = "orange") + labs(x = "Number of Dependent Children")
+ggplot(data = DEPEND, aes(x = number)) + geom_density(fill = "pink", alpha = 0.3,
+color = "red") + labs(x = "Number of Dependent Children")
+}
+\references{
+Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014.
+\emph{Probability and Statistics with R}, Second Edition.
+Chapman & Hall / CRC.
+}
+\keyword{datasets}
+

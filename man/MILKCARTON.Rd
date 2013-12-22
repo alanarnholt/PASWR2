@@ -1,0 +1,31 @@
+\docType{data}
+\name{MILKCARTON}
+\alias{MILKCARTON}
+\title{Milk Carton Drying Times}
+\format{A data frame with 80 observations on the following 2 variables:
+\itemize{
+\item \code{seconds} (drying time in seconds)
+\item \code{size} (factor with levels \code{halfgallon} and \code{wholegallon})
+}}
+\usage{
+MILKCARTON
+}
+\description{
+A plastics manufacturer makes two sizes of milk containers:
+half gallon and gallon sizes. The time required for each
+size to dry is recorded in seconds in the data frame
+\code{MILKCARTON}.
+}
+\examples{
+ggplot(data = MILKCARTON, aes(x = size, y = seconds)) + geom_boxplot()
+ggplot(data = MILKCARTON, aes(x = size, y = seconds, fill = size)) + geom_boxplot() +
+guides(fill = FALSE) + scale_fill_brewer() +
+labs(x = "size of container", y = "drying time in seconds")
+}
+\references{
+Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014.
+\emph{Probability and Statistics with R}, Second Edition.
+Chapman & Hall / CRC.
+}
+\keyword{datasets}
+

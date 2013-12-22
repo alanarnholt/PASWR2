@@ -1,0 +1,33 @@
+\docType{data}
+\name{TIREWEAR}
+\alias{TIREWEAR}
+\title{Tire Wear}
+\format{A data frame with 16 observations on the following 3 variables:
+\itemize{
+\item \code{wear} (tread loss measured in thousandths of an inch)
+\item \code{treat} (a factor with levels \code{A}, \code{B}, \code{C}, and \code{D})
+\item \code{block} (a factor with levels \code{Car1}, \code{Car2}, \code{Car3}, and \code{Car4})
+}}
+\usage{
+TIREWEAR
+}
+\description{
+The data frame \code{TIREWEAR} contains measurements for
+the amount of tread loss in thousandths of an inch after
+10,000 miles of driving.
+}
+\examples{
+par(mfrow=c(1, 2), cex = 0.8)
+with(data = TIREWEAR,
+interaction.plot(treat, block, wear, type = "b", legend = FALSE))
+with(data = TIREWEAR,
+interaction.plot(block, treat, wear, type = "b", legend = FALSE))
+par(mfrow=c(1, 1), cex = 1)
+}
+\references{
+Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014.
+\emph{Probability and Statistics with R}, Second Edition.
+Chapman & Hall / CRC.
+}
+\keyword{datasets}
+

@@ -1,0 +1,38 @@
+\docType{data}
+\name{SDS4}
+\alias{SDS4}
+\title{M1 Motorspeedway Times}
+\format{A data frame with 40 observations on the following variable:
+\itemize{
+\item \code{times} (interarrival times to the nearest second)
+}}
+\source{
+Hand, D. J., \emph{et. al.} 1994. \emph{A Handbook of Small
+Data Sets}. Chapman & Hall, London.
+}
+\usage{
+SDS4
+}
+\description{
+The times recorded are those for 41 successive vehicles
+travelling northwards along the M1 motorway in England when
+passing a fixed point near Junction 13 in Bedfordshire on
+Saturday, March 23, 1985. After subtracting the times, the
+following 40 interarrival times reported to the nearest
+second are stored in \code{SDS4} under the variable
+\code{times}.
+}
+\examples{
+ggplot(data = SDS4, aes(x = times)) + geom_histogram(binwidth = 2)
+ggplot(data = SDS4, aes(x = times, y = ..density..)) +
+geom_histogram(binwidth = 2, color = "red", fill = "pink", alpha = 0.5) +
+geom_density(fill = "cornsilk", alpha = 0.5) +
+labs(x = "interarrival times to the nearest second", y = "")
+}
+\references{
+Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014.
+\emph{Probability and Statistics with R}, Second Edition.
+Chapman & Hall / CRC.
+}
+\keyword{datasets}
+

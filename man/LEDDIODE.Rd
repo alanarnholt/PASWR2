@@ -1,0 +1,27 @@
+\docType{data}
+\name{LEDDIODE}
+\alias{LEDDIODE}
+\title{LED Diodes}
+\format{A data frame with 30 observations on the following 2 variables:
+\itemize{
+\item \code{diameter} (diameter of diode measured in millimeters)
+\item \code{supplier} (factor with levels \code{supplierA} and \code{supplierB})
+}}
+\usage{
+LEDDIODE
+}
+\description{
+The diameter in millimeters for a random sample of 15
+diodes from each of the two suppliers is stored in the data
+frame \code{LEDDIODE}.
+}
+\examples{
+ggplot(data = LEDDIODE, aes(supplier, diameter)) + geom_boxplot()
+}
+\references{
+Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014.
+\emph{Probability and Statistics with R}, Second Edition.
+Chapman & Hall / CRC.
+}
+\keyword{datasets}
+

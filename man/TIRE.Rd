@@ -1,0 +1,40 @@
+\docType{data}
+\name{TIRE}
+\alias{TIRE}
+\title{Stopping Distance}
+\format{A data frame with 24 observations on the following 2 variables:
+\itemize{
+\item \code{stopdist} (stopping distance measured to the nearest foot)
+\item \code{tire} (a factor with levels \code{A}, \code{B}, \code{C}, and \code{D})
+}}
+\usage{
+TIRE
+}
+\description{
+The data frame \code{TIRE} has the stopping distances
+measured to the nearest foot for a standard sized car to
+come to a complete stop from a speed of sixty miles per
+hour. There are six measurements of the stopping distance
+for four different tread patterns labeled A, B, C, and D.
+The same driver and car were used for all twenty-four
+measurements.
+}
+\examples{
+ggplot(data = TIRE, aes(x = reorder(tire, stopdist, FUN = median), y = stopdist,
+fill = tire)) + geom_boxplot() + guides(fill = FALSE) +
+labs(y = "Stopping distance in feet", x = "Tire Brand") + scale_fill_brewer()
+summary(aov(stopdist ~ tire, data = TIRE))
+p <- ggplot(data = TIRE, aes(x = reorder(tire, stopdist, FUN = mean),
+y = stopdist, fill = tire))
+p + geom_boxplot(width = 0.6) + geom_dotplot(binaxis = "y", stackdir = "center",
+binwidth = 2) + guides(fill = FALSE) + scale_fill_brewer() +
+stat_summary(fun.y = mean, geom = "point", fill = "black", shape = 23, size = 3) +
+labs(x = "Tire Brand", y = "Stopping distance in feet")
+}
+\references{
+Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014.
+\emph{Probability and Statistics with R}, Second Edition.
+Chapman & Hall / CRC.
+}
+\keyword{datasets}
+

@@ -1,0 +1,25 @@
+\docType{data}
+\name{SCORE}
+\alias{SCORE}
+\title{Standardized Test Scores}
+\format{A data frame with 20 observations on the following  variable:
+\itemize{
+\item \code{scores} (standardized test score)
+}}
+\usage{
+SCORE
+}
+\description{
+Standardized test scores from a random sample of twenty
+college freshmen
+}
+\examples{
+ggplot(data = SCORE, aes(sample = scores)) + stat_qq()
+}
+\references{
+Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014.
+\emph{Probability and Statistics with R}, Second Edition.
+Chapman & Hall / CRC.
+}
+\keyword{datasets}
+

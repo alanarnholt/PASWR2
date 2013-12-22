@@ -1,0 +1,33 @@
+\docType{data}
+\name{URLADDRESS}
+\alias{URLADDRESS}
+\title{Megabytes Downloaded}
+\format{A data frame with 30 observations on the following 2 variables:
+\itemize{
+\item \code{megasd} (megabytes dowloaded)
+\item \code{mconnected} (number of minutes connected)
+}}
+\usage{
+URLADDRESS
+}
+\description{
+The manager of a URL commercial address is interested in
+predicting the number of megabytes downloaded,
+\code{megasd}, by clients according to the number minutes
+they are connected, \code{mconnected}. The manager randomly
+selects (megabyte, minute) pairs, and records the data.
+The pairs (\code{megasd}, \code{mconnected}) are stored in
+the data frame \code{URLADDRESS}.
+}
+\examples{
+ggplot(data = URLADDRESS, aes(x = mconnected, y = megasd)) +
+geom_point(color = "blue") +
+labs(x = "number of minutes connected", y = "megabytes dowloaded")
+}
+\references{
+Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014.
+\emph{Probability and Statistics with R}, Second Edition.
+Chapman & Hall / CRC.
+}
+\keyword{datasets}
+

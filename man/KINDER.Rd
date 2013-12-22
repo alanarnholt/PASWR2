@@ -1,0 +1,29 @@
+\docType{data}
+\name{KINDER}
+\alias{KINDER}
+\title{Kindergarten Class}
+\format{A data frame with 20 observations on the following 2 variables:
+\itemize{
+\item \code{ht} (height in inches of each child)
+\item \code{wt} (weight in pounds of each child)
+}}
+\usage{
+KINDER
+}
+\description{
+The data frame \code{KINDER} contains the height in inches
+and weight in pounds of 20 children from a kindergarten
+class.
+}
+\examples{
+ggplot(data = KINDER, aes(x = ht, y = wt)) + geom_point(color = "blue") +
+geom_smooth(method = "lm", color = "red") + labs(x = "height in inches",
+y = "weight in pounds")
+}
+\references{
+Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014.
+\emph{Probability and Statistics with R}, Second Edition.
+Chapman & Hall / CRC.
+}
+\keyword{datasets}
+

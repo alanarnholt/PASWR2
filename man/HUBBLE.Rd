@@ -1,0 +1,39 @@
+\docType{data}
+\name{HUBBLE}
+\alias{HUBBLE}
+\title{Hubble Telescope}
+\format{A data frame with 15 observations on the following 2 variables:
+\itemize{
+\item \code{team1} (days to complete scenario)
+\item \code{team2} (days to complete scenario)
+}}
+\usage{
+HUBBLE
+}
+\description{
+The Hubble Space Telescope was put into orbit on April 25,
+1990. Unfortunately, on June 25, 1990, a spherical
+aberration was discovered in Hubble's primary mirror. To
+correct this, astronauts had to work in space. To prepare
+for the mission, two teams of astronauts practiced making
+repairs under simulated space conditions. Each team of
+astronauts went through 15 identical scenarios. The times
+to complete each scenario were recorded in days.
+}
+\examples{
+with(data = HUBBLE,
+qqnorm(team1 - team2))
+with(data = HUBBLE,
+qqline(team1 - team2))
+# Trellis Approach
+qqmath(~(team1 - team2), data = HUBBLE, type=c("p", "r"))
+# ggplot approach
+ggplot(data = HUBBLE, aes(sample = team1 - team2)) + stat_qq(color = "blue")
+}
+\references{
+Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014.
+\emph{Probability and Statistics with R}, Second Edition.
+Chapman & Hall / CRC.
+}
+\keyword{datasets}
+

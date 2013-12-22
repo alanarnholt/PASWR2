@@ -1,0 +1,54 @@
+\name{checking.plots}
+\alias{checking.plots}
+\title{Checking Plots}
+\usage{
+checking.plots(model, n.id = 3, COL = c("#0080FF", "#A9E2FF"))
+}
+\arguments{
+  \item{model}{an aov or lm object}
+
+  \item{n.id}{the number of points to identify}
+
+  \item{COL}{vector of two colors}
+}
+\description{
+Function that creates four graphs that can be used to help
+assess independence, normality, and constant variance
+}
+\examples{
+mod.aov <- aov(stopdist ~ tire, data = TIRE)
+checking.plots(mod.aov)
+rm(mod.aov)
+
+# Similar graphs using ggplot2
+#
+mod.aov <- aov(stopdist ~ tire, data = TIRE)
+fortify(mod.aov)
+# library(gridExtra) used to place all graphs on the same device
+p1 <- ggplot(data = mod.aov, aes(x = 1:dim(fortify(mod.aov))[1], y = .stdresid,
+color = tire)) + geom_point() + labs(y = "Standardized Residuals",
+x = "Ordered Residuals") + geom_hline(yintercept = c(-3,-2, 2, 3),
+linetype = "dashed", col = "pink") + theme_bw()
+p2 <- ggplot(data = mod.aov, aes(sample = .stdresid, color = tire)) +
+stat_qq()  + geom_abline(a = 0, b = 1, linetype = "dashed", col = "pink") + theme_bw()
+p3 <- ggplot(data = mod.aov, aes(x = .fitted, y = .stdresid, color = tire)) +
+geom_point() + geom_hline(yintercept = 0, linetype = "dashed") +
+labs(y = "Standardized Residuals", x = "Fitted Values") +
+geom_hline(yintercept = c(-3, -2, 2, 3), linetype = "dashed", color = "pink") +
+theme_bw()
+p1
+p2
+p3
+# Use the following (not run) to get all graphs on the same device
+# library(gridExtra)
+# grid.arrange(p1, p2, p3, nrow=3)
+rm(mod.aov, p1, p2, p3)
+}
+\author{
+Alan T. Arnholt <arnholtat@appstate.edu>
+}
+\seealso{
+\code{\link{twoway.plots}}, \code{\link{oneway.plots}}
+}
+\keyword{hplot}
+

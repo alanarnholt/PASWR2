@@ -1,0 +1,36 @@
+\docType{data}
+\name{ROACHEGGS}
+\alias{ROACHEGGS}
+\title{Oriental Cockroaches}
+\format{A data frame with 81 observations on the following variable:
+\itemize{
+\item \code{eggs} (numeric vector where a 0 indicates nothing hatched while a 1 indicates the birth of a cockroach.)
+}}
+\usage{
+ROACHEGGS
+}
+\description{
+A laboratory is interested in testing a new child friendly
+pesticide on \emph{Blatta orientalis} (oriental
+cockroaches). Scientists apply the new pesticide to 81
+randomly selected Blatta orientalis oothecae (eggs). The
+results from the experiment are stored in the data frame
+\code{ROACHEGGS} in the variable \code{eggs}.  A zero in
+the variable \code{eggs} indicates that nothing hatched
+from the egg while a 1 indicates the birth of a cockroach.
+}
+\examples{
+p <- seq(0.1, 0.9, 0.001)
+negloglike <- function(p){
+-(sum(ROACHEGGS$eggs)*log(p) + sum(1-ROACHEGGS$eggs)*log(1-p))
+}
+nlm(negloglike, .2)
+rm(p, negloglike)
+}
+\references{
+Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014.
+\emph{Probability and Statistics with R}, Second Edition.
+Chapman & Hall / CRC.
+}
+\keyword{datasets}
+

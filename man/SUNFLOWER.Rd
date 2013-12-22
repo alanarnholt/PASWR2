@@ -1,0 +1,44 @@
+\docType{data}
+\name{SUNFLOWER}
+\alias{SUNFLOWER}
+\title{Sunflower Defoliation}
+\format{A data frame with 72 observations on the following 5 variables:
+\itemize{
+\item \code{location} (a factor with levels \code{A}, \code{B}, \code{C}, and \code{D} for locations Carcastillo, Melida, Murillo, and Unciti, respectively)
+\item \code{stage} (a factor with levels \code{stage1}, \code{stage2}, \code{stage3}, \code{stage4}, and \code{stage5})
+\item \code{defoli} (a factor with levels \code{control}, \code{treat1}, \code{treat2}, and \code{treat3})
+\item \code{yield} (sunflower yield in kg/ha)
+\item \code{numseed} (number of seeds per sunflower head)
+}}
+\source{
+Muro, J., \emph{et. al.} 2001. \dQuote{Defoliation Effects
+on Sunflower Yield Reduction.} \emph{Agronomy Journal},
+\bold{93}: 634-637.
+}
+\usage{
+SUNFLOWER
+}
+\description{
+Seventy-two field trials were conducted by applying four
+defoliation treatments (non-defoliated control, 33\%, 66\%,
+and 100\%) at different growth stages (\code{stage})
+ranging from pre-flowering (1) to physiological maturity
+(5) in four different locations of Navarra, Spain:
+Carcastillo (1), Melida (2), Murillo (3), and Unciti (4).
+There are two response variables: \code{yield} in kg/ha of
+the sunflower and \code{numseed}, the number of seeds per
+sunflower head. Data are stored in the data frame
+\code{SUNFLOWER}.
+}
+\examples{
+summary(aov(yield ~ stage + defoli + stage:defoli, data = SUNFLOWER))
+ggplot(data = SUNFLOWER, aes(numseed, yield, color = defoli)) + geom_point() +
+geom_smooth(method = "lm", se = FALSE) + facet_grid(location ~ .)
+}
+\references{
+Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014.
+\emph{Probability and Statistics with R}, Second Edition.
+Chapman & Hall / CRC.
+}
+\keyword{datasets}
+

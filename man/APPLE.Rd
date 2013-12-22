@@ -1,0 +1,37 @@
+\docType{data}
+\name{APPLE}
+\alias{APPLE}
+\title{Apple Hardness}
+\format{A data frame with 34 observations on the following two variables:
+\itemize{
+\item \code{hardness} (hardness rating measured in \eqn{\texttt{kg}/\texttt{meter}^2} for both the \code{fresh} and \code{warehouse} apples)
+\item \code{location} (\code{factor} with two levels \code{fresh} and \code{warehouse})
+}}
+\usage{
+APPLE
+}
+\description{
+An experiment was undertaken where seventeen apples were
+randomly selected from an orchard (\code{fresh}) and
+measured for hardness.  Seventeen apples were also randomly
+selected from a warehouse (\code{warehouse}) where the
+apples had been stored for one week and measured for
+hardness.
+}
+\examples{
+# ggplot2 approach
+ggplot(data = APPLE, aes(sample = hardness)) + stat_qq() + facet_grid(. ~ location)
+ggplot(data = APPLE, aes(sample = hardness, color = location)) + stat_qq()
+ggplot(data = APPLE, aes(x = hardness, fill = location)) + geom_density(alpha = 0.4) +
+scale_fill_brewer()
+# lattice approach
+qqmath(~hardness|location, data = APPLE)
+qqmath(~hardness, group = location, type = c('p', 'r'), auto.key = TRUE, data = APPLE)
+}
+\references{
+Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014.
+\emph{Probability and Statistics with R}, Second Edition.
+Chapman & Hall / CRC.
+}
+\keyword{datasets}
+

@@ -1,0 +1,29 @@
+\docType{data}
+\name{LOSTR}
+\alias{LOSTR}
+\title{Lost Revenue Due to Worker Illness}
+\format{A data frame with 25 observations on the following 2 variables:
+\itemize{
+\item \code{numbersick} (number of absent workers due to illness)
+\item \code{lostrevenue} (lost revenue in dollars)
+}}
+\usage{
+LOSTR
+}
+\description{
+Data set containing the lost revenue in dollars/day and
+number of workers absent due to illness for a metallurgic
+company
+}
+\examples{
+ggplot(data = LOSTR, aes(x = numbersick, y = lostrevenue)) + geom_point(color = "red",
+pch = 21, fill = "pink", size = 4) + geom_smooth(method = "lm") +
+labs(x = "number of absent workers due to illness", y = "lost revenue in dollars")
+}
+\references{
+Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014.
+\emph{Probability and Statistics with R}, Second Edition.
+Chapman & Hall / CRC.
+}
+\keyword{datasets}
+

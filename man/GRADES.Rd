@@ -1,0 +1,34 @@
+\docType{data}
+\name{GRADES}
+\alias{GRADES}
+\title{GPA and SAT Scores}
+\format{A data frame with 200 observations on the following 2 variables:
+\itemize{
+\item \code{sat} (SAT score)
+\item \code{gpa} (grade point average)
+}}
+\usage{
+GRADES
+}
+\description{
+The admissions committee of a comprehensive state
+university selected, at random, the records of 200 second
+semester freshmen. The results, first semester college GPA
+and high school SAT scores, are stored in the data frame
+\code{GRADES}.
+}
+\examples{
+# base scatterplot
+plot(gpa ~ sat, data = GRADES)
+# lattice scatterplot
+xyplot(gpa ~ sat, data = GRADES, type = c("p", "smooth"))
+# ggplot scatterplot
+ggplot(data = GRADES, aes(x = sat, y = gpa)) + geom_point() + geom_smooth()
+}
+\references{
+Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014.
+\emph{Probability and Statistics with R}, Second Edition.
+Chapman & Hall / CRC.
+}
+\keyword{datasets}
+

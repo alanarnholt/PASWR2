@@ -1,0 +1,36 @@
+\docType{data}
+\name{GROCERY}
+\alias{GROCERY}
+\title{Grocery Spending}
+\format{A data frame with 30 observations on the following variable:
+\itemize{
+\item \code{amount} (total dollars spent on groceries)
+}}
+\usage{
+GROCERY
+}
+\description{
+The consumer expenditure survey, created by the U.S.
+Department of Labor, was administered to 30 households in
+Watauga County, North Carolina, to see how the cost of
+living in Watauga county with respect to total dollars
+spent on groceries compares with other counties. The amount
+of money each household spent per week on groceries is
+stored in the variable \code{amount}.
+}
+\examples{
+with(data = GROCERY,
+z.test(amount, sigma.x = 25, mu = 100, alternative = "greater"))
+hist(GROCERY$amount, xlab = "Weekly grocery bill", main = "")
+ggplot(data = GROCERY, aes(x = amount, y = ..density..)) +
+geom_histogram(binwidth = 8, fill = "cornsilk", color = "gray80") +
+geom_density(color = "lightblue", size = 1, fill = "lightblue", alpha = .2) +
+labs(x = "Weekly grocery bill (in dollars)")
+}
+\references{
+Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014.
+\emph{Probability and Statistics with R}, Second Edition.
+Chapman & Hall / CRC.
+}
+\keyword{datasets}
+

@@ -1,0 +1,33 @@
+\docType{data}
+\name{TENNIS}
+\alias{TENNIS}
+\title{Speed Detector}
+\format{A data frame with 12 observations on the following 2 variables:
+\itemize{
+\item \code{speed1} (speed in kilometers per hour)
+\item \code{speed2} (speed in kilometers per hour)
+}}
+\usage{
+TENNIS
+}
+\description{
+The Yonalasee tennis club has two systems to measure the
+speed of a tennis ball. The local tennis pro suspects one
+system (\code{speed1}) consistently records faster speeds.
+To test her suspicions, she sets up both systems and
+records the speeds of 12 serves (three serves from each
+side of the court). The values are stored in the data frame
+\code{TENNIS} in the variables \code{speed1} and
+\code{speed2}. The recorded speeds are in kilometers per
+hour.
+}
+\examples{
+with(data = TENNIS, boxplot(speed1, speed2))
+}
+\references{
+Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014.
+\emph{Probability and Statistics with R}, Second Edition.
+Chapman & Hall / CRC.
+}
+\keyword{datasets}
+

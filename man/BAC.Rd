@@ -1,0 +1,49 @@
+\docType{data}
+\name{BAC}
+\alias{BAC}
+\title{Blood Alcohol Content}
+\format{A data frame with 10 observations of the following 2 variables:
+\itemize{
+\item \code{X} (blood alcohol content measured in g/L)
+\item \code{Y} (blood alcohol content measured in g/L)
+}}
+\usage{
+BAC
+}
+\description{
+Two volunteers weighing 180 pounds each consumed a twelve
+ounce beer every fifteen minutes for one hour. One hour
+after the fourth beer was consumed, each volunteer's blood
+alcohol was measured with ten different breathalyzers from
+the same company. The numbers recorded in data frame
+\code{BAC} are the sorted blood alcohol content values
+reported with breathalyzers from company \code{X} and
+company \code{Y}.
+}
+\examples{
+with(data = BAC,
+var.test(X, Y, alternative = "less"))
+# Convert data from wide to long format
+# library(reshape2)
+# BACL <- melt(BAC, variable.name = "company", value.name = "bac")
+# ggplot(data = BACL, aes(x = company, y = bac, fill = company)) +
+# geom_boxplot() + guides(fill = FALSE) + scale_fill_brewer() +
+# labs(y = "blood alcohol content measured in g/L")
+# Convert with reshape()
+BACL <- reshape(BAC, varying = c("X", "Y"), v.names = "bac", timevar = "company",
+direction = "long")
+ggplot(data = BACL, aes(x = factor(company), y = bac, fill = factor(company))) +
+geom_boxplot() + guides(fill = FALSE) + scale_fill_brewer() +
+labs(y = "blood alcohol content measured in g/L", x = "") +
+scale_x_discrete(breaks = c(1, 2), labels = c("Company X", "Company Y"))
+
+# Base graphics
+boxplot(BAC$Y, BAC$X)
+}
+\references{
+Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014.
+\emph{Probability and Statistics with R}, Second Edition.
+Chapman & Hall / CRC.
+}
+\keyword{datasets}
+

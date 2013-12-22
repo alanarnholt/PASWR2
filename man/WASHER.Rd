@@ -1,0 +1,24 @@
+\docType{data}
+\name{WASHER}
+\alias{WASHER}
+\title{Washer Diameter}
+\format{A data frame with 20 observations on the following variable:
+\itemize{
+\item \code{diameter} (diameter of washer in cm)
+}}
+\usage{
+WASHER
+}
+\description{
+Diameter of circular metal disk
+}
+\examples{
+ggplot(data = WASHER, aes(x = diameter)) + geom_density(fill = "blue", alpha = 0.2)
+}
+\references{
+Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014.
+\emph{Probability and Statistics with R}, Second Edition.
+Chapman & Hall / CRC.
+}
+\keyword{datasets}
+

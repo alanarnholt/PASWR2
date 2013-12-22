@@ -1,0 +1,44 @@
+\docType{data}
+\name{EPIDURAL}
+\alias{EPIDURAL}
+\title{Traditional Sitting Position Versus Hamstring Stretch Position}
+\format{A data frame with 85 observations on the following 7 variables:
+\itemize{
+\item \code{doctor} (a factor with levels \code{Dr. A}, \code{Dr. B}, \code{Dr. C}, and \code{Dr. D})
+\item \code{kg} (weight in kg of patient)
+\item \code{cm} (height in cm of patient)
+\item \code{ease} (a factor with levels \code{Difficult}, \code{Easy}, and \code{Impossible} indicating the physicians' assessments of how well bone landmarks could be felt in the patient)
+\item {treatment} (a factor with levels \code{Hamstring Stretch} and \code{Traditional Sitting})
+\item \code{oc} (number of obstructive contacts)
+\item \code{complications} (a factor with levels \code{Failure - person got dizzy}, \code{Failure - too many OCs}, \code{None}, \code{Paresthesia}, and \code{Wet Tap})
+}}
+\source{
+Fisher, K. S., Arnholt, A. T., Douglas, M. E., Vandiver, S.
+L., Nguyen, D. H. 2009. \dQuote{A Randomized Trial of the
+Traditional Sitting Position Versus the Hamstring Stretch
+Position for Labor Epidural Needle Placement.}
+\emph{Journal of Anesthesia & Analgesia}, Vol 109, No. 2:
+532-534.
+}
+\usage{
+EPIDURAL
+}
+\description{
+Initial results from a study to determine whether the
+traditional sitting position or the hamstring stretch
+position is superior for administering epidural anesthesia
+to pregnant women in labor as measured by the number of
+obstructive (needle to bone) contacts (\code{oc})
+}
+\examples{
+xtabs(~ doctor + ease, data = EPIDURAL)
+xtabs(~ doctor + factor(ease, levels = c("Easy", "Difficult", "Impossible")),
+data = EPIDURAL)
+}
+\references{
+Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014.
+\emph{Probability and Statistics with R}, Second Edition.
+Chapman & Hall / CRC.
+}
+\keyword{datasets}
+

@@ -1,0 +1,25 @@
+\docType{data}
+\name{WAIT}
+\alias{WAIT}
+\title{Waiting Time}
+\format{A data frame with 15 observations on the following variable:
+\itemize{
+\item \code{minutes} (waiting time in minutes)
+}}
+\usage{
+WAIT
+}
+\description{
+A statistician records how long he must wait for his bus
+each morning.
+}
+\examples{
+with(data= WAIT, wilcox.test(minutes, mu = 6, alternative = "less"))
+}
+\references{
+Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014.
+\emph{Probability and Statistics with R}, Second Edition.
+Chapman & Hall / CRC.
+}
+\keyword{datasets}
+

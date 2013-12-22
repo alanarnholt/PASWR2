@@ -1,0 +1,40 @@
+\docType{data}
+\name{WEIGHTGAIN}
+\alias{WEIGHTGAIN}
+\title{Weight Gain in Rats}
+\format{A data frame with 40 observations on the following 3 variables:
+\itemize{
+\item \code{proteinsource} (a factor with levels \code{Beef} and \code{Cereal})
+\item \code{proteinamount} (a factor with levels \code{High} and \code{Low})
+\item \code{weightgain} (weight gained in grams)
+}}
+\source{
+Hand, D. J., F. Daly, A. D. Lunn, K. J. McConway, and E.
+Ostrowski. 1994. \emph{A Handbook of Small Datasets}.
+Chapman and Hall/CRC, London.
+}
+\usage{
+WEIGHTGAIN
+}
+\description{
+The data come from an experiment to study the gain in
+weight of rats fed on four different diets, distinguished
+by amount of protein (low and high) and by source of
+pretein (beef and cereal).
+}
+\details{
+The design of the experiment is a completely randomized
+design with ten rats in each of the four treatments.
+}
+\examples{
+ggplot(data = WEIGHTGAIN, aes(x = proteinamount, y = weightgain,
+fill = proteinsource)) + geom_boxplot()
+aov(weightgain ~ proteinsource*proteinamount, data = WEIGHTGAIN)
+}
+\references{
+Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014.
+\emph{Probability and Statistics with R}, Second Edition.
+London: Chapman & Hall.
+}
+\keyword{datasets}
+

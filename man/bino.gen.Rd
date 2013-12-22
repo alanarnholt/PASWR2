@@ -1,0 +1,32 @@
+\name{bino.gen}
+\alias{bino.gen}
+\title{Binomial Distribution Simulation}
+\usage{
+bino.gen(samples = 10000, n = 20, pi = 0.5)
+}
+\arguments{
+  \item{samples}{number of repeated samples to generate}
+
+  \item{n}{number of Bernoulli trials}
+
+  \item{pi}{probability of sucess for each Bernoulli trial}
+}
+\value{
+\item{\code{simulated.distribution}}{Simulated binomial
+distribution}
+\item{\code{theoretical.distribution}}{Theoretical binomial
+distribution}
+}
+\description{
+Function that generates and displays \emph{m} repeated
+samples of \emph{n} Bernoulli trials with a given
+probability of success
+}
+\examples{
+bino.gen(samples=50000, n = 10, pi = 0.80)
+}
+\author{
+Alan T. Arnholt <arnholtat@appstate.edu>
+}
+\keyword{programming}
+

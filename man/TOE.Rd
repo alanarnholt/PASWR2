@@ -1,0 +1,26 @@
+\docType{data}
+\name{TOE}
+\alias{TOE}
+\title{Nuclear Energy}
+\format{A data frame with 12 observations on the following variable:
+\itemize{
+\item \code{energy} (nuclear energy measured in tons of oil equivalent)
+}}
+\usage{
+TOE
+}
+\description{
+Nuclear energy (in TOE, tons of oil equivalent) produced in
+12 randomly selected European countries during 2003
+}
+\examples{
+ggplot(data = TOE, aes(x = energy)) + geom_density(color = "red", alpha = 0.3,
+fill = "pink")
+}
+\references{
+Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014.
+\emph{Probability and Statistics with R}, Second Edition.
+Chapman & Hall / CRC.
+}
+\keyword{datasets}
+

@@ -1,0 +1,39 @@
+\name{interval.plot}
+\alias{interval.plot}
+\title{Interval Plot}
+\usage{
+interval.plot(ll, ul, parameter = 0)
+}
+\arguments{
+  \item{ll}{vector of lower values}
+
+  \item{ul}{vector of upper values}
+
+  \item{parameter}{value of the desired parameter (used
+  when graphing confidence intervals)}
+}
+\value{
+Draws user-given intervals on a graphical device.
+}
+\description{
+Function to graph intervals
+}
+\examples{
+set.seed(385)
+samples <- 100
+n <- 625
+ll <- numeric(samples)
+ul <- numeric(samples)
+xbar <- numeric(samples)
+for (i in 1:samples){
+  xbar[i] <- mean(rnorm(n, 80, 25))
+  ll[i] <- xbar[i] - qnorm(.975)*25/sqrt(n)
+  ul[i] <- xbar[i] + qnorm(.975)*25/sqrt(n)
+  }
+interval.plot(ll, ul, parameter = 80)
+}
+\author{
+Alan T. Arnholt <arnholtat@appstate.edu>
+}
+\keyword{programming}
+

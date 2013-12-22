@@ -1,0 +1,39 @@
+\docType{data}
+\name{SWIMTIMES}
+\alias{SWIMTIMES}
+\title{Swim Times}
+\format{A data frame with 17 observations on the following 2 variables:
+\itemize{
+\item \code{seconds} (time improvement in seconds)
+\item \code{diet} (a factor with levels \code{lowfat} and \code{highfat})
+}}
+\usage{
+SWIMTIMES
+}
+\description{
+Swimmers' improvements in seconds for two diets are stored
+in the data frame \code{SWIMTIMES}. The values in
+\code{seconds} represent the time improvement in seconds
+for swimmers.
+}
+\details{
+Times for the thirty-two swimmers for the 200 yard
+individual medley were taken right after the swimmers'
+conference meet. The swimmers were randomly assigned to
+follow one of the diets.  One group followed a low fat diet
+the entire year but lost two swimmers along the way. The
+other group followed a high fat diet the entire year and
+also lost two swimmers.
+}
+\examples{
+wilcox.test(seconds ~ diet, data = SWIMTIMES)
+ggplot(data = SWIMTIMES, aes(x = diet, y = seconds, fill = diet)) + geom_violin() +
+guides(fill = FALSE) + scale_fill_brewer()
+}
+\references{
+Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014.
+\emph{Probability and Statistics with R}, Second Edition.
+Chapman & Hall / CRC.
+}
+\keyword{datasets}
+

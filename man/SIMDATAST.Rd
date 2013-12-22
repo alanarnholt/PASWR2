@@ -1,0 +1,28 @@
+\docType{data}
+\name{SIMDATAST}
+\alias{SIMDATAST}
+\title{Simulated Data (Predictors)}
+\format{A data frame with 200 observations on the following 5 variables:
+\itemize{
+\item \code{y1} (a numeric vector)
+\item \code{y2} (a numeric vector)
+\item \code{x1} (a numeric vector)
+\item \code{x2} (a numeric vector)
+\item \code{x3} (a numeric vector)
+}}
+\usage{
+SIMDATAST
+}
+\description{
+Simulated data for five variables
+}
+\examples{
+ggplot(data = SIMDATAST, aes(x = x1, y = y1)) + geom_point() + geom_smooth()
+}
+\references{
+Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014.
+\emph{Probability and Statistics with R}, Second Edition.
+Chapman & Hall / CRC.
+}
+\keyword{datasets}
+

@@ -1,0 +1,33 @@
+\name{oneway.plots}
+\alias{oneway.plots}
+\title{Exploratory Graphs for Single Factor Designs}
+\usage{
+oneway.plots(Y, fac1, COL = c("#A9E2FF", "#0080FF"))
+}
+\arguments{
+  \item{Y}{response variable for a single factor design}
+
+  \item{fac1}{predictor variable (factor)}
+
+  \item{COL}{a vector with two colors}
+}
+\description{
+Function to create dotplots, boxplots, and design plot
+(means) for single factor designs
+}
+\examples{
+with(data = TIRE, oneway.plots(stopdist, tire))
+## Similar graphs with ggplot2
+ggplot(data = TIRE, aes(tire, stopdist, fill = tire)) +
+geom_dotplot(binaxis = "y", stackdir = "center") + coord_flip() + theme_bw()
+ggplot(data = TIRE, aes(tire, stopdist, fill = tire)) + geom_boxplot() +
+guides(fill = FALSE) + theme_bw()
+}
+\author{
+Alan T. Arnholt <arnholtat@appstate.edu>
+}
+\seealso{
+\code{\link{twoway.plots}}, \code{\link{checking.plots}}
+}
+\keyword{hplot}
+

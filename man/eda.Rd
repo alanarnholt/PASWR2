@@ -1,0 +1,46 @@
+\name{eda}
+\alias{eda}
+\title{Exploratory Data Analysis}
+\usage{
+eda(x, trim = 0.05, dec = 3)
+}
+\arguments{
+  \item{x}{is a numeric vector where \code{NA}s and
+  \code{Inf}s are allowed but will be removed.}
+
+  \item{trim}{is a fraction (between 0 and 0.5, inclusive)
+  of values to be trimmed from each end of the ordered data
+  such that if \code{trim = 0.5}, the result is the
+  median.}
+
+  \item{dec}{is a number specifying the number of decimals}
+}
+\value{
+Function returns various measures of center and location.
+The values returned for the quartiles are based on the
+default \pkg{R} definitions for quartiles. For more
+information on the definition of the quartiles, type
+\code{?quantile} and read about the algorithm used by
+\code{type = 7}.
+}
+\description{
+Function that produces a histogram, density plot, boxplot,
+and Q-Q plot
+}
+\details{
+The function \code{eda()} will not return console window
+information on data sets containing more than 5000
+observations. It will, however, still produce graphical
+output for data sets containing more than 5000
+observations.
+}
+\examples{
+eda(x = rnorm(100))
+# Produces four graphs for the 100 randomly
+# generated standard normal variates.
+}
+\author{
+Alan T. Arnholt <arnholtat@appstate.edu>
+}
+\keyword{hplot}
+

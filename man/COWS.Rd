@@ -1,0 +1,39 @@
+\docType{data}
+\name{COWS}
+\alias{COWS}
+\title{Butterfat of Cows}
+\format{A data frame with 100 observations on the following 3 variables:
+\itemize{
+\item \code{butterfat} (average butterfat percentage)
+\item \code{age} (a factor with levels \code{2 years old} and \code{Mature})
+\item \code{breed} (a factor with levels \code{Ayrshire}, \code{Canadian}, \code{Guernsey}, \code{Holstein-Friesian}, and \code{Jersey})
+}}
+\source{
+Canadian record book of purebred dairy cattle.
+}
+\usage{
+COWS
+}
+\description{
+Random samples of ten mature (five-years-old and older) and
+ten two-year-old cows were taken from each of five breeds.
+The average butterfat percentage of these 100 cows is
+stored in the variable \code{butterfat} with the type of
+cow stored in the variable \code{breed} and the age of the
+cow stored in the variable \code{age}.
+}
+\examples{
+ggplot(data = COWS, aes(x = breed, y = butterfat, fill = age)) +
+geom_boxplot(position = position_dodge(1.0)) +
+labs(x = "", y = "Average butterfat percentage") + scale_fill_brewer()
+summary(aov(butterfat ~ breed + age, data = COWS))
+}
+\references{
+\itemize{ \item Sokal, R. R. and Rohlf, F. J. 1994.
+\emph{Biometry}.  W. H. Freeman, New York, third edition.
+\item Ugarte, M. D., Militino, A. F., and Arnholt, A. T.
+2014. \emph{Probability and Statistics with R}, Second
+Edition. Chapman & Hall / CRC.}
+}
+\keyword{datasets}
+

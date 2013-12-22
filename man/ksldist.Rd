@@ -1,0 +1,29 @@
+\name{ksldist}
+\alias{ksldist}
+\title{Simulated Lilliefors' Test of Normality Values}
+\usage{
+ksldist(n = 10, sims = 10000, alpha = 0.05)
+}
+\arguments{
+  \item{n}{sample size}
+
+  \item{sims}{number of simulations to perform}
+
+  \item{alpha}{desired \eqn{\alpha} level}
+}
+\description{
+Function to visualize the sampling distribution of
+\eqn{D_n}{D[n]} (the Kolmogorov-Smirnov one sample
+statistic) for simple and composite hypotheses
+}
+\examples{
+ksldist(n = 10, sims = 15000, alpha = 0.05)
+}
+\author{
+Alan T. Arnholt <arnholtat@appstate.edu>
+}
+\seealso{
+\code{\link{ksdist}}
+}
+\keyword{hplot}
+

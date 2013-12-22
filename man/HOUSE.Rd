@@ -1,0 +1,27 @@
+\docType{data}
+\name{HOUSE}
+\alias{HOUSE}
+\title{House Prices}
+\format{A data frame with 14 observations on the following 2 variables:
+\itemize{
+\item \code{neighborhood} (a factor with levels \code{Blowing Rock}, \code{Cove Creek}, \code{Green Valley}, \code{Park Valley}, \code{Parkway}, and \code{Valley Crucis})
+\item \code{price} (price of house in thousands of dollars)
+}}
+\usage{
+HOUSE
+}
+\description{
+Random sample of house prices (in thousands of dollars) for
+three bedroom/two bath houses in Watauga County, NC
+}
+\examples{
+with(data = HOUSE,
+t.test(price, mu = 225))
+}
+\references{
+Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014.
+\emph{Probability and Statistics with R}, Second Edition.
+Chapman & Hall / CRC.
+}
+\keyword{datasets}
+

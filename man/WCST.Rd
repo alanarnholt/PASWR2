@@ -1,0 +1,35 @@
+\docType{data}
+\name{WCST}
+\alias{WCST}
+\title{Wisconsin Card Sorting Test}
+\format{A data frame with 50 observations on the following variable:
+\itemize{
+\item \code{score} (score on the Wisconsin Card Sorting Test)
+}}
+\usage{
+WCST
+}
+\description{
+The following data are the test scores from a group of 50
+patients from the \emph{Virgen del Camino} Hospital
+(Pamplona, Spain) on the Wisconsin Card Sorting Test.
+}
+\details{
+The \dQuote{Wisconsin Card Sorting Test} is widely used by
+psychiatrists, neurologists, and neuropsychologists with
+patients who have a brain injury, neurodegenerative
+disease, or a mental illness such as schizophrenia.
+Patients with any sort of frontal lobe lesion generally do
+poorly on the test.
+}
+\examples{
+ggplot(data = WCST, aes(x = score)) + geom_density(fill = "lightblue", alpha = 0.8,
+color ="blue")
+}
+\references{
+Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014.
+\emph{Probability and Statistics with R}, Second Edition.
+Chapman & Hall / CRC.
+}
+\keyword{datasets}
+

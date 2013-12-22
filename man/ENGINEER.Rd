@@ -1,0 +1,32 @@
+\docType{data}
+\name{ENGINEER}
+\alias{ENGINEER}
+\title{Engineers' Salaries}
+\format{A data frame with 51 observations on the following 2 variables:
+\itemize{
+\item \code{salary} (salary 10 years after graduation in thousands of dollars)
+\item \code{university} (one of three different engineering universities)
+}}
+\usage{
+ENGINEER
+}
+\description{
+Salaries for engineering graduates 10 years after
+graduation
+}
+\examples{
+ggplot(data = ENGINEER, aes(x = university, y = salary, fill = university)) +
+geom_boxplot() + guides(fill = FALSE) + scale_fill_brewer() +
+labs(y = "salary 10 years after graduation \\n in thousands of dollars")
+# Violin Plots
+ggplot(data = ENGINEER, aes(x = university, y = salary, fill = university)) +
+geom_violin() + guides(fill = FALSE) + scale_fill_brewer() +
+labs(y = "salary 10 years after graduation \\n in thousands of dollars")
+}
+\references{
+Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014.
+\emph{Probability and Statistics with R}, Second Edition.
+Chapman & Hall / CRC.
+}
+\keyword{datasets}
+

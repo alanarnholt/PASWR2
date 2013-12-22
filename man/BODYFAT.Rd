@@ -1,0 +1,46 @@
+\docType{data}
+\name{BODYFAT}
+\alias{BODYFAT}
+\title{Body Fat Composition}
+\format{A data frame with 18 observations on the following 3 variables:
+\itemize{
+\item \code{age} (age in years)
+\item \code{fat} (percent body fat composition)
+\item \code{sex} (a factor with levels \code{F} for female and \code{M} for male)
+}}
+\source{
+Mazess, R. B., Peppler, W. W., and Gibbons, M. (1984)
+\dQuote{Total Body Composition by Dual-Photon (153 Gd)
+Absorptiometry.} \emph{American Journal of Clinical
+Nutrition}, \bold{40}, \bold{4}: 834-839.
+}
+\usage{
+BODYFAT
+}
+\description{
+Values from a study reported in the \emph{American Journal
+of Clinical Nutrition} that investigated a new method for
+measuring body composition
+}
+\examples{
+# base graphics
+boxplot(fat ~ sex, data = BODYFAT)
+# ggplot2 approach
+ggplot(data=BODYFAT, aes(x = sex, y = fat, fill = sex)) + geom_boxplot() +
+labs(x = "",y = "Percent body fat") + scale_x_discrete(breaks=c("F", "M"),
+labels =c("Female", "Male")) + guides(fill = FALSE) +
+scale_fill_manual(values = c("red", "green"))
+# Brewer Colors
+ggplot(data=BODYFAT, aes(x = sex, y = fat, fill = sex)) + geom_boxplot() +
+labs(x = "", y = "Percent body fat") + scale_x_discrete(breaks=c("F", "M"),
+labels =c("Female", "Male")) + guides(fill = FALSE) + scale_fill_brewer()
+ggplot(data=BODYFAT, aes(x = fat, fill = sex)) + geom_density(alpha = 0.4) +
+scale_fill_brewer()
+}
+\references{
+Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014.
+\emph{Probability and Statistics with R}, Second Edition.
+Chapman & Hall / CRC.
+}
+\keyword{datasets}
+

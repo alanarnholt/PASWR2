@@ -1,0 +1,25 @@
+\docType{data}
+\name{TESTSCORES}
+\alias{TESTSCORES}
+\title{Statistics Grades}
+\format{A data frame with 29 observations on the following variable:
+\itemize{
+\item \code{grade} (test score)
+}}
+\usage{
+TESTSCORES
+}
+\description{
+Test grades of 29 students taking a basic statistics course
+}
+\examples{
+ggplot(data = TESTSCORES, aes(x = grade)) + geom_histogram(binwidth = 5,
+fill = "cornsilk", color = "gray60", alpha = 0.7)
+}
+\references{
+Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014.
+\emph{Probability and Statistics with R}, Second Edition.
+Chapman & Hall / CRC.
+}
+\keyword{datasets}
+

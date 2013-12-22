@@ -1,0 +1,30 @@
+\docType{data}
+\name{STSCHOOL}
+\alias{STSCHOOL}
+\title{School Satisfaction}
+\format{A data frame with 26 observations on the following 4 variables:
+\itemize{
+\item \code{x} (satisfaction score)
+\item \code{y} (satisfaction score)
+\item \code{satisfaction} (combined satisfaction scores)
+\item \code{school} (a factor with levels \code{x} and \code{y})
+}}
+\usage{
+STSCHOOL
+}
+\description{
+A questionnaire is randomly administered to 11 students
+from State School \code{x} and to 15 students from State
+School \code{y}. The results have been ordered and stored
+in the data frame \code{STSCHOOL}.
+}
+\examples{
+with(data = STSCHOOL, t.test(x, y, var.equal=TRUE))
+}
+\references{
+Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014.
+\emph{Probability and Statistics with R}, Second Edition.
+Chapman & Hall / CRC.
+}
+\keyword{datasets}
+

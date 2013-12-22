@@ -1,0 +1,32 @@
+\docType{data}
+\name{SUNDIG}
+\alias{SUNDIG}
+\title{Workstation Comparison}
+\format{A data frame with 5 observations on the following 3 variables:
+\itemize{
+\item \code{sun} (time in seconds for a Sun workstation to complete a simulation)
+\item \code{digital} (time in seconds for a Digital workstation to complete a simulation)
+\item \code{difference} (difference between \code{sun} and \code{digital})
+}}
+\usage{
+SUNDIG
+}
+\description{
+To compare the speed differences between two different
+brands of workstations (Sun and Digital), the times each
+brand took to complete complex simulations were recorded.
+Five complex simulations were selected, and the five
+selected simulations were run on both workstations. The
+resulting times in minutes for the five simulations are
+stored in data frame \code{SUNDIG}.
+}
+\examples{
+with(data = SUNDIG, t.test(sun, digital, paired=TRUE)$conf)
+}
+\references{
+Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014.
+\emph{Probability and Statistics with R}, Second Edition.
+Chapman & Hall / CRC.
+}
+\keyword{datasets}
+

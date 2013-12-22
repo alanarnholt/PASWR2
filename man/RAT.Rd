@@ -1,0 +1,31 @@
+\docType{data}
+\name{RAT}
+\alias{RAT}
+\title{Rat Survival Time}
+\format{A data frame with 20 observations on the following variable:
+\itemize{
+\item \code{survival.time} (number of weeks survived)
+}}
+\source{
+Lawless, J. 1982. \emph{Statistical Models and Methods for
+Lifetime Data}. John Wiley, New York.
+}
+\usage{
+RAT
+}
+\description{
+The survival time in weeks of 20 male rats exposed to high
+levels of radiation
+}
+\examples{
+ggplot(data = RAT, aes(sample = survival.time)) + stat_qq()
+ggplot(data = RAT, aes(x = survival.time)) + geom_density(alpha = 0.2, fill = "blue") +
+labs(x = "Survival time in weeks")
+}
+\references{
+Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014.
+\emph{Probability and Statistics with R}, Second Edition.
+Chapman & Hall / CRC.
+}
+\keyword{datasets}
+

@@ -1,0 +1,51 @@
+\docType{data}
+\name{SATFRUIT}
+\alias{SATFRUIT}
+\title{Fruit Trees}
+\format{A data frame with 47 observations on the following 17 variables:
+\itemize{
+\item \code{quadrat} (number of the sampled segment or quadrat)
+\item \code{smallarea} (the small area, a factor with levels \code{R63}, \code{R67}, and \code{R68})
+\item \code{wheat} (area classified as wheat in the sampled segment)
+\item \code{barley} (area classified as barley in the sampled segment)
+\item \code{nonarable} (area classified as non-arable in the sampled segment)
+\item \code{corn} (area classified as corn in the sampled segment)
+\item \code{sunflower} (area classified as sunflower in the sampled segment)
+\item \code{vineyard} (area classified as vineyard in the sampled segment)
+\item \code{grass} (area classified as grass in the sampled segment)
+\item \code{asparagus} (area classified as asparagus in the sampled segment)
+\item \code{alfalfa} (area classified as alfalfa in the sampled segment)
+\item \code{rape} (area classified as rape in the sampled segment)
+\item \code{rice} (area classified as rice in the sampled segment)
+\item \code{almonds} (area classified as almonds in the sampled segment)
+\item \code{olives} (area classified as olives in the sampled segment)
+\item \code{fruit} (area classified as fruit trees in the sampled segment)
+\item \code{observed} (the observed area of fruit trees in the sampled segment)
+}}
+\source{
+Militino, A. F., \emph{et. al.} 2006. \dQuote{Using Small
+Area Models to Estimate the Total Area Occupied by Olive
+Trees.} \emph{Journal of Agricultural, Biological and
+Environmental Statistics}, \bold{11}: 450-461.
+}
+\usage{
+SATFRUIT
+}
+\description{
+To estimate the total surface occupied by fruit trees in 3
+small areas (R63, R67, and R68) of Navarra (Spain) in 2001,
+a sample of 47 square segments has been taken. The
+experimental units are square segments or quadrats of 4
+hectares, obtained by random sampling after overlaying a
+square grid on the study domain.
+}
+\examples{
+pairs(SATFRUIT[,15:17])
+}
+\references{
+Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014.
+\emph{Probability and Statistics with R}, Second Edition.
+Chapman & Hall / CRC.
+}
+\keyword{datasets}
+

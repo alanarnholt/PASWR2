@@ -1,0 +1,34 @@
+\name{normarea}
+\alias{normarea}
+\title{Normal Area}
+\usage{
+normarea(lower = -Inf, upper = Inf, m = 0, sig = 1)
+}
+\arguments{
+  \item{lower}{the desired lower value}
+
+  \item{upper}{the desired upper value}
+
+  \item{m}{the mean for the population (default is the
+  standard normal with \code{m = 0})}
+
+  \item{sig}{the standard deviation of the population
+  (default is the standard normal with \code{sig = 1})}
+}
+\value{
+Draws the specified area in a graphics device
+}
+\description{
+Function that computes and draws the area between two user
+specified values in a user specified normal distribution
+with a given mean and standard deviation
+}
+\examples{
+# Finds and graphically illustrates P(70 < X < 130) given X is N(100, 15)
+normarea(lower = 70, upper = 130, m = 100, sig = 15)
+}
+\author{
+Alan T. Arnholt <arnholtat@appstate.edu>
+}
+\keyword{hplot}
+

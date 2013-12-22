@@ -1,0 +1,29 @@
+\docType{data}
+\name{GLUCOSE}
+\alias{GLUCOSE}
+\title{Blood Glucose Levels}
+\format{A data frame with 15 observations on the following 3 variables:
+\itemize{
+\item \code{patient} (patient number)
+\item \code{old} (blood glucose level in mg/100 ml using an old device)
+\item \code{new} (blood glucose level in mg/100 ml using a new device)
+}}
+\usage{
+GLUCOSE
+}
+\description{
+Fifteen diabetic patients were randomly selected, and their
+blood glucose levels were measured in mg/100 ml with two
+different devices.
+}
+\examples{
+with(data = GLUCOSE,
+boxplot(old, new, col = c("red", "blue")))
+}
+\references{
+Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014.
+\emph{Probability and Statistics with R}, Second Edition.
+Chapman & Hall / CRC.
+}
+\keyword{datasets}
+

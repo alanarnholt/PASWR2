@@ -1,0 +1,31 @@
+\docType{data}
+\name{WATER}
+\alias{WATER}
+\title{Sodium Content of Water}
+\format{A data frame with 30 observations on the following 4 variables:
+\itemize{
+\item \code{x} (sodium content measured in mg/L)
+\item \code{y} (sodium content measured in mg/L)
+\item \code{sodium} (combined sodium content measured in mg/L)
+\item \code{source} (a factor with levels \code{x} and \code{y})
+}}
+\usage{
+WATER
+}
+\description{
+An independent agency measures the sodium content in 20
+samples from source \code{x} and in 10 samples from source
+\code{y} and stores them in the data frame \code{WATER}.
+}
+\examples{
+ggplot(data = WATER, aes(x = sodium, y = ..density.., fill = source)) +
+geom_density(alpha = 0.2)
+t.test(sodium ~ source, data = WATER, alternative = "less")
+}
+\references{
+Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014.
+\emph{Probability and Statistics with R}, Second Edition.
+Chapman & Hall / CRC.
+}
+\keyword{datasets}
+

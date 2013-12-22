@@ -1,0 +1,28 @@
+\docType{data}
+\name{INSURQUOTES}
+\alias{INSURQUOTES}
+\title{Insurance Quotes}
+\format{A data frame with 15 observations on the following 2 variables:
+\itemize{
+\item \code{companyA} (quotes from company A in Euros)
+\item \code{companyB} (quotes from company B in Euros)
+}}
+\usage{
+INSURQUOTES
+}
+\description{
+Insurance quotes for two insurers of hazardous waste jobs
+}
+\examples{
+ggplot(data = INSURQUOTES, aes(sample = companyA - companyB)) +
+stat_qq(col = "orange", size = 4)
+with(data = INSURQUOTES,
+t.test(companyA, companyB))
+}
+\references{
+Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014.
+\emph{Probability and Statistics with R}, Second Edition.
+Chapman & Hall / CRC.
+}
+\keyword{datasets}
+

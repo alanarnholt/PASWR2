@@ -1,0 +1,38 @@
+\docType{data}
+\name{BIOMASS}
+\alias{BIOMASS}
+\title{Beech Trees}
+\format{A data frame with 42 observations on the following 4 variables:
+\itemize{
+\item \code{diameter} (diameter of the stem in centimeters)
+\item \code{height} (height of the tree in meters)
+\item \code{stemweight} (weight of the stem in kilograms)
+\item \code{aboveweight} (aboveground weight in kilograms)
+}}
+\source{
+\emph{Gobierno de Navarra} and \emph{Gestion Ambiental
+Viveros y Repoblaciones de Navarra}, 2006.  The data were
+obtained within the European Project FORSEE.
+}
+\usage{
+BIOMASS
+}
+\description{
+Several measurements of 42 beech trees (\emph{Fagus
+Sylvatica}) taken from a forest in Navarra (Spain)
+}
+\examples{
+pairs(BIOMASS, col = "red", cex = 0.75)
+plot(log(aboveweight) ~ log(diameter), data = BIOMASS)
+# logarithmic axes
+ggplot(data = BIOMASS, aes(x = diameter, y = aboveweight, color = log(stemweight))) +
+geom_point() + scale_x_log10() + scale_y_log10() +
+labs(x = "diameter of the stem in centimeters", y = "above ground weight in kilograms")
+}
+\references{
+Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014.
+\emph{Probability and Statistics with R}, Second Edition.
+Chapman & Hall / CRC.
+}
+\keyword{datasets}
+

@@ -1,0 +1,36 @@
+\docType{data}
+\name{CHIPS}
+\alias{CHIPS}
+\title{Silicon Chips}
+\format{A data frame with 28 observations on the following 2 variables:
+\itemize{
+\item \code{number} (number of usable chips from each silicon sheet)
+\item \code{method} (a factor with levels \code{techniqueI} and \code{techniqueII})
+}}
+\usage{
+CHIPS
+}
+\description{
+Two techniques of splitting chips are randomly assigned to
+28 sheets so that each technique is applied to 14 sheets.
+The the number of usable chips from each silicon sheet is
+stored in the variable \code{number}.
+}
+\examples{
+# ggplot2 approach
+ggplot(data = CHIPS, aes(sample = number)) + stat_qq() + facet_grid(. ~ method)
+ggplot(data = CHIPS, aes(sample = number, color = method)) + stat_qq()
+ggplot(data=BODYFAT, aes(x = fat, fill = sex)) + geom_density(alpha = 0.4) +
+scale_fill_brewer()
+
+# lattice approach
+qqmath(~ number|method, data = CHIPS)
+qqmath(~ number, group = method, type = c('p', 'r'), auto.key = TRUE, data = CHIPS)
+}
+\references{
+Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014.
+\emph{Probability and Statistics with R}, Second Edition.
+Chapman & Hall / CRC.
+}
+\keyword{datasets}
+

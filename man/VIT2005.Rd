@@ -1,0 +1,45 @@
+\docType{data}
+\name{VIT2005}
+\alias{VIT2005}
+\title{Apartments in Vitoria}
+\format{A data frame with 218 observations on the following 5 variables:
+\itemize{
+\item \code{totalprice} (the market total price (in Euros) of the apartment including garage(s) and storage room(s))
+\item \code{area} (the total living area of the apartment in square meters)
+\item \code{zone} (a factor indicating the neighborhood where the apartment is located with levels \code{Z11}, \code{Z21}, \code{Z31}, \code{Z32}, \code{Z34}, \code{Z35}, \code{Z36}, \code{Z37}, \code{Z38}, \code{Z41}, \code{Z42}, \code{Z43}, \code{Z44}, \code{Z45}, \code{Z46}, \code{Z47}, \code{Z48}, \code{Z49}, \code{Z52}, \code{Z53}, \code{Z56}, \code{Z61}, and \code{Z62})
+\item \code{category} (a factor indicating the condition of the apartment with levels \code{2A}, \code{2B}, \code{3A}, \code{3B}, \code{4A}, \code{4B}, and \code{5A} ordered so that \code{2A} is the best and \code{5A} is the worst)
+\item \code{age} (age of the apartment in years)
+\item \code{floor} (floor on which the apartment is located)
+\item \code{rooms} (total number of rooms including bedrooms, dining room, and kitchen)
+\item \code{out} (a factor indicating the percent of the apartment exposed to the elements: The levels \code{E100}, \code{E75}, \code{E50}, and \code{E25}, correspond to complete exposure, 75\% exposure, 50\% exposure, and 25\% exposure, respectively.)
+\item \code{conservation} (is an ordered factor indicating the state of conservation of the apartment.  The levels \code{1A}, \code{2A}, \code{2B}, and \code{3A} are ordered from best to worst conservation.)
+\item \code{toilets} (the number of bathrooms)
+\item \code{garage} (the number of garages)
+\item \code{elevator} (indicates the absence (0) or presence (1) of elevators.)
+\item \code{streetcategory} (an ordered factor from best to worst indicating the category of the street with levels \code{S2}, \code{S3}, \code{S4}, and \code{S5})
+\item \code{heating} (a factor indicating the type of heating with levels \code{1A}, \code{3A}, \code{3B}, and \code{4A} which correspond to: no heating, low-standard private heating, high-standard private heating, and central heating, respectively.)
+\item \code{storage} (the number of storage rooms outside of the apartment)
+}}
+\usage{
+VIT2005
+}
+\description{
+Descriptive information and the appraised total price (in
+Euros) for apartments in Vitoria, Spain
+}
+\examples{
+ggplot(data = VIT2005, aes(x = area, y = totalprice, color = factor(elevator))) +
+geom_point()
+modTotal <- lm(totalprice ~ area + as.factor(elevator) + area:as.factor(elevator),
+data = VIT2005)
+modSimpl <- lm(totalprice ~ area, data = VIT2005)
+anova(modSimpl, modTotal)
+rm(modSimpl, modTotal)
+}
+\references{
+Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014.
+\emph{Probability and Statistics with R}, Second Edition.
+Chapman & Hall / CRC.
+}
+\keyword{datasets}
+
