@@ -1,4 +1,5 @@
-PASWR2
+`PASWR2` Functions and data sets for the text *Probability and Statistics
+    with R*, Second Edition (Under Development)
 ======
 
 `PASWR2` R Package (Development)
