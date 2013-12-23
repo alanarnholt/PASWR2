@@ -28,7 +28,7 @@ To install the **PASWR2** package, type the following at the `R` prompt:
 install_github("alanarnholt/PASWR2")
 ```
     
-It is possible to install **PASWR2** with GIT and the `R CMD build` assuming you have GIT installed and the appropriate tools to build `R` from source.
+It is possible to install **PASWR2** with [GIT](http://http://git-scm.com/) and the `R CMD build` assuming you have GIT installed and the appropriate tools to build `R` from source.
 
 ```bash
 git clone https://github.com/alanarnholt/PASWR2.git
