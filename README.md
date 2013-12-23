@@ -1,8 +1,7 @@
-`PASWR2` Functions and data sets for the text *Probability and Statistics
-    with R*, Second Edition (Under Development)
-======
+`PASWR2` Development Version
+####
 
-`PASWR2` R Package (Development)
+`PASWR2` Functions and data sets for the text *Probability and Statistics with R*, Second Edition (Under Development)
 
 Most likely the easiest way to install `PASWR2` is to use the `R` package
 `devtools`.
