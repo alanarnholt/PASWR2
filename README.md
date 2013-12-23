@@ -15,7 +15,7 @@ However, you need to make sure you're set up to develop packages. This is platfo
 You can check everything is installed correctly with the `has_devel` function from the `devtools` package. You will also need to make sure you have the `repmis` and `roxygen2` packages installed.  Type the following at the `R` prompt:
 
 ```s
-install.packages(c("devtools", "repmis", "roxygen2"))    
+install.packages(c("devtools", "repmis", "roxygen2", "ggplot2"), dependencies = TRUE)    
 library(devtools)
 has_devel()
 ```
