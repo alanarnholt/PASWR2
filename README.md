@@ -7,7 +7,7 @@ Most likely the easiest way to install **PASWR2** is to use the `R` package
 
 However, you need to make sure you're set up to develop packages. This is platform specific:
 
-* On Windows, download and install [Rtools](http://www.murdoch-sutherland.com/Rtools/).
+* On Windows, download and install [Rtools](http://http://cran.r-project.org/bin/windows/Rtools/).
 * On the Mac, make sure you have xcode installed.
 * On Linux, make sure you have the R-dev packages installed.
 
@@ -15,7 +15,8 @@ You must be running `R` 3.0.2 or greater.  Upgrade now if you are using an older
 You can check everything is installed correctly with the `has_devel()` function from the **devtools** package. You will also need to make sure you have the **repmis** and **roxygen2** packages installed.  Type the following at the `R` prompt:
 
 ```s
-install.packages(c("devtools", "repmis", "roxygen2", "ggplot2"), dependencies = TRUE)    
+install.packages(c("devtools", "repmis", "roxygen2", "ggplot2"), 
+                dependencies = TRUE)    
 library(devtools)
 has_devel()
 ```
