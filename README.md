@@ -37,3 +37,4 @@ R CMD build PASWR2
 R CMD INSTALL PASWR2_*.tar.gz
 ```
 
+[View on package web page](http://alanarnholt.github.io/PASWR2/)
