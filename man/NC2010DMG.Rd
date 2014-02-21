@@ -5,37 +5,37 @@
 \format{A data frame with 100 observations (counties) on the following 32 variables:
 \itemize{
 \item \code{countyName} (Name of North Carolina county)
-\item \code{pop2010} (Total population of the county (2010))
-\item \code{medage} (Median age of the county (2010))
-\item \code{divorced} (Number of divorced adults (2010))
-\item \code{pctrural} (The percent of the population that lives in rural area of the county (2010))
-\item \code{edu_baorup} (The total number of people with a Bachelor's degree (2010))
-\item \code{medinc} (The median household income adjusted for inflation (2010))
-\item \code{col_enroll} (The number of people enrolled in college (2010))
-\item \code{age18-24} (The number of people between the ages of 18 and 24 in the county (2010))
-\item \code{age25-29} (The number of people between the ages of 25 and 29 in the county (2010))
-\item \code{age60up} (The number of people between over the age of 60 in the county (2010))
-\item \code{students} (The number of people enrolled in college (2010))
-\item \code{white} (The number of white people in the county (2010))
-\item \code{black} (The number of black people in the county (2010))
-\item \code{MaleBachelor} (The number of males with a Bachelor's degree (2010))
-\item \code{MaleMaster} (The number of males with a Master's degree (2010))
-\item \code{MaleProfessional} (The number of males with a professional degree (2010))
-\item \code{MaleDoctorate} (The number of males with a Doctorate degree (2010))
-\item \code{FemaleBachelor} (The number of females with a Bachelor's degree (2010))
-\item \code{FemaleMaster} (The number of females with a Master's degree (2010))
-\item \code{FemaleProfessional} (The number of females with a professional degree (2010))
-\item \code{FemaleDoctorate} (The number of females with a Doctorate degree (2010))
-\item \code{Owneroccupied} (The number of homes that are owner occupied (2010))
-\item \code{Renteroccupied} (The number of homes that are renter occupied (2010))
-\item \code{popden} (The number of people per square mile (2010))
-\item \code{pctfor} (The percent of voters that voted for Amendment 1, May 8, 2012)
-\item \code{turnout} (The percent of registered voters that voted May 8, 2012)
-\item \code{obama08} (The percent of voters that voted for Barrack Obama in the 2008 presidential election)
-\item \code{mccain08} (The percent of voters that voted for John McCain in the 2008 presidential election)
-\item \code{evanrate} (Evangelical rates of adherence per 1,000 population (2010))
-\item \code{churches} (The number of churches in the county (2010))
-\item \code{colleges} (The number of colleges in the county (2010))
+\item \code{pop2010} (Total population of the county in 2010)
+\item \code{medage} (Median age of the county in 2010)
+\item \code{divorced} (Number of divorced adults in 2010)
+\item \code{pctrural} (The percent of the population that lived in a rural area of the county in 2010)
+\item \code{edu_baorup} (The total number of people with a Bachelor's degree in 2010)
+\item \code{medinc} (The median household income adjusted for inflation in 2010)
+\item \code{col_enroll} (The number of people enrolled in college in 2010)
+\item \code{age18-24} (The number of people between the ages of 18 and 24 in the county in 2010)
+\item \code{age25-29} (The number of people between the ages of 25 and 29 in the county in 2010)
+\item \code{age60up} (The number of people over the age of 60 in the county in 2010)
+\item \code{students} (The number of people enrolled in college in 2010)
+\item \code{white} (The number of white people in the county in 2010)
+\item \code{black} (The number of black people in the county in 2010)
+\item \code{MaleBachelor} (The number of males with a Bachelor's degree in 2010)
+\item \code{MaleMaster} (The number of males with a Master's degree in 2010)
+\item \code{MaleProfessional} (The number of males with a professional degree in 2010)
+\item \code{MaleDoctorate} (The number of males with a Doctorate degree in 2010)
+\item \code{FemaleBachelor} (The number of females with a Bachelor's degree in 2010)
+\item \code{FemaleMaster} (The number of females with a Master's degree in 2010)
+\item \code{FemaleProfessional} (The number of females with a professional degree in 2010)
+\item \code{FemaleDoctorate} (The number of females with a Doctorate degree in 2010)
+\item \code{Owneroccupied} (The number of homes that are owner occupied in 2010)
+\item \code{Renteroccupied} (The number of homes that are renter occupied in 2010)
+\item \code{popden} (The number of people per square mile in 2010)
+\item \code{pctfor} (The percent of voters that voted for Amendment 1 on May 8, 2012)
+\item \code{turnout} (The percent of registered voters who voted May 8, 2012)
+\item \code{obama08} (The percent of voters who voted for Barrack Obama in the 2008 presidential election)
+\item \code{mccain08} (The percent of voters who voted for John McCain in the 2008 presidential election)
+\item \code{evanrate} (Evangelical rates of adherence per 1,000 population in 2010)
+\item \code{churches} (The number of churches in the county in 2010)
+\item \code{colleges} (The number of colleges in the county in 2010)
 }}
 \source{
 The original data was provided by E.L. Davison, Department
@@ -56,7 +56,7 @@ NC2010DMG
 \description{
 North Carolina county demographics for 2010 and county
 voter information for the North Carolina Amendment 1 ballot
-initiative which took place May 8, 2012 are stored in the
+initiative which took place May 8, 2012, are stored in the
 data frame \code{NC2010DMG}.
 }
 \examples{
