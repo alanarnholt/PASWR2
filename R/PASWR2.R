@@ -993,7 +993,59 @@ LOSTR <- source_data(paste(fgithub, "LOSTR.csv", sep = ""))
 #' @export
 MILKCARTON <- source_data(paste(fgithub, "MILKCARTON.csv", sep = ""))
 #  MILKCARTON <- source_data(file=url(paste(site,"MILKCARTON.csv", sep = "")))
-###########################################################################
+#####################################################################################
+#' @name NC2010DMG
+#' @title North Carolina Demographics
+#' @aliases NC2010DMG
+#' @docType data
+#' @description North Carolina county demographics for 2010 and county voter information for the North Carolina Amendment 1 ballot initiative which took place May 8, 2012 are stored in the data frame \code{NC2010DMG}.
+#' @format A data frame with 100 observations (counties) on the following 32 variables: 
+#' \itemize{
+#' \item \code{countyName} (Name of North Carolina county)
+#' \item \code{pop2010} (Total population of the county (2010))
+#' \item \code{medage} (Median age of the county (2010))
+#' \item \code{divorced} (Number of divorced adults (2010))
+#' \item \code{pctrural} (The percent of the population that lives in rural area of the county (2010))
+#' \item \code{edu_baorup} (The total number of people with a Bachelor's degree (2010))
+#' \item \code{medinc} (The median household income adjusted for inflation (2010))
+#' \item \code{col_enroll} (The number of people enrolled in college (2010))
+#' \item \code{age18-24} (The number of people between the ages of 18 and 24 in the county (2010))
+#' \item \code{age25-29} (The number of people between the ages of 25 and 29 in the county (2010))
+#' \item \code{age60up} (The number of people between over the age of 60 in the county (2010))
+#' \item \code{students} (The number of people enrolled in college (2010))
+#' \item \code{white} (The number of white people in the county (2010))
+#' \item \code{black} (The number of black people in the county (2010))
+#' \item \code{MaleBachelor} (The number of males with a Bachelor's degree (2010))
+#' \item \code{MaleMaster} (The number of males with a Master's degree (2010))
+#' \item \code{MaleProfessional} (The number of males with a professional degree (2010))
+#' \item \code{MaleDoctorate} (The number of males with a Doctorate degree (2010))
+#' \item \code{FemaleBachelor} (The number of females with a Bachelor's degree (2010))
+#' \item \code{FemaleMaster} (The number of females with a Master's degree (2010))
+#' \item \code{FemaleProfessional} (The number of females with a professional degree (2010))
+#' \item \code{FemaleDoctorate} (The number of females with a Doctorate degree (2010))
+#' \item \code{Owneroccupied} (The number of homes that are owner occupied (2010))
+#' \item \code{Renteroccupied} (The number of homes that are renter occupied (2010))
+#' \item \code{popden} (The number of people per square mile (2010))
+#' \item \code{pctfor} (The percent of voters that voted for Amendment 1, May 8, 2012)
+#' \item \code{turnout} (The percent of registered voters that voted May 8, 2012)
+#' \item \code{obama08} (The percent of voters that voted for Barrack Obama in the 2008 presidential election)
+#' \item \code{mccain08} (The percent of voters that voted for John McCain in the 2008 presidential election)
+#' \item \code{evanrate} (Evangelical rates of adherence per 1,000 population (2010))
+#' \item \code{churches} (The number of churches in the county (2010))
+#' \item \code{colleges} (The number of colleges in the county (2010))
+#' }
+#' @source The original data was provided by E.L. Davison, Department of Sociology, Appalachian State University.  Variables
+#' \code{countyName} through \code{popden} were obtained from \url{http://factfinder2.census.gov/faces/nav/jsf/pages/searchresults.xhtml?refresh=t#"} and further cleaned by Maureen O'Donnell and Eitan Lees. The variables \code{pctfor} through \code{mccain08} were obtained from \url{http://www.ncsbe.gov/}. The variables \code{evanrate} and \code{churches} were obtained from \url{http://thearda.com}, while the information for \code{colleges} was obtained from \url{http://collegestats.org/colleges/north-carolina}.
+#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
+#' @examples
+#' ggplot(data = MILKCARTON, aes(x = size, y = seconds)) + geom_boxplot()
+#' ggplot(data = MILKCARTON, aes(x = size, y = seconds, fill = size)) + geom_boxplot() + 
+#' guides(fill = FALSE) + scale_fill_brewer() + 
+#' labs(x = "size of container", y = "drying time in seconds")
+#' @keywords datasets
+#' @export
+NC2010DMG <- source_data(paste(fgithub, "NC2010DMG.csv", sep = ""))
+#####################################################################################
 #' @name PHENYL
 #' @title Phenylketonuria
 #' @aliases PHENYL
