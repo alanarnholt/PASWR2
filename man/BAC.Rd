@@ -41,7 +41,7 @@ scale_x_discrete(breaks = c(1, 2), labels = c("Company X", "Company Y"))
 boxplot(BAC$Y, BAC$X)
 }
 \references{
-Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014.
+Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015.
 \emph{Probability and Statistics with R}, Second Edition.
 Chapman & Hall / CRC.
 }

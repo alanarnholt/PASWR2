@@ -36,7 +36,7 @@ xtabs(~ doctor + factor(ease, levels = c("Easy", "Difficult", "Impossible")),
 data = EPIDURAL)
 }
 \references{
-Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014.
+Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015.
 \emph{Probability and Statistics with R}, Second Edition.
 Chapman & Hall / CRC.
 }

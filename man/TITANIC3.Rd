@@ -50,7 +50,7 @@ with(TITANIC3, table(pclass, sex))
 Modeling Strategies with Applications to Linear Models,
 Logistic Regression, and Survival Analysis}.  Springer.
 \item Ugarte, M. D., Militino, A. F., and Arnholt, A. T.
-2014. \emph{Probability and Statistics with R}, Second
+2015. \emph{Probability and Statistics with R}, Second
 Edition. Chapman & Hall / CRC. }
 }
 \keyword{datasets}

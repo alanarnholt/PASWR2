@@ -25,7 +25,7 @@ ggplot(data = DEPEND, aes(x = number)) + geom_density(fill = "pink", alpha = 0.3
 color = "red") + labs(x = "Number of Dependent Children")
 }
 \references{
-Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014.
+Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015.
 \emph{Probability and Statistics with R}, Second Edition.
 Chapman & Hall / CRC.
 }

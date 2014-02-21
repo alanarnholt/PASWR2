@@ -21,7 +21,7 @@ geom_smooth(method = "lm", color = "red") + labs(x = "height in inches",
 y = "weight in pounds")
 }
 \references{
-Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014.
+Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015.
 \emph{Probability and Statistics with R}, Second Edition.
 Chapman & Hall / CRC.
 }

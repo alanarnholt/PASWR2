@@ -29,7 +29,7 @@ fill = design)) + geom_boxplot() + labs(x = "", y = "Lifetime in thousands of ho
 guides(fill = FALSE) + scale_fill_brewer()
 }
 \references{
-Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014.
+Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015.
 \emph{Probability and Statistics with R}, Second Edition.
 Chapman & Hall / CRC.
 }

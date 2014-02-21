@@ -27,7 +27,7 @@ ggplot(data = WCST, aes(x = score)) + geom_density(fill = "lightblue", alpha = 0
 color ="blue")
 }
 \references{
-Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014.
+Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015.
 \emph{Probability and Statistics with R}, Second Edition.
 Chapman & Hall / CRC.
 }

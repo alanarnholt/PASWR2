@@ -30,7 +30,7 @@ geom_density(fill = "cornsilk", alpha = 0.5) +
 labs(x = "interarrival times to the nearest second", y = "")
 }
 \references{
-Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014.
+Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015.
 \emph{Probability and Statistics with R}, Second Edition.
 Chapman & Hall / CRC.
 }

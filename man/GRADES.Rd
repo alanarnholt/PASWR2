@@ -26,7 +26,7 @@ xyplot(gpa ~ sat, data = GRADES, type = c("p", "smooth"))
 ggplot(data = GRADES, aes(x = sat, y = gpa)) + geom_point() + geom_smooth()
 }
 \references{
-Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014.
+Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015.
 \emph{Probability and Statistics with R}, Second Edition.
 Chapman & Hall / CRC.
 }

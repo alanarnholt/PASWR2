@@ -30,7 +30,7 @@ geom_point() + scale_x_log10() + scale_y_log10() +
 labs(x = "diameter of the stem in centimeters", y = "above ground weight in kilograms")
 }
 \references{
-Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014.
+Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015.
 \emph{Probability and Statistics with R}, Second Edition.
 Chapman & Hall / CRC.
 }

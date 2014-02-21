@@ -28,7 +28,7 @@ geom_density(color = "lightblue", size = 1, fill = "lightblue", alpha = .2) +
 labs(x = "Weekly grocery bill (in dollars)")
 }
 \references{
-Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014.
+Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015.
 \emph{Probability and Statistics with R}, Second Edition.
 Chapman & Hall / CRC.
 }

@@ -34,7 +34,7 @@ library(repmis)
 #' }
 #' @details This is data regarding aggressive behavior in relation to exposure to violent television programs from Gibbons (1997) with the following exposition: \dQuote{\ldots a group of children are matched as well as possible as regards home environment, genetic  factors, intelligence, parental attitudes, and so forth, in an effort to minimize factors other than TV that might influence a tendency for aggressive behavior.  In each of the resulting 16 pairs, one child is randomly selected to view the most violent shows on TV, while the other watches cartoons, situation comedies, and the like.  The children are then subjected to a series of tests designed to produce an ordinal measure of their aggression factors.} (pages 143-144)
 #' @source Gibbons, J. D. (1977) \emph{Nonparametric Methods for Quantitavie Analysis}. American Science Press.
-#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
+#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 #' @examples
 #' AL <- reshape(AGGRESSION, varying = c("violence", "noviolence"), 
 #' v.names = "aggression", direction = "long")
@@ -59,7 +59,7 @@ AGGRESSION <- source_data(paste(fgithub, "AGGRESSION.csv", sep = ""))
 #' \item \code{hardness} (hardness rating measured in \eqn{\texttt{kg}/\texttt{meter}^2} for both the \code{fresh} and \code{warehouse} apples)
 #' \item \code{location} (\code{factor} with two levels \code{fresh} and \code{warehouse})  
 #' }
-#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
+#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 #' @examples
 #' # ggplot2 approach
 #' ggplot(data = APPLE, aes(sample = hardness)) + stat_qq() + facet_grid(. ~ location)
@@ -84,7 +84,7 @@ APPLE <- source_data(paste(fgithub, "APPLE.csv", sep = ""))
 #' \item \code{size} (apartment size in square meters)
 #' \item \code{location} (\code{factor} with two levels \code{SanJorge} and \code{Mendebaldea})
 #' }
-#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
+#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 #' @examples
 #' p <- ggplot(data = APTSIZE, aes(x = location, y = size, fill = location)) + 
 #' labs(x = "", y = "Apartment size (square meters)") + 
@@ -134,7 +134,7 @@ APTSIZE <- source_data(paste(fgithub, "APTSIZE.csv", sep = ""))
 #' \item \code{slg} (slugging percentage = total bases/at bats)
 #' }
 #' @source \url{http://www.baseball-reference.com/about/bat_glossary.shtml}
-#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
+#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 #' @examples
 #' ggplot(data = BABERUTH, aes(x = ba)) + geom_histogram(binwidth = 0.03) + 
 #' facet_grid(team ~ .) + labs(x = "Batting average")
@@ -156,7 +156,7 @@ BABERUTH <- source_data(paste(fgithub, "BABERUTH.csv", sep = ""))
 #' \item \code{X} (blood alcohol content measured in g/L) 
 #' \item \code{Y} (blood alcohol content measured in g/L)
 #' }
-#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
+#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 #' @examples
 #' with(data = BAC, 
 #' var.test(X, Y, alternative = "less"))
@@ -191,7 +191,7 @@ BAC <- source_data(paste(fgithub, "BAC.csv", sep = ""))
 #' \item \code{lifetime} (life time measured in hours)
 #' \item \code{facility} (\code{factor} with two levels \code{A} and \code{B})  
 #' }
-#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
+#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 #' @examples
 #' p <- ggplot(data = BATTERY, aes(x = lifetime, color = facility))
 #' p + geom_density()
@@ -222,7 +222,7 @@ BATTERY <- source_data(paste(fgithub, "BATTERY.csv", sep = ""))
 #' \item \code{aboveweight} (aboveground weight in kilograms)  
 #' }
 #' @source \emph{Gobierno de Navarra} and \emph{Gestion Ambiental Viveros y Repoblaciones de Navarra}, 2006.  The data were obtained within the European Project FORSEE.
-#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
+#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 #' @examples
 #' pairs(BIOMASS, col = "red", cex = 0.75)
 #' plot(log(aboveweight) ~ log(diameter), data = BIOMASS)
@@ -247,7 +247,7 @@ BIOMASS <- source_data(paste(fgithub, "BIOMASS.csv", sep = ""))
 #' \item \code{sex} (a factor with levels \code{F} for female and \code{M} for male) 
 #' }
 #' @source Mazess, R. B., Peppler, W. W., and Gibbons, M. (1984) \dQuote{Total Body Composition by Dual-Photon (153 Gd) Absorptiometry.} \emph{American Journal of Clinical Nutrition}, \bold{40}, \bold{4}: 834-839.
-#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
+#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 #' @examples
 #' # base graphics
 #' boxplot(fat ~ sex, data = BODYFAT)
@@ -277,7 +277,7 @@ BODYFAT <- source_data(paste(fgithub, "BODYFAT.csv", sep = ""))
 #' \item \code{score} (assessment score for each student)
 #' \item \code{calculus} (a factor with levels \code{NO} and \code{YES} for students who did not  and did successfully complete calculus prior to enrolling in the biostatistics course) 
 #' }
-#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
+#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 #' @examples
 #' # ggplot2 approach
 #' ggplot(data = CALCULUS, aes(sample = score)) + stat_qq() + facet_grid(. ~ calculus)
@@ -304,7 +304,7 @@ CALCULUS <- source_data(paste(fgithub, "CALCULUS.csv", sep = ""))
 #' \item \code{deaths} (total number of known mortal accidents) 
 #' \item \code{population} (country population/1000)
 #' }
-#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
+#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 #' @examples
 #' plot(deaths ~ cars, data = CARS2004)
 #' ggplot(data = CARS2004, aes(x = population, y = deaths, color = cars)) + geom_point()
@@ -323,7 +323,7 @@ CARS2004 <- source_data(paste(fgithub, "CARS2004EU.csv", sep = ""))
 #' \item \code{number} (number of usable chips from each silicon sheet)
 #' \item \code{method} (a factor with levels \code{techniqueI} and \code{techniqueII}) 
 #' }
-#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
+#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 #' @examples
 #' # ggplot2 approach
 #' ggplot(data = CHIPS, aes(sample = number)) + stat_qq() + facet_grid(. ~ method)
@@ -349,7 +349,7 @@ CHIPS <- source_data(paste(fgithub, "CHIPS.csv", sep = ""))
 #' \item \code{lifetime} (lifetimes in thousands of hours)
 #' \item \code{design} (a factor with levels \code{DesignI} and \code{DesignII}) 
 #' }
-#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
+#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 #' @examples
 #' # ggplot2 approach
 #' ggplot(data = CIRCUIT, aes(x = design, y = lifetime, fill = design)) + geom_boxplot() + 
@@ -377,7 +377,7 @@ CIRCUIT <- source_data(paste(fgithub, "CIRCUITDESIGNS.csv", sep = ""))
 #' \item \code{cosmed} (measured VO2 with Cosmed)
 #' \item \code{amatek} (measured VO2 with Amatek) 
 #' }
-#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
+#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 #' @examples
 #' # ggplot2 approach
 #' ggplot(data = COSAMA, aes(factor(1), y = cosmed - amatek)) + geom_boxplot() + 
@@ -413,7 +413,7 @@ COSAMA <- source_data(paste(fgithub, "COSAMA.csv", sep = ""))
 #' \item \code{breed} (a factor with levels \code{Ayrshire}, \code{Canadian}, \code{Guernsey}, \code{Holstein-Friesian}, and \code{Jersey}) 
 #' }
 #' @source Canadian record book of purebred dairy cattle.
-#' @references \itemize{ \item Sokal, R. R. and Rohlf, F. J. 1994. \emph{Biometry}.  W. H. Freeman, New York, third edition. \item Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.}
+#' @references \itemize{ \item Sokal, R. R. and Rohlf, F. J. 1994. \emph{Biometry}.  W. H. Freeman, New York, third edition. \item Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.}
 #' @examples
 #' ggplot(data = COWS, aes(x = breed, y = butterfat, fill = age)) + 
 #' geom_boxplot(position = position_dodge(1.0)) + 
@@ -434,7 +434,7 @@ COWS <- source_data(paste(fgithub, "COWS.csv", sep = ""))
 #' \item \code{number} (number of dependent children)
 #' }
 #' @source Kitchens, L. J. 2003. \emph{Basic Statistics and Data Analysis}. Duxbury.
-#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
+#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 #' @examples
 #' xtabs(~number, data = DEPEND)
 #' ggplot(data = DEPEND, aes(x = factor(number))) + 
@@ -457,7 +457,7 @@ DEPEND <- source_data(paste(fgithub, "DEPEND.csv", sep = ""))
 #' \item \code{line} (a factor with levels \code{Nonselected}, \code{Resistant}, and \code{Susceptible})
 #' }
 #' @source The original measurements are from an experiment conducted by R. R. Sokal (\emph{Biometry} by Sokal and Rohlf, 1994, p. 237).
-#' @references \itemize{ \item Sokal, R. R. and Rohlf, F. J. 1994. \emph{Biometry}.  W. H. Freeman, New York, third edition. \item Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.}
+#' @references \itemize{ \item Sokal, R. R. and Rohlf, F. J. 1994. \emph{Biometry}.  W. H. Freeman, New York, third edition. \item Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.}
 #' @examples
 #' ggplot(data = DROSOPHILA, aes(x = reorder(line, fecundity, FUN = median),  
 #' y = fecundity, fill = line)) + geom_boxplot() + guides(fill = FALSE) + 
@@ -483,7 +483,7 @@ DROSOPHILA <- source_data(paste(fgithub, "DROSOPHILA.csv", sep = ""))
 #' \item \code{salary} (salary 10 years after graduation in thousands of dollars)
 #' \item \code{university} (one of three different engineering universities)
 #' }
-#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
+#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 #' @examples
 #' ggplot(data = ENGINEER, aes(x = university, y = salary, fill = university)) + 
 #' geom_boxplot() + guides(fill = FALSE) + scale_fill_brewer() + 
@@ -513,7 +513,7 @@ ENGINEER <- source_data(paste(fgithub, "ENGINEER.csv", sep = ""))
 #' \item \code{complications} (a factor with levels \code{Failure - person got dizzy}, \code{Failure - too many OCs}, \code{None}, \code{Paresthesia}, and \code{Wet Tap})
 #' }
 #' @source Fisher, K. S., Arnholt, A. T., Douglas, M. E., Vandiver, S. L., Nguyen, D. H. 2009. \dQuote{A Randomized Trial of the Traditional Sitting Position Versus the Hamstring Stretch Position for Labor Epidural Needle Placement.} \emph{Journal of Anesthesia & Analgesia}, Vol 109, No. 2: 532-534.
-#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
+#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 #' @examples
 #' xtabs(~ doctor + ease, data = EPIDURAL)
 #' xtabs(~ doctor + factor(ease, levels = c("Easy", "Difficult", "Impossible")), 
@@ -539,7 +539,7 @@ EPIDURAL <- source_data(paste(fgithub, "EPIDURAL.csv", sep = ""))
 #' \item \code{complications} (a factor with levels \code{Failure - person got dizzy}, \code{Failure - too many OCs}, \code{None}, \code{Paresthesia}, and \code{Wet Tap})
 #' }
 #' @source Fisher, K. S., Arnholt, A. T., Douglas, M. E., Vandiver, S. L., Nguyen, D. H. 2009. \dQuote{A Randomized Trial of the Traditional Sitting Position Versus the Hamstring Stretch Position for Labor Epidural Needle Placement.} \emph{Journal of Anesthesia & Analgesia}, Vol 109, No. 2: 532-534.
-#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
+#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 #' @examples
 #' ggplot(data = EPIDURALF, aes(x = treatment, y = oc, fill = treatment)) +
 #'  geom_boxplot() + guides(fill = FALSE) + scale_fill_brewer() + 
@@ -560,7 +560,7 @@ EPIDURALF <- source_data(paste(fgithub, "EPIDURALF.csv", sep = ""))
 #' \item \code{rd2002} (research and development investments in millions of Euros for 2002)
 #' \item \code{rd2003} (research and development investments in millions of Euros for 2003)
 #' }
-#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
+#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 #' @examples
 #' ggplot(data = EURD, aes(x = rd2002, y =  rd2003)) + geom_point() +
 #' geom_smooth(method = "lm")
@@ -584,7 +584,7 @@ EURD <- source_data(paste(fgithub, "EURD.csv", sep = ""))
 #' \item \code{type} (a factor with levels \code{monospecific} and \code{multispecific})
 #' }
 #' @source \emph{Gobierno de Navarra} and \emph{Gestion Ambiental Viveros y Repoblaciones de Navarra}, 2006.  The data were obtained within the European Project FORSEE.
-#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
+#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 #' @examples
 #' ggplot(data = FAGUS, aes(x = type, y = carbon)) + geom_boxplot()
 #' @keywords datasets
@@ -602,7 +602,7 @@ FAGUS <- source_data(paste(fgithub, "FAGUS.csv", sep = ""))
 #' \item \code{weight} (difference in weight (grams))
 #' \item \code{diet} (a factor with levels \code{A}, \code{B}, and \code{C})
 #' }
-#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
+#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 #' @examples
 #' # checking.plots()?
 #' p <- ggplot(data = FCD, aes(x = diet, y = weight))
@@ -624,7 +624,7 @@ FCD <- source_data(paste(fgithub, "FCD.csv", sep = ""))
 #' \item \code{fertilization} (a factor with levels \code{cross} and \code{self})
 #' }
 #' @source Darwin, C. 1876. \emph{The Effect of Cross and Self-Fertilization in the Vegetable Kingdom.} D. Appleton and Company. 
-#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
+#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 #' @examples
 #' p <- ggplot(data = FERTILIZE, aes(x = height, color = fertilization))
 #' p + geom_density()
@@ -644,7 +644,7 @@ FERTILIZE <- source_data(paste(fgithub, "FERTILIZE.csv", sep = ""))
 #' \item \code{shear} (carrot shear measured in kN)
 #' \item \code{freezer} (a factor with levels \code{A}, \code{B}, \code{C}, and \code{D})
 #' }
-#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
+#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 #' @examples
 #' summary(aov(shear ~ freezer, data = FOOD))
 #' @keywords datasets
@@ -663,7 +663,7 @@ FOOD <- source_data(paste(fgithub, "FOOD.csv", sep = ""))
 #' \item \code{team1} (pit stop times for team one)
 #' \item \code{team2} (pit stop times for team two)
 #' }
-#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
+#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 #' @examples
 #' # Change data format from wide to long
 #' # library(reshape2)
@@ -692,7 +692,7 @@ FORMULA1 <- source_data(paste(fgithub, "FORMULA1.csv", sep = ""))
 #' \itemize{
 #' \item \code{attf} (times until failure in hours)
 #' }
-#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
+#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 #' @examples
 #' ggplot(data = GD, aes(x = attf, y = ..density..)) + 
 #' geom_histogram(binwidth = 2, fill = "cornsilk", color = "orange") + 
@@ -713,7 +713,7 @@ GD <- source_data(paste(fgithub, "GD.csv", sep = ""))
 #' \item \code{old} (blood glucose level in mg/100 ml using an old device)
 #' \item \code{new} (blood glucose level in mg/100 ml using a new device)
 #' }
-#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
+#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 #' @examples
 #' with(data = GLUCOSE,
 #' boxplot(old, new, col = c("red", "blue")))
@@ -732,7 +732,7 @@ GLUCOSE <- source_data(paste(fgithub, "GLUCOSE.csv", sep = ""))
 #' \item \code{sat} (SAT score)
 #' \item \code{gpa} (grade point average)
 #' }
-#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
+#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 #' @examples
 #' # base scatterplot
 #' plot(gpa ~ sat, data = GRADES)
@@ -754,7 +754,7 @@ GRADES <- source_data(paste(fgithub, "GRADES.csv", sep = ""))
 #' \itemize{
 #' \item \code{amount} (total dollars spent on groceries)
 #' }
-#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
+#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 #' @examples
 #' with(data = GROCERY, 
 #' z.test(amount, sigma.x = 25, mu = 100, alternative = "greater"))
@@ -782,7 +782,7 @@ GROCERY <- source_data(paste(fgithub, "GROCERY.csv", sep = ""))
 #' }
 #' @source D. J. Hand, F. Daly, A. D. Lunn, K. J. McConway and E. Ostrowski. 1994. \emph{A Handbook of Small Datasets}. Chapman and Hall/CRC, London.
 #' @details These data were collected in an investigation of environmental causes of disease.  They show the annual mortality rate per 100,000 for males, averaged over the years 1958-1964, and the calcium concentration (in parts per million) in the drinking water supply for 61 large towns in England and Wales.  (The higher the calcium concentration, the harder the water.)
-#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
+#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 #' @examples
 #' ggplot(data = HARDWATER, aes(x = hardness, y = mortality, color  = location)) + 
 #' geom_point() + labs(y = "averaged annual mortality per 100,000 males", 
@@ -802,7 +802,7 @@ HARDWATER <- source_data(paste(fgithub, "HARDWATER.csv", sep = ""))
 #' \item \code{neighborhood} (a factor with levels \code{Blowing Rock}, \code{Cove Creek}, \code{Green Valley}, \code{Park Valley}, \code{Parkway}, and \code{Valley Crucis})
 #' \item \code{price} (price of house in thousands of dollars)
 #' }
-#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
+#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 #' @examples
 #' with(data = HOUSE,
 #' t.test(price, mu = 225))
@@ -832,7 +832,7 @@ HOUSE <- source_data(paste(fgithub, "HOUSE.csv", sep = ""))
 #' }
 #' @source Data provided by Dr. Alan Utter, Department of Health Leisure and Exercise Science, Appalachian State University
 #' 
-#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
+#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 #' 
 #' @examples
 #' FAT <- c(HSWRESTLER$hwfat, HSWRESTLER$tanfat, HSWRESTLER$skfat)
@@ -859,7 +859,7 @@ HSWRESTLER <- source_data(paste(fgithub, "HSWRESTLER.csv", sep = ""))
 #' \item \code{team1} (days to complete scenario)
 #' \item \code{team2} (days to complete scenario)
 #' }
-#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
+#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 #' @examples
 #' with(data = HUBBLE, 
 #' qqnorm(team1 - team2))
@@ -884,7 +884,7 @@ HUBBLE <- source_data(paste(fgithub, "HUBBLE.csv", sep = ""))
 #' \item \code{companyA} (quotes from company A in Euros)
 #' \item \code{companyB} (quotes from company B in Euros)
 #' }
-#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
+#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 #' @examples
 #' ggplot(data = INSURQUOTES, aes(sample = companyA - companyB)) + 
 #' stat_qq(col = "orange", size = 4)
@@ -907,7 +907,7 @@ INSURQUOTES <- source_data(paste(fgithub, "INSURQUOTES.csv", sep = ""))
 #' }
 #' @details Janka hardness is a structural property of Australian hardwood timbers. The Janka hardness test measures the force required to imbed a steel ball into a piece of wood.
 #' @source Williams, E.J. 1959. \emph{Regression Analysis}.  John Wiley & Sons, New York.
-#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
+#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 #' @examples
 #' ggplot(data = JANKA, aes(x = density, y = hardness)) + geom_point() + geom_smooth()
 #' @keywords datasets
@@ -925,7 +925,7 @@ JANKA <- source_data(paste(fgithub, "JANKA.csv", sep = ""))
 #' \item \code{ht} (height in inches of each child)
 #' \item \code{wt} (weight in pounds of each child)
 #' }
-#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
+#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 #' @examples
 #' ggplot(data = KINDER, aes(x = ht, y = wt)) + geom_point(color = "blue") + 
 #' geom_smooth(method = "lm", color = "red") + labs(x = "height in inches", 
@@ -945,7 +945,7 @@ KINDER <- source_data(paste(fgithub, "KINDER.csv", sep = ""))
 #' \item \code{diameter} (diameter of diode measured in millimeters)
 #' \item \code{supplier} (factor with levels \code{supplierA} and \code{supplierB})
 #' }
-#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
+#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 #' @examples
 #' ggplot(data = LEDDIODE, aes(supplier, diameter)) + geom_boxplot()
 #' @keywords datasets
@@ -963,7 +963,7 @@ LEDDIODE <- source_data(paste(fgithub, "LEDDIODE.csv", sep = ""))
 #' \item \code{numbersick} (number of absent workers due to illness)
 #' \item \code{lostrevenue} (lost revenue in dollars)
 #' }
-#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
+#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 #' @examples
 #' ggplot(data = LOSTR, aes(x = numbersick, y = lostrevenue)) + geom_point(color = "red", 
 #' pch = 21, fill = "pink", size = 4) + geom_smooth(method = "lm") + 
@@ -983,7 +983,7 @@ LOSTR <- source_data(paste(fgithub, "LOSTR.csv", sep = ""))
 #' \item \code{seconds} (drying time in seconds)
 #' \item \code{size} (factor with levels \code{halfgallon} and \code{wholegallon})
 #' }
-#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
+#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 #' @examples
 #' ggplot(data = MILKCARTON, aes(x = size, y = seconds)) + geom_boxplot()
 #' ggplot(data = MILKCARTON, aes(x = size, y = seconds, fill = size)) + geom_boxplot() + 
@@ -1036,7 +1036,7 @@ MILKCARTON <- source_data(paste(fgithub, "MILKCARTON.csv", sep = ""))
 #' }
 #' @source The original data was provided by E.L. Davison, Department of Sociology, Appalachian State University.  Variables
 #' \code{countyName} through \code{popden} were obtained from \url{http://factfinder2.census.gov/faces/nav/jsf/pages/searchresults.xhtml?refresh=t#"} and further cleaned by Maureen O'Donnell and Eitan Lees. The variables \code{pctfor} through \code{mccain08} were obtained from \url{http://www.ncsbe.gov/}. The variables \code{evanrate} and \code{churches} were obtained from \url{http://thearda.com}, while the information for \code{colleges} was obtained from \url{http://collegestats.org/colleges/north-carolina}.
-#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
+#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 #' @examples
 #' ggplot(data = MILKCARTON, aes(x = size, y = seconds)) + geom_boxplot()
 #' ggplot(data = MILKCARTON, aes(x = size, y = seconds, fill = size)) + geom_boxplot() + 
@@ -1060,7 +1060,7 @@ NC2010DMG <- source_data(paste(fgithub, "NC2010DMG.csv", sep = ""))
 #' }
 #' @details Phenylketonuria (PKU) is a genetic disorder that is characterized by an inability of the body to utilize the essential amino acid, phenylalanine. Research suggests patients with phenylketonuria have deficiencies in coenzyme Q10.
 #' @source Artuch, R., \emph{et. al.} 2004. \dQuote{Study of Antioxidant Status in Phenylketonuric Patients.} \emph{Clinical Biochemistry}, \bold{37}: 198-203.
-#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
+#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 #' @examples
 #' PL <- stack(PHENYL)
 #' PL$sub <- factor(rep(1:46, 4))
@@ -1082,7 +1082,7 @@ PHENYL <- source_data(paste(fgithub, "PHENYL.csv", sep = ""))
 #' \itemize{
 #' \item \code{call.time} (time spent on long distance calls in minutes)
 #' }
-#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
+#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 #' @examples
 #' with(data = PHONE, 
 #' SIGN.test(call.time, md = 2.1))
@@ -1101,7 +1101,7 @@ PHONE <- source_data(paste(fgithub, "PHONE.csv", sep = ""))
 #' \item \code{survival.time} (number of weeks survived)
 #' }
 #' @source Lawless, J. 1982. \emph{Statistical Models and Methods for Lifetime Data}. John Wiley, New York.
-#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
+#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 #' @examples
 #' ggplot(data = RAT, aes(sample = survival.time)) + stat_qq()
 #' ggplot(data = RAT, aes(x = survival.time)) + geom_density(alpha = 0.2, fill = "blue") +
@@ -1122,7 +1122,7 @@ RAT <- source_data(paste(fgithub, "RAT.csv", sep = ""))
 #' \item \code{group} (factor with levels \code{control} and \code{treatment})
 #' }
 #' @source The data is originally from Ott and Mendenhall (\emph{Understanding Statistics}, 1985, problem 8.17).
-#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
+#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 #' @examples
 #' # Boxplot
 #' ggplot(data = RATBP, aes(x = group, y = mmHg)) + geom_boxplot()
@@ -1144,7 +1144,7 @@ RATBP <- source_data(paste(fgithub, "RATBP.csv", sep = ""))
 #' \item \code{kilowatts} (energy consumption in kilowatts for a 24 hour period)
 #' \item \code{group} (factor with levels \code{original} and \code{modified})
 #' }
-#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
+#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 #' @examples
 #' # Boxplot
 #' ggplot(data = REFRIGERATOR, aes(x = group, y = kilowatts)) + geom_boxplot()
@@ -1165,7 +1165,7 @@ REFRIGERATOR <- source_data(paste(fgithub, "REFRIGERATOR.csv", sep = ""))
 #' \itemize{
 #' \item \code{eggs} (numeric vector where a 0 indicates nothing hatched while a 1 indicates the birth of a cockroach.)
 #' }
-#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
+#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 #' @examples
 #' p <- seq(0.1, 0.9, 0.001) 
 #' negloglike <- function(p){ 
@@ -1188,7 +1188,7 @@ ROACHEGGS <- source_data(paste(fgithub, "ROACHEGGS.csv", sep = ""))
 #' \item \code{salinity} (surface-water salinity measurements)
 #' }
 #' @source Davis, J. 1986. \emph{Statistics and Data Analysis in Geology}. John Wiley, New York.
-#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
+#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 #' @examples
 #' # Boxplot
 #' ggplot(data = SALINITY, aes(x = salinity)) + geom_density(fill = "yellow", alpha = 0.3)
@@ -1223,7 +1223,7 @@ SALINITY <- source_data(paste(fgithub, "SALINITY.csv", sep = ""))
 #' \item \code{observed} (the observed area of fruit trees in the sampled segment)
 #' }
 #' @source Militino, A. F., \emph{et. al.} 2006. \dQuote{Using Small Area Models to Estimate the Total Area Occupied by Olive Trees.} \emph{Journal of Agricultural, Biological and Environmental Statistics}, \bold{11}: 450-461.
-#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
+#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 #' @examples
 #' pairs(SATFRUIT[,15:17])
 #' @keywords datasets
@@ -1241,7 +1241,7 @@ SATFRUIT <- source_data(paste(fgithub, "SATFRUIT.csv", sep = ""))
 #' \item \code{score} (IQ score)
 #' \item \code{county} (factor with levels \code{County1} and \code{County2})
 #' }
-#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
+#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 #' @examples
 #' ggplot(data = SBIQ, aes(sample = score, color = county)) + stat_qq()
 #' @keywords datasets
@@ -1260,7 +1260,7 @@ SBIQ <- source_data(paste(fgithub, "SBIQ.csv", sep = ""))
 #' \item \code{classification} (factor with levels \code{psychotic} and \code{nonpsychotic})
 #' }
 #' @source Sternberg, D. E., Van Kammen, D. P., and Bunney,W. E. 1982. \dQuote{Schizophrenia: Dopamine \eqn{\beta}-Hydroxylase Activity and Treatment Response.} \emph{Science}, \bold{216}: 1423-1425.
-#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
+#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 #' @examples
 #' ggplot(data = SCHIZO, aes(x = classification, y = dopamine)) + geom_boxplot()
 #' @keywords datasets
@@ -1277,7 +1277,7 @@ SCHIZO <- source_data(paste(fgithub, "SCHIZO.csv", sep = ""))
 #' \itemize{
 #' \item \code{scores} (standardized test score)
 #' }
-#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
+#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 #' @examples
 #' ggplot(data = SCORE, aes(sample = scores)) + stat_qq()
 #' @keywords datasets
@@ -1295,7 +1295,7 @@ SCORE <- source_data(paste(fgithub, "SCORE.csv", sep = ""))
 #' \item \code{times} (interarrival times to the nearest second)
 #' }
 #' @source Hand, D. J., \emph{et. al.} 1994. \emph{A Handbook of Small Data Sets}. Chapman & Hall, London.
-#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
+#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 #' @examples
 #' ggplot(data = SDS4, aes(x = times)) + geom_histogram(binwidth = 2)
 #' ggplot(data = SDS4, aes(x = times, y = ..density..)) + 
@@ -1320,7 +1320,7 @@ SDS4 <- source_data(paste(fgithub, "SDS4.csv", sep = ""))
 #' \item \code{x2} (a numeric vector)
 #' \item \code{x3} (a numeric vector)
 #' }
-#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
+#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 #' @examples
 #' ggplot(data = SIMDATAST, aes(x = x1, y = y1)) + geom_point() + geom_smooth()
 #' @keywords datasets
@@ -1341,7 +1341,7 @@ SIMDATAST <- source_data(paste(fgithub, "SIMDATAST.csv", sep = ""))
 #' \item \code{x2} (a numeric vector)
 #' \item \code{x3} (a numeric vector)
 #' }
-#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
+#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 #' @examples
 #' ggplot(data = SIMDATAXT, aes(x = x1, y = y)) + geom_point() + geom_smooth()
 #' @keywords datasets
@@ -1362,7 +1362,7 @@ SIMDATAXT <- source_data(paste(fgithub, "SIMDATAXT.csv", sep = ""))
 #' }
 #' @details The World Cup is played once every four years. National teams from all over the world compete. In 2002 and in 1998, thirty-six teams were invited; whereas, in 1994 and in 1990, only 24 teams participated. The data frame \code{SOCCER} contains three columns: \code{cgt}, \code{game}, and \code{goals}. All of the information contained in \code{Soccer} is indirectly available from the FIFA World Cup website, located at \url{http://fifaworldcup.yahoo.com/}.
 #' @source Chu, S. 2003. \dQuote{Using Soccer Goals to Motivate the Poisson Process.} \emph{INFORMS} Transaction on Education, \bold{3}, \bold{2}: 62-68.
-#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
+#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 #' @examples
 #' xtabs(~goals, data = SOCCER)
 #' @keywords datasets
@@ -1381,7 +1381,7 @@ SOCCER <- source_data(paste(fgithub, "SOCCER.csv", sep = ""))
 #' \item \code{gender} (a factor with levels \code{Female} and \code{Male})
 #' \item \code{class} (a factor with levels \code{8 a.m.} and \code{9 a.m.})
 #' }
-#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
+#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 #' @examples
 #' p <- ggplot(data = STATTEMPS, aes(x = gender, y =temperature, fill = class))
 #' p + geom_violin()
@@ -1402,7 +1402,7 @@ STATTEMPS <- source_data(paste(fgithub, "STATTEMPS.csv", sep = ""))
 #' \item \code{satisfaction} (combined satisfaction scores)
 #' \item \code{school} (a factor with levels \code{x} and \code{y})
 #' }
-#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
+#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 #' @examples
 #' with(data = STSCHOOL, t.test(x, y, var.equal=TRUE))
 #' @keywords datasets
@@ -1421,7 +1421,7 @@ STSCHOOL <- source_data(paste(fgithub, "STSCHOOL.csv", sep = ""))
 #' \item \code{digital} (time in seconds for a Digital workstation to complete a simulation)
 #' \item \code{difference} (difference between \code{sun} and \code{digital})
 #' }
-#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
+#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 #' @examples
 #' with(data = SUNDIG, t.test(sun, digital, paired=TRUE)$conf)
 #' @keywords datasets
@@ -1443,7 +1443,7 @@ SUNDIG <- source_data(paste(fgithub, "SUNDIG.csv", sep = ""))
 #' \item \code{numseed} (number of seeds per sunflower head)
 #' }
 #' @source Muro, J., \emph{et. al.} 2001. \dQuote{Defoliation Effects on Sunflower Yield Reduction.} \emph{Agronomy Journal}, \bold{93}: 634-637.
-#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
+#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 #' @examples
 #' summary(aov(yield ~ stage + defoli + stage:defoli, data = SUNFLOWER))
 #' ggplot(data = SUNFLOWER, aes(numseed, yield, color = defoli)) + geom_point() + 
@@ -1463,7 +1463,7 @@ SUNFLOWER <- source_data(paste(fgithub, "SUNFLOWER.csv", sep = ""))
 #' \item \code{community} (a factor with levels \code{Andalucia}, \code{Aragon},\code{Asturias}, \code{Baleares}, \code{C.Valenciana}, \code{Canarias}, \code{Cantabria}, \code{Castilla-La Mancha}, \code{Castilla-Leon}, \code{Cataluna}, \code{Extremadura}, \code{Galicia}, \code{La Rioja}, \code{Madrid}, \code{Murcia}, \code{Navarra}, and \code{P.Vasco})
 #' \item \code{surface} (surface area in \eqn{\texttt{km}^2})
 #' }
-#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
+#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 #' @examples
 #' # Base Graphs
 #' with(data = SURFACESPAIN, barplot(surface, names.arg = community, las = 2))
@@ -1489,7 +1489,7 @@ SURFACESPAIN <- source_data(paste(fgithub, "SURFACESPAIN.csv", sep = ""))
 #' \item \code{diet} (a factor with levels \code{lowfat} and \code{highfat})
 #' }
 #' @details Times for the thirty-two swimmers for the 200 yard individual medley were taken right after the swimmers' conference meet. The swimmers were randomly assigned to follow one of the diets.  One group followed a low fat diet the entire year but lost two swimmers along the way. The other group followed a high fat diet the entire year and also lost two swimmers.
-#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
+#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 #' @examples
 #' wilcox.test(seconds ~ diet, data = SWIMTIMES)
 #' ggplot(data = SWIMTIMES, aes(x = diet, y = seconds, fill = diet)) + geom_violin() + 
@@ -1509,7 +1509,7 @@ SWIMTIMES <- source_data(paste(fgithub, "SWIMTIMES.csv", sep = ""))
 #' \item \code{speed1} (speed in kilometers per hour)
 #' \item \code{speed2} (speed in kilometers per hour)
 #' }
-#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
+#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 #' @examples
 #' with(data = TENNIS, boxplot(speed1, speed2))
 #' @keywords datasets
@@ -1526,7 +1526,7 @@ TENNIS <- source_data(paste(fgithub, "TENNIS.csv", sep = ""))
 #' \itemize{
 #' \item \code{grade} (test score)
 #' }
-#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
+#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 #' @examples
 #' ggplot(data = TESTSCORES, aes(x = grade)) + geom_histogram(binwidth = 5, 
 #' fill = "cornsilk", color = "gray60", alpha = 0.7)
@@ -1545,7 +1545,7 @@ TESTSCORES <- source_data(paste(fgithub, "TESTSCORES.csv", sep = ""))
 #' \item \code{stopdist} (stopping distance measured to the nearest foot)
 #' \item \code{tire} (a factor with levels \code{A}, \code{B}, \code{C}, and \code{D})
 #' }
-#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
+#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 #' @examples
 #' ggplot(data = TIRE, aes(x = reorder(tire, stopdist, FUN = median), y = stopdist, 
 #' fill = tire)) + geom_boxplot() + guides(fill = FALSE) + 
@@ -1573,7 +1573,7 @@ TIRE <- source_data(paste(fgithub, "TIRE.csv", sep = ""))
 #' \item \code{treat} (a factor with levels \code{A}, \code{B}, \code{C}, and \code{D})
 #' \item \code{block} (a factor with levels \code{Car1}, \code{Car2}, \code{Car3}, and \code{Car4})
 #' }
-#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
+#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 #' @examples
 #' par(mfrow=c(1, 2), cex = 0.8) 
 #' with(data = TIREWEAR, 
@@ -1613,7 +1613,7 @@ TIREWEAR <- source_data(paste(fgithub, "TIREWEAR.csv", sep = ""))
 #' @references \itemize{ 
 #' \item Harrell, F. E. 2001.
 #'  \emph{Regression Modeling Strategies with Applications to Linear Models, Logistic Regression, and Survival Analysis}.  Springer.
-#' \item Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
+#' \item Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 #' }   
 #' @examples
 #' with(TITANIC3, table(pclass, sex))
@@ -1631,7 +1631,7 @@ TITANIC3 <- source_data(paste(fgithub, "TITANIC3.csv", sep = ""))
 #' \itemize{
 #' \item \code{energy} (nuclear energy measured in tons of oil equivalent)
 #' }
-#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
+#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 #' @examples
 #' ggplot(data = TOE, aes(x = energy)) + geom_density(color = "red", alpha = 0.3, 
 #' fill = "pink")
@@ -1650,7 +1650,7 @@ TOE <- source_data(paste(fgithub, "TOE.csv", sep = ""))
 #' \item \code{income} (yearly income in millions of dollars)
 #' }
 #' @source \url{http://www.atptennis.com/en/}
-#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
+#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 #' @examples
 #' ggplot(data = TOP20, aes(x = income)) + 
 #' geom_histogram(binwidth = 1, fill = "lightblue", color = "blue") + 
@@ -1670,7 +1670,7 @@ TOP20 <- source_data(paste(fgithub, "TOP20.csv", sep = ""))
 #' \item \code{megasd} (megabytes dowloaded)
 #' \item \code{mconnected} (number of minutes connected)
 #' }
-#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
+#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 #' @examples
 #' ggplot(data = URLADDRESS, aes(x = mconnected, y = megasd)) + 
 #' geom_point(color = "blue") + 
@@ -1703,7 +1703,7 @@ URLADDRESS <- source_data(paste(fgithub, "URLADDRESS.csv", sep = ""))
 #' \item \code{heating} (a factor indicating the type of heating with levels \code{1A}, \code{3A}, \code{3B}, and \code{4A} which correspond to: no heating, low-standard private heating, high-standard private heating, and central heating, respectively.)
 #' \item \code{storage} (the number of storage rooms outside of the apartment)
 #' }
-#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
+#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 #' @examples
 #' ggplot(data = VIT2005, aes(x = area, y = totalprice, color = factor(elevator))) + 
 #' geom_point()
@@ -1726,7 +1726,7 @@ VIT2005 <- source_data(paste(fgithub, "VIT2005.csv", sep = ""))
 #' \itemize{
 #' \item \code{minutes} (waiting time in minutes)
 #' }
-#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
+#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 #' @examples
 #' with(data= WAIT, wilcox.test(minutes, mu = 6, alternative = "less"))
 #' @keywords datasets
@@ -1743,7 +1743,7 @@ WAIT <- source_data(paste(fgithub, "WAIT.csv", sep = ""))
 #' \itemize{
 #' \item \code{diameter} (diameter of washer in cm)
 #' }
-#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
+#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 #' @examples
 #' ggplot(data = WASHER, aes(x = diameter)) + geom_density(fill = "blue", alpha = 0.2)
 #' @keywords datasets
@@ -1763,7 +1763,7 @@ WASHER <- source_data(paste(fgithub, "WASHER.csv", sep = ""))
 #' \item \code{sodium} (combined sodium content measured in mg/L)
 #' \item \code{source} (a factor with levels \code{x} and \code{y})
 #' }
-#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
+#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 #' @examples
 #' ggplot(data = WATER, aes(x = sodium, y = ..density.., fill = source)) + 
 #' geom_density(alpha = 0.2)
@@ -1783,7 +1783,7 @@ WATER <- source_data(paste(fgithub, "WATER.csv", sep = ""))
 #' \item \code{score} (score on the Wisconsin Card Sorting Test)
 #' }
 #' @details The \dQuote{Wisconsin Card Sorting Test} is widely used by psychiatrists, neurologists, and neuropsychologists with patients who have a brain injury, neurodegenerative disease, or a mental illness such as schizophrenia. Patients with any sort of frontal lobe lesion generally do poorly on the test.
-#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
+#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 #' @examples
 #' ggplot(data = WCST, aes(x = score)) + geom_density(fill = "lightblue", alpha = 0.8, 
 #' color ="blue")
@@ -1805,7 +1805,7 @@ WCST <- source_data(paste(fgithub, "WCST.csv", sep = ""))
 #' }
 #' @details The design of the experiment is a completely randomized design with ten rats in each of the four treatments.
 #' @source Hand, D. J., F. Daly, A. D. Lunn, K. J. McConway, and E. Ostrowski. 1994. \emph{A Handbook of Small Datasets}. Chapman and Hall/CRC, London.
-#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014. \emph{Probability and Statistics with R}, Second Edition. London: Chapman & Hall.
+#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. London: Chapman & Hall.
 #' @examples
 #' ggplot(data = WEIGHTGAIN, aes(x = proteinamount, y = weightgain, 
 #' fill = proteinsource)) + geom_boxplot()
@@ -1826,7 +1826,7 @@ WEIGHTGAIN <- source_data(paste(fgithub, "WEIGHTGAIN.csv", sep = ""))
 #' \item \code{hectares} (surface area measured in hectares)
 #' \item \code{acres} (surface area measured in acres)
 #' }
-#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
+#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 #' @examples
 #' ggplot(data = WHEATSPAIN, aes(x = reorder(community, acres), y = acres)) + 
 #' geom_bar(stat="identity", color = "orange", fill = "gold") + coord_flip() + 
@@ -1846,7 +1846,7 @@ WHEATSPAIN <- source_data(paste(fgithub, "WHEATSPAIN.csv", sep = ""))
 #' \item \code{states} (a factor with levels \code{AR}, \code{CA}, \code{CO}, \code{DE}, \code{GA}, \code{ID}, \code{IL}, \code{IN}, \code{KS}, \code{KY}, \code{MD}, \code{MI}, \code{MO}, \code{MS}, \code{MT}, \code{NC}, \code{NE}, \code{NY}, \code{OH}, \code{OK}, \code{OR}, \code{Other}, \code{PA}, \code{SC}, \code{SD}, \code{TN}, \code{TX}, \code{VA}, \code{WA}, and \code{WI})
 #' \item \code{acres} (wheat surface area measured in thousands of acres)
 #' }
-#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
+#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 #' @examples
 #' ggplot(data = WHEATUSA2004, aes(x = reorder(states, acres), y = acres)) + 
 #' geom_bar(stat = "identity", color = "gold", fill = "yellow") + coord_flip() + 
@@ -1866,7 +1866,7 @@ WHEATUSA2004 <- source_data(paste(fgithub, "WHEATUSA2004.csv", sep = ""))
 #' \item \code{production} (wool production in thousands of kilograms)
 #' \item \code{location} (a factor with levels \code{textileA} and \code{textileB}.)
 #' }
-#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
+#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 #' @examples
 #' ggplot(data = WOOL, aes(location, production, fill = location)) + geom_boxplot() + 
 #' guides(fill = FALSE) + scale_fill_brewer()

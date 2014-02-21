@@ -23,7 +23,7 @@ ggplot(data = RAT, aes(x = survival.time)) + geom_density(alpha = 0.2, fill = "b
 labs(x = "Survival time in weeks")
 }
 \references{
-Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014.
+Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015.
 \emph{Probability and Statistics with R}, Second Edition.
 Chapman & Hall / CRC.
 }

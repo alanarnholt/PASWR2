@@ -21,7 +21,7 @@ pch = 21, fill = "pink", size = 4) + geom_smooth(method = "lm") +
 labs(x = "number of absent workers due to illness", y = "lost revenue in dollars")
 }
 \references{
-Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2014.
+Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015.
 \emph{Probability and Statistics with R}, Second Edition.
 Chapman & Hall / CRC.
 }
