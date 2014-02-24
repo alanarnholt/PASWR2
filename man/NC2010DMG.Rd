@@ -15,7 +15,6 @@
 \item \code{age18-24} (The number of people between the ages of 18 and 24 in the county in 2010)
 \item \code{age25-29} (The number of people between the ages of 25 and 29 in the county in 2010)
 \item \code{age60up} (The number of people over the age of 60 in the county in 2010)
-\item \code{students} (The number of people enrolled in college in 2010)
 \item \code{white} (The number of white people in the county in 2010)
 \item \code{black} (The number of black people in the county in 2010)
 \item \code{MaleBachelor} (The number of males with a Bachelor's degree in 2010)
