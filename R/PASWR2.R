@@ -1859,7 +1859,7 @@ WHEATUSA2004 <- source_data(paste(fgithub, "WHEATUSA2004.csv", sep = ""))
 #' @title Wool Production
 #' @aliases WOOL
 #' @docType data
-#' @description Random sample of wool production in kilograms on 5 different days at two different locations 
+#' @description Random sample of wool production in thousands of kilograms on 5 different days at two different locations 
 #' @format A data frame with 30 observations on the following 2 variables: 
 #' \itemize{
 #' \item \code{production} (wool production in thousands of kilograms)
