@@ -61,7 +61,7 @@ checking.plots <- function(model, n.id = 3, COL=c("#0080FF", "#A9E2FF")){
   mAx <- max(abs(y[is.finite(y)])) + .5
   n <- length(y)
   plot( (1:n), y, ylab = "standardized residuals", col = COL[1],
-        xlab = "ordered values", ylim=c(-mAx, mAx),
+        xlab = "ordered values", ylim=c(-mAx, mAx), type = "b",
         main = paste("Standardized residuals versus \n ordered values for", varmodel))
   Identify((1:n), y, n.id)
   abline(h = 0, lty = 2, col = COL[2])
