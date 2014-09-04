@@ -10,10 +10,10 @@
 #' 
 #' @author Winston Chang <winston@@stdout.org> 
 #' 
+#' @seealso \code{\link{layout}}
 #' @export
 #' 
 #' @examples
-#' library(PASWR2)
 #' p1 <- ggplot(data = HSWRESTLER, aes(x = skfat, y = hwfat)) + geom_point()
 #' p2 <- ggplot(data = HSWRESTLER, aes(x = tanfat, y = hwfat)) + geom_point()
 #' multiplot(p1, p2, cols = 2)
