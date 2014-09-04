@@ -7,11 +7,7 @@ Author: Alan T. Arnholt
 Maintainer: Alan T. Arnholt <arnholtat@appstate.edu>
 Description: Functions and data sets for the text Probability and Statistics
     with R, Second Edition
-Depends:
-    ggplot2,
-    lattice,
-    e1071,
-    grid
+Depends: ggplot2, lattice, e1071, grid
 LazyLoad: yes
 LazyData: yes
 License: GPL-2
