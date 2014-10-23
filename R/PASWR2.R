@@ -622,6 +622,7 @@ FCD <- source_data(paste(fgithub, "FCD.csv", sep = ""))
 #' \itemize{
 #' \item \code{height} (height of plant in inches)
 #' \item \code{fertilization} (a factor with levels \code{cross} and \code{self})
+#' \item \code{pot} (a factor with fifteen levels)
 #' }
 #' @source Darwin, C. 1876. \emph{The Effect of Cross and Self-Fertilization in the Vegetable Kingdom.} D. Appleton and Company. 
 #' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
