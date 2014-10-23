@@ -3,10 +3,11 @@
 \name{FERTILIZE}
 \alias{FERTILIZE}
 \title{Cross and Auto Fertilization}
-\format{A data frame with 30 observations on the following 2 variables:
+\format{A data frame with 30 observations on the following 3 variables:
 \itemize{
 \item \code{height} (height of plant in inches)
 \item \code{fertilization} (a factor with levels \code{cross} and \code{self})
+\item \code{pot} (a factor with fifteen levels)
 }}
 \source{
 Darwin, C. 1876. \emph{The Effect of Cross and Self-Fertilization in the Vegetable Kingdom.} D. Appleton and Company.
