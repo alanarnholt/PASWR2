@@ -1540,10 +1540,11 @@ TESTSCORES <- source_data(paste(fgithub, "TESTSCORES.csv", sep = ""))
 #' @aliases TIRE
 #' @docType data
 #' @description The data frame \code{TIRE} has the stopping distances measured to the nearest foot for a standard sized car to come to a complete stop from a speed of sixty miles per hour. There are six measurements of the stopping distance for four different tread patterns labeled A, B, C, and D. The same driver and car were used for all twenty-four measurements.
-#' @format A data frame with 24 observations on the following 2 variables: 
+#' @format A data frame with 24 observations on the following 3 variables: 
 #' \itemize{
 #' \item \code{stopdist} (stopping distance measured to the nearest foot)
 #' \item \code{tire} (a factor with levels \code{A}, \code{B}, \code{C}, and \code{D})
+#' \item \code{order} (order the experiment was conducted)
 #' }
 #' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 #' @examples
