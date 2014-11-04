@@ -44,6 +44,7 @@
 #' @keywords hplot
 #' 
 ############## added density plot and 2*2 design 6/27/13 ###
+## Change type from "b" to "o" 11/04/14
 checking.plots <- function(model, n.id = 3, COL=c("#0080FF", "#A9E2FF")){
   Identify <- function(x, y, n.id = 3, AD = 0.2){
     y <- y[!is.na(y)]
@@ -61,7 +62,7 @@ checking.plots <- function(model, n.id = 3, COL=c("#0080FF", "#A9E2FF")){
   mAx <- max(abs(y[is.finite(y)])) + .5
   n <- length(y)
   plot( (1:n), y, ylab = "standardized residuals", col = COL[1],
-        xlab = "ordered values", ylim=c(-mAx, mAx), type = "b",
+        xlab = "ordered values", ylim=c(-mAx, mAx), type = "o",
         main = paste("Standardized residuals versus \n ordered values for", varmodel))
   Identify((1:n), y, n.id)
   abline(h = 0, lty = 2, col = COL[2])
