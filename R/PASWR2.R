@@ -1067,6 +1067,7 @@ NC2010DMG <- source_data(paste(fgithub, "NC2010DMG.csv", sep = ""))
 #' @keywords datasets
 #' @export
 PAMTEMP <- source_data(paste(fgithub, "PAMTEMP.csv", sep = ""))
+PAMTEMP$month <- factor(month.abb[PAMTEMP$month], levels = month.abb[1:12])
 #  PAMTEMP <- source_data(file=url(paste(site,"PAMTEMP.csv", sep = "")))
 ###########################################################################
 #####################################################################################
