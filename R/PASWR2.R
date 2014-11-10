@@ -1046,11 +1046,35 @@ MILKCARTON <- source_data(paste(fgithub, "MILKCARTON.csv", sep = ""))
 #' @export
 NC2010DMG <- source_data(paste(fgithub, "NC2010DMG.csv", sep = ""))
 #####################################################################################
+#' @name PAMTEMP
+#' @title Pamplona Temperatures
+#' @aliases PAMTEMP
+#' @docType data
+#' @description The data frame \code{PAMTEMP} has records of the temperature and precipitation for Pamplona, Spain from January 1, 1990 to December 31, 2010. 
+#' @format A data frame with 7547 observations on the following 7 variables: 
+#' \itemize{
+#' \item \code{tmax} (maximum daily temperature in celcius)
+#' \item \code{tmin} (minimum daily temperature in celcius)
+#' \item \code{precip} (daily precipitation in mm)
+#' \item \code{day} (day of the month)
+#' \item \code{month} (month of the year)
+#' \item \code{year} (year)
+#' \item \code{tmean} (the average of \code{tmax} and \code{tmin})
+#' }
+#' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
+#' @examples
+#' str(PAMTEMP)
+#' @keywords datasets
+#' @export
+PAMTEMP <- source_data(paste(fgithub, "PAMTEMP.csv", sep = ""))
+#  PAMTEMP <- source_data(file=url(paste(site,"PAMTEMP.csv", sep = "")))
+###########################################################################
+#####################################################################################
 #' @name PHENYL
 #' @title Phenylketonuria
 #' @aliases PHENYL
 #' @docType data
-#' @description The data frame \code{Phenyl} records the level of Q10 at four different times for 46 patients diagnosed with phenylketonuria. The variable \code{Q10.1} contains the level of Q10 measured in micromoles for the 46 patients. \code{Q10.2}, \code{Q10.3}, and \code{Q10.4} are the values recorded at later times, respectively, for the 46 patients.
+#' @description The data frame \code{PHENYL} records the level of Q10 at four different times for 46 patients diagnosed with phenylketonuria. The variable \code{Q10.1} contains the level of Q10 measured in micromoles for the 46 patients. \code{Q10.2}, \code{Q10.3}, and \code{Q10.4} are the values recorded at later times, respectively, for the 46 patients.
 #' @format A data frame with 46 observations on the following 4 variables: 
 #' \itemize{
 #' \item \code{Q10.1} (level of Q10 at time 1 in micromoles)
