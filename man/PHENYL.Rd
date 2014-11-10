@@ -17,7 +17,7 @@ Artuch, R., \emph{et. al.} 2004. \dQuote{Study of Antioxidant Status in Phenylke
 PHENYL
 }
 \description{
-The data frame \code{Phenyl} records the level of Q10 at four different times for 46 patients diagnosed with phenylketonuria. The variable \code{Q10.1} contains the level of Q10 measured in micromoles for the 46 patients. \code{Q10.2}, \code{Q10.3}, and \code{Q10.4} are the values recorded at later times, respectively, for the 46 patients.
+The data frame \code{PHENYL} records the level of Q10 at four different times for 46 patients diagnosed with phenylketonuria. The variable \code{Q10.1} contains the level of Q10 measured in micromoles for the 46 patients. \code{Q10.2}, \code{Q10.3}, and \code{Q10.4} are the values recorded at later times, respectively, for the 46 patients.
 }
 \details{
 Phenylketonuria (PKU) is a genetic disorder that is characterized by an inability of the body to utilize the essential amino acid, phenylalanine. Research suggests patients with phenylketonuria have deficiencies in coenzyme Q10.
