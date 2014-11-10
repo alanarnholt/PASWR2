@@ -1064,6 +1064,13 @@ NC2010DMG <- source_data(paste(fgithub, "NC2010DMG.csv", sep = ""))
 #' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 #' @examples
 #' str(PAMTEMP)
+#' levels(PAMTEMP$month)
+#' PAMTEMP$month <- factor(PAMTEMP$month, levels = month.abb[1:12])
+#' levels(PAMTEMP$month)
+#' ggplot(data = PAMTEMP, aes(x = 1:dim(PAMTEMP)[1], y = tmean)) + 
+#' geom_line() + 
+#' theme_bw() + 
+#' labs(x = "", y = "Average Temperature (Celcius)")
 #' @keywords datasets
 #' @export
 PAMTEMP <- source_data(paste(fgithub, "PAMTEMP.csv", sep = ""))
