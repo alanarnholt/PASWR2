@@ -1907,11 +1907,14 @@ WHEATUSA2004 <- source_data(paste(fgithub, "WHEATUSA2004.csv", sep = ""))
 #' @export
 WOOL <- source_data(paste(fgithub, "WOOL.csv", sep = ""))
 #  WOOL <- source_data(file=url(paste(site,"WOOL.csv", sep = "")))
-###########################################################################
+#########################################################################
+##
+## Import to namespace 11/19/14
+#' @import ggplot2 lattice e1071 grid
+####
 # save.image(file = "~/Dropbox/git_repositories/Data/PASWR2.RData")
 ##########################################################################
 rm('site', 'f','f1', 'fgithub')
-###########################################################################
-
+#########################################################################
 
 
