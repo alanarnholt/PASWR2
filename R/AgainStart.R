@@ -7,21 +7,6 @@
 #' @keywords package
 NULL
 #####################################################################################
-site <- "http://www1.appstate.edu/~arnholta/PASWR2E/DATA/"  #This works for MAC and PC...but is dependent on internet connection # Need to update the web site with stuff in PASWR2_Data
-f <- "/Users/alan/Dropbox/PASWR2E/Data/"   # This is for the MAC...either alan or admin
-f1 <- "C:/Users/Arnholts/Dropbox/PASWR2E/Data/"  # Change this to wherever Dropbox is on PC...
-f2 <- "/home/alan/Dropbox/PASWR2E/Data/"  # for running off of my linux box online
-fgit <- "/Users/alan/Dropbox/git_repositories/PASWR2_Data/"
-# RelSite <- file.path(dirname(getwd()), "Data/")  # had Data folder inside PASWR2...but deleted it 
-                                                   # in order to get the lazy load to work....    
-# RelSite <- "../Data/"             ### This should always work....
-                                    ### but it still is not working....UGH!!!!!!!!!!!!!!!
-RelSite <- "../inst/extdata/"       ### Sat morning (08/10/13)...will it work---NO
-#####################################################################################
-fgithub <- "https://raw.github.com/alanarnholt/Data/master/"
-# Trying something new 12/22/13 ---Need to make sure repmis is installed
-library(repmis) # add comment here
-#####################################################################################
 #' @name AGGRESSION
 #' @title TV and Behavior
 #' @aliases AGGRESSION
@@ -45,10 +30,8 @@ library(repmis) # add comment here
 #' with(data = AGGRESSION, 
 #' wilcox.test(violence, noviolence, paired = TRUE, alternative = "greater"))
 #' @keywords datasets
-#' @export
-AGGRESSION <- source_data(paste(fgithub, "AGGRESSION.csv", sep = ""))  
-#  AGGRESSION <- source_data(file=url(paste(site,"AGGRESSION.csv", sep = "")))   should work on any platform...but it is dependent on the web!!!  
-###########################################################################
+"AGGRESSION"
+#####################################################################################
 #' @name APPLE
 #' @title Apple Hardness
 #' @aliases APPLE
@@ -70,10 +53,8 @@ AGGRESSION <- source_data(paste(fgithub, "AGGRESSION.csv", sep = ""))
 #' qqmath(~hardness|location, data = APPLE)
 #' qqmath(~hardness, group = location, type = c('p', 'r'), auto.key = TRUE, data = APPLE)
 #' @keywords datasets
-#' @export
-APPLE <- source_data(paste(fgithub, "APPLE.csv", sep = ""))
-#  APPLE <- source_data(file=url(paste(site, "APPLE.csv", sep = "")))
-###########################################################################
+"APPLE"
+#####################################################################################
 #' @name APTSIZE
 #' @title Apartment Size
 #' @aliases APTSIZE
@@ -107,10 +88,8 @@ APPLE <- source_data(paste(fgithub, "APPLE.csv", sep = ""))
 #' boxplot(size ~ location, data = APTSIZE, col = c("red", "yellow"), 
 #' ylab = "Apartment size (square meters)")
 #' @keywords datasets
-#' @export
-APTSIZE <- source_data(paste(fgithub, "APTSIZE.csv", sep = ""))
-#  APTSIZE <- source_data(file=url(paste(site, "APTSIZE.csv", sep = "")))
-###########################################################################
+"APTSIZE"
+#####################################################################################
 #' @name BABERUTH
 #' @title George Herman Ruth
 #' @aliases BABERUTH
@@ -142,10 +121,8 @@ APTSIZE <- source_data(paste(fgithub, "APTSIZE.csv", sep = ""))
 #' labs(x = "Number of Games Played", y = "Times at Bat", color = "Runs\n Batted In", 
 #' title = "George Herman Ruth")
 #' @keywords datasets
-#' @export
-BABERUTH <- source_data(paste(fgithub, "BABERUTH.csv", sep = ""))
-#  BABERUTH <- source_data(file=url(paste(site,"BABERUTH.csv", sep = "")))
-###########################################################################
+"BABERUTH"
+#####################################################################################
 #' @name BAC
 #' @title Blood Alcohol Content
 #' @aliases BAC
@@ -177,10 +154,8 @@ BABERUTH <- source_data(paste(fgithub, "BABERUTH.csv", sep = ""))
 #' # Base graphics
 #' boxplot(BAC$Y, BAC$X)
 #' @keywords datasets
-#' @export
-BAC <- source_data(paste(fgithub, "BAC.csv", sep = ""))
-#  BAC <- source_data(file=url(paste(site,"BAC.csv", sep = "")))
-###########################################################################
+"BAC"
+#####################################################################################
 #' @name BATTERY
 #' @title Lithium Batteries
 #' @aliases BATTERY
@@ -205,10 +180,8 @@ BAC <- source_data(paste(fgithub, "BAC.csv", sep = ""))
 #' qqmath(~ lifetime|facility, data = BATTERY)
 #' qqmath(~ lifetime, group = facility, type = c('p', 'r'), auto.key=TRUE, data = BATTERY)
 #' @keywords datasets
-#' @export
-BATTERY <- source_data(paste(fgithub, "BATTERY.csv", sep = ""))
-#  BATTERY <- source_data(file=url(paste(site,"BATTERY.csv", sep = "")))
-###########################################################################
+"BATTERY"
+#####################################################################################
 #' @name BIOMASS
 #' @title Beech Trees
 #' @aliases BIOMASS
@@ -231,10 +204,8 @@ BATTERY <- source_data(paste(fgithub, "BATTERY.csv", sep = ""))
 #' geom_point() + scale_x_log10() + scale_y_log10() + 
 #' labs(x = "diameter of the stem in centimeters", y = "above ground weight in kilograms")
 #' @keywords datasets
-#' @export
-BIOMASS <- source_data(paste(fgithub, "BIOMASS.csv", sep = ""))
-#  BIOMASS <- source_data(file=url(paste(site,"BIOMASS.csv", sep = "")))
-###########################################################################
+"BIOMASS"
+#####################################################################################
 #' @name BODYFAT
 #' @title Body Fat Composition
 #' @aliases BODYFAT
@@ -263,10 +234,8 @@ BIOMASS <- source_data(paste(fgithub, "BIOMASS.csv", sep = ""))
 #' ggplot(data=BODYFAT, aes(x = fat, fill = sex)) + geom_density(alpha = 0.4) + 
 #' scale_fill_brewer() 
 #' @keywords datasets
-#' @export
-BODYFAT <- source_data(paste(fgithub, "BODYFAT.csv", sep = ""))
-#  BODYFAT <- source_data(file=url(paste(site,"BODYFAT.csv", sep = "")))
-###########################################################################
+"BODYFAT"
+#####################################################################################
 #' @name CALCULUS
 #' @title Calculus Assessment Scores
 #' @aliases CALCULUS
@@ -288,10 +257,8 @@ BODYFAT <- source_data(paste(fgithub, "BODYFAT.csv", sep = ""))
 #' qqmath(~score|calculus, data = CALCULUS)
 #' qqmath(~score, group = calculus, type = c('p', 'r'), auto.key=TRUE, data = CALCULUS)
 #' @keywords datasets
-#' @export
-CALCULUS <- source_data(paste(fgithub, "CALCULUS.csv", sep = ""))
-#  CALCULUS <- source_data(file=url(paste(site,"CALCULUS.csv", sep = "")))
-###########################################################################
+"CALCULUS"
+#####################################################################################
 #' @name CARS2004
 #' @title Cars in the European Union (2004)
 #' @aliases CARS2004
@@ -309,10 +276,8 @@ CALCULUS <- source_data(paste(fgithub, "CALCULUS.csv", sep = ""))
 #' plot(deaths ~ cars, data = CARS2004)
 #' ggplot(data = CARS2004, aes(x = population, y = deaths, color = cars)) + geom_point()
 #' @keywords datasets
-#' @export
-CARS2004 <- source_data(paste(fgithub, "CARS2004EU.csv", sep = ""))
-#  CARS2004 <- source_data(file=url(paste(site,"CARS2004EU.csv", sep = "")))
-###########################################################################
+"CARS2004"
+#####################################################################################
 #' @name CHIPS
 #' @title Silicon Chips
 #' @aliases CHIPS
@@ -335,9 +300,7 @@ CARS2004 <- source_data(paste(fgithub, "CARS2004EU.csv", sep = ""))
 #' qqmath(~ number|method, data = CHIPS)
 #' qqmath(~ number, group = method, type = c('p', 'r'), auto.key = TRUE, data = CHIPS)
 #' @keywords datasets
-#' @export
-CHIPS <- source_data(paste(fgithub, "CHIPS.csv", sep = ""))
-#  CHIPS <- source_data(file=url(paste(site,"CHIPS.csv", sep = "")))
+"CHIPS"
 ###########################################################################
 #' @name CIRCUIT
 #' @title Circuit Design Lifetime
@@ -363,10 +326,8 @@ CHIPS <- source_data(paste(fgithub, "CHIPS.csv", sep = ""))
 #' fill = design)) + geom_boxplot() + labs(x = "", y = "Lifetime in thousands of hours") + 
 #' guides(fill = FALSE) + scale_fill_brewer()
 #' @keywords datasets
-#' @export
-CIRCUIT <- source_data(paste(fgithub, "CIRCUITDESIGNS.csv", sep = ""))
-#  CIRCUIT <- source_data(file=url(paste(site,"CIRCUITDESIGNS.csv", sep = "")))
-###########################################################################
+"CIRCUIT"
+#####################################################################################
 #' @name COSAMA
 #' @title Cosmed Versus Amatek
 #' @aliases COSAMA
@@ -397,9 +358,7 @@ CIRCUIT <- source_data(paste(fgithub, "CIRCUITDESIGNS.csv", sep = ""))
 #' # lattice approach
 #' bwplot(~ (cosmed - amatek), data = COSAMA)
 #' @keywords datasets
-#' @export
-COSAMA <- source_data(paste(fgithub, "COSAMA.csv", sep = ""))
-#  COSAMA <- source_data(file=url(paste(site,"COSAMA.csv", sep = "")))
+"COSAMA"
 ###########################################################################
 #' @name COWS
 #' @title Butterfat of Cows
@@ -420,10 +379,8 @@ COSAMA <- source_data(paste(fgithub, "COSAMA.csv", sep = ""))
 #' labs(x = "", y = "Average butterfat percentage") + scale_fill_brewer()
 #' summary(aov(butterfat ~ breed + age, data = COWS))
 #' @keywords datasets
-#' @export
-COWS <- source_data(paste(fgithub, "COWS.csv", sep = ""))
-#  COWS <- source_data(file=url(paste(site,"COWS.csv", sep = "")))
-###########################################################################
+"COWS"
+#####################################################################################
 #' @name DEPEND
 #' @title Number of Dependent Children for 50 Families
 #' @aliases DEPEND
@@ -442,9 +399,7 @@ COWS <- source_data(paste(fgithub, "COWS.csv", sep = ""))
 #' ggplot(data = DEPEND, aes(x = number)) + geom_density(fill = "pink", alpha = 0.3, 
 #' color = "red") + labs(x = "Number of Dependent Children")
 #' @keywords datasets
-#' @export
-DEPEND <- source_data(paste(fgithub, "DEPEND.csv", sep = ""))
-#  DEPEND <- source_data(file=url(paste(site,"DEPEND.csv", sep = "")))
+"DEPEND"
 ###########################################################################
 #' @name DROSOPHILA
 #' @title Drosophila Melanogaster
@@ -469,9 +424,7 @@ DEPEND <- source_data(paste(fgithub, "DEPEND.csv", sep = ""))
 #' x = "") + scale_fill_brewer()
 #' summary(aov(fecundity ~ line, data = DROSOPHILA))
 #' @keywords datasets
-#' @export
-DROSOPHILA <- source_data(paste(fgithub, "DROSOPHILA.csv", sep = ""))
-#  DROSOPHILA <- source_data(file=url(paste(site,"DROSOPHILA.csv", sep = "")))
+"DROSOPHILA"
 ###########################################################################
 #' @name ENGINEER
 #' @title Engineers' Salaries
@@ -493,10 +446,8 @@ DROSOPHILA <- source_data(paste(fgithub, "DROSOPHILA.csv", sep = ""))
 #' geom_violin() + guides(fill = FALSE) + scale_fill_brewer() + 
 #' labs(y = "salary 10 years after graduation \n in thousands of dollars")
 #' @keywords datasets
-#' @export
-ENGINEER <- source_data(paste(fgithub, "ENGINEER.csv", sep = ""))
-#  ENGINEER <- source_data(file=url(paste(site,"ENGINEER.csv", sep = "")), colClasses = c("numeric", "factor"))
-###########################################################################
+"ENGINEER"
+#####################################################################################
 #' @name EPIDURAL
 #' @title Traditional Sitting Position Versus Hamstring Stretch Position
 #' @aliases EPIDURAL
@@ -519,10 +470,8 @@ ENGINEER <- source_data(paste(fgithub, "ENGINEER.csv", sep = ""))
 #' xtabs(~ doctor + factor(ease, levels = c("Easy", "Difficult", "Impossible")), 
 #' data = EPIDURAL)
 #' @keywords datasets
-#' @export
-EPIDURAL <- source_data(paste(fgithub, "EPIDURAL.csv", sep = ""))
-#  EPIDURAL <- source_data(file=url(paste(site,"EPIDURAL.csv", sep = "")))
-###########################################################################
+"EPIDURAL"
+#####################################################################################
 #' @name EPIDURALF
 #' @title Traditional Sitting Position Versus Hamstring Stretch Position
 #' @aliases EPIDURALF
@@ -545,9 +494,7 @@ EPIDURAL <- source_data(paste(fgithub, "EPIDURAL.csv", sep = ""))
 #'  geom_boxplot() + guides(fill = FALSE) + scale_fill_brewer() + 
 #'  labs(y = "number of obstructive contacts")
 #' @keywords datasets
-#' @export
-EPIDURALF <- source_data(paste(fgithub, "EPIDURALF.csv", sep = ""))
-#  EPIDURALF <- source_data(file=url(paste(site,"EPIDURALF.csv", sep = "")))
+"EPIDURALF"
 ###########################################################################
 #' @name EURD
 #' @title European Union Research and Development
@@ -568,9 +515,7 @@ EPIDURALF <- source_data(paste(fgithub, "EPIDURALF.csv", sep = ""))
 #' # lattice approach
 #' qqmath(~ (rd2003 - rd2002), data = EURD, type =c("p", "r"))
 #' @keywords datasets
-#' @export
-EURD <- source_data(paste(fgithub, "EURD.csv", sep = ""))
-#  EURD <- source_data(file=url(paste(site,"EURD.csv", sep = "")), stringsAsFactors = FALSE)
+"EURD"
 ###########################################################################
 #' @name FAGUS
 #' @title Retained Carbon in Beech Trees
@@ -588,9 +533,7 @@ EURD <- source_data(paste(fgithub, "EURD.csv", sep = ""))
 #' @examples
 #' ggplot(data = FAGUS, aes(x = type, y = carbon)) + geom_boxplot()
 #' @keywords datasets
-#' @export
-FAGUS <- source_data(paste(fgithub, "FAGUS.csv", sep = ""))
-#  FAGUS <- source_data(file=url(paste(site,"FAGUS.csv", sep = "")))
+"FAGUS"
 ###########################################################################
 #' @name FCD
 #' @title Fat Cats
@@ -609,9 +552,7 @@ FAGUS <- source_data(paste(fgithub, "FAGUS.csv", sep = ""))
 #' p + geom_violin(fill = "blue")
 #' aov(weight ~ diet, data = FCD)
 #' @keywords datasets
-#' @export
-FCD <- source_data(paste(fgithub, "FCD.csv", sep = ""))
-#  FCD <- source_data(file=url(paste(site,"FCD.csv", sep = "")))
+"FCD"
 ###########################################################################
 #' @name FERTILIZE
 #' @title Cross and Auto Fertilization
@@ -631,9 +572,7 @@ FCD <- source_data(paste(fgithub, "FCD.csv", sep = ""))
 #' p + geom_density()
 #' t.test(height ~ fertilization, data = FERTILIZE)
 #' @keywords datasets
-#' @export
-FERTILIZE <- source_data(paste(fgithub, "FERTILIZE.csv", sep = ""))
-#  FERTILIZE <- source_data(file=url(paste(site,"FERTILIZE.csv", sep = "")))
+"FERTILIZE"
 ###########################################################################
 #' @name FOOD
 #' @title Carrot Shear
@@ -649,9 +588,7 @@ FERTILIZE <- source_data(paste(fgithub, "FERTILIZE.csv", sep = ""))
 #' @examples
 #' summary(aov(shear ~ freezer, data = FOOD))
 #' @keywords datasets
-#' @export
-FOOD <- source_data(paste(fgithub, "FOOD.csv", sep = ""))
-#  FOOD <- source_data(file=url(paste(site,"FOOD.csv", sep = "")))
+"FOOD"
 ###########################################################################
 #' @name FORMULA1
 #' @title Pit Stop Times
@@ -680,9 +617,7 @@ FOOD <- source_data(paste(fgithub, "FOOD.csv", sep = ""))
 #' with(data = FORMULA1, 
 #' boxplot(team1, team2, col = c("red", "blue")))
 #' @keywords datasets
-#' @export
-FORMULA1 <- source_data(paste(fgithub, "FORMULA1.csv", sep = ""))
-#  FORMULA1 <- source_data(file=url(paste(site,"FORMULA1.csv", sep = "")))
+"FORMULA1"
 ###########################################################################
 #' @name GD
 #' @title Times Until Failure
@@ -699,9 +634,7 @@ FORMULA1 <- source_data(paste(fgithub, "FORMULA1.csv", sep = ""))
 #' geom_histogram(binwidth = 2, fill = "cornsilk", color = "orange") + 
 #' geom_density(color = "gray", size = 1) + labs( x = "time until failure in hours")
 #' @keywords datasets
-#' @export
-GD <- source_data(paste(fgithub, "GD.csv", sep = ""))
-#  GD <- source_data(file=url(paste(site,"GD.csv", sep = "")))
+"GD"
 ###########################################################################
 #' @name GLUCOSE
 #' @title Blood Glucose Levels
@@ -719,9 +652,7 @@ GD <- source_data(paste(fgithub, "GD.csv", sep = ""))
 #' with(data = GLUCOSE,
 #' boxplot(old, new, col = c("red", "blue")))
 #' @keywords datasets
-#' @export
-GLUCOSE <- source_data(paste(fgithub, "GLUCOSE.csv", sep = ""))
-#  GLUCOSE <- source_data(file=url(paste(site,"GLUCOSE.csv", sep = "")))
+"GLUCOSE"
 ###########################################################################
 #' @name GRADES
 #' @title GPA and SAT Scores
@@ -742,9 +673,7 @@ GLUCOSE <- source_data(paste(fgithub, "GLUCOSE.csv", sep = ""))
 #' # ggplot scatterplot
 #' ggplot(data = GRADES, aes(x = sat, y = gpa)) + geom_point() + geom_smooth()
 #' @keywords datasets
-#' @export
-GRADES <- source_data(paste(fgithub, "GRADES.csv", sep = ""))
-#  GRADES <- source_data(file=url(paste(site,"GRADES.csv", sep = "")))
+"GRADES"
 ###########################################################################
 #' @name GROCERY
 #' @title Grocery Spending
@@ -765,9 +694,7 @@ GRADES <- source_data(paste(fgithub, "GRADES.csv", sep = ""))
 #' geom_density(color = "lightblue", size = 1, fill = "lightblue", alpha = .2) + 
 #' labs(x = "Weekly grocery bill (in dollars)")
 #' @keywords datasets
-#' @export
-GROCERY <- source_data(paste(fgithub, "GROCERY.csv", sep = ""))
-#  GROCERY <- source_data(file=url(paste(site,"GROCERY.csv", sep = "")))
+"GROCERY"
 ###########################################################################
 #' @name HARDWATER
 #' @title Mortality and Water Hardness
@@ -789,9 +716,7 @@ GROCERY <- source_data(paste(fgithub, "GROCERY.csv", sep = ""))
 #' geom_point() + labs(y = "averaged annual mortality per 100,000 males", 
 #' x = "calcium concentration (in parts per million)")
 #' @keywords datasets
-#' @export
-HARDWATER <- source_data(paste(fgithub, "HARDWATER.csv", sep = ""))
-#  HARDWATER <- source_data(file=url(paste(site,"HARDWATER.csv", sep = "")))
+"HARDWATER"
 ###########################################################################
 #' @name HOUSE
 #' @title House Prices
@@ -808,9 +733,7 @@ HARDWATER <- source_data(paste(fgithub, "HARDWATER.csv", sep = ""))
 #' with(data = HOUSE,
 #' t.test(price, mu = 225))
 #' @keywords datasets
-#' @export
-HOUSE <- source_data(paste(fgithub, "HOUSE.csv", sep = ""))
-#  HOUSE <- source_data(file=url(paste(site,"HOUSE.csv", sep = "")))
+"HOUSE"
 ###########################################################################
 #' @name HSWRESTLER
 #' @title High School Wrestlers
@@ -846,9 +769,7 @@ HOUSE <- source_data(paste(fgithub, "HOUSE.csv", sep = ""))
 #' y = "hydrostatic measure of percent fat")
 #' 
 #' @keywords datasets
-#' @export
-HSWRESTLER <- source_data(paste(fgithub, "HSWRESTLER.csv", sep = ""))
-#  HSWRESTLER <- source_data(file=url(paste(site,"HSWRESTLER.csv", sep = "")))
+"HSWRESTLER"
 ###########################################################################
 #' @name HUBBLE
 #' @title Hubble Telescope
@@ -871,9 +792,7 @@ HSWRESTLER <- source_data(paste(fgithub, "HSWRESTLER.csv", sep = ""))
 #' # ggplot approach
 #' ggplot(data = HUBBLE, aes(sample = team1 - team2)) + stat_qq(color = "blue")
 #' @keywords datasets
-#' @export
-HUBBLE <- source_data(paste(fgithub, "HUBBLE.csv", sep = ""))
-#  HUBBLE <- source_data(file=url(paste(site,"HUBBLE.csv", sep = "")))
+"HUBBLE"
 ###########################################################################
 #' @name INSURQUOTES
 #' @title Insurance Quotes
@@ -892,9 +811,7 @@ HUBBLE <- source_data(paste(fgithub, "HUBBLE.csv", sep = ""))
 #' with(data = INSURQUOTES,
 #' t.test(companyA, companyB))
 #' @keywords datasets
-#' @export
-INSURQUOTES <- source_data(paste(fgithub, "INSURQUOTES.csv", sep = ""))
-#  INSURQUOTES <- source_data(file=url(paste(site,"INSURANCE.csv", sep = "")))
+"INSURQUOTES"
 ###########################################################################
 #' @name JANKA
 #' @title Australian Eucalypt Hardwoods
@@ -912,9 +829,7 @@ INSURQUOTES <- source_data(paste(fgithub, "INSURQUOTES.csv", sep = ""))
 #' @examples
 #' ggplot(data = JANKA, aes(x = density, y = hardness)) + geom_point() + geom_smooth()
 #' @keywords datasets
-#' @export
-JANKA <- source_data(paste(fgithub, "JANKA.csv", sep = ""))
-#  JANKA <- source_data(file=url(paste(site,"JANKA.csv", sep = "")))
+"JANKA"
 ###########################################################################
 #' @name KINDER
 #' @title Kindergarten Class
@@ -932,9 +847,7 @@ JANKA <- source_data(paste(fgithub, "JANKA.csv", sep = ""))
 #' geom_smooth(method = "lm", color = "red") + labs(x = "height in inches", 
 #' y = "weight in pounds")
 #' @keywords datasets
-#' @export
-KINDER <- source_data(paste(fgithub, "KINDER.csv", sep = ""))
-#  KINDER <- source_data(file=url(paste(site,"KINDER.csv", sep = "")))
+"KINDER"
 ###########################################################################
 #' @name LEDDIODE
 #' @title LED Diodes
@@ -950,9 +863,7 @@ KINDER <- source_data(paste(fgithub, "KINDER.csv", sep = ""))
 #' @examples
 #' ggplot(data = LEDDIODE, aes(supplier, diameter)) + geom_boxplot()
 #' @keywords datasets
-#' @export
-LEDDIODE <- source_data(paste(fgithub, "LEDDIODE.csv", sep = ""))
-#  LEDDIODE <- source_data(file=url(paste(site,"LEDDIODE.csv", sep = "")))
+"LEDDIODE"
 ###########################################################################
 #' @name LOSTR
 #' @title Lost Revenue Due to Worker Illness
@@ -970,9 +881,7 @@ LEDDIODE <- source_data(paste(fgithub, "LEDDIODE.csv", sep = ""))
 #' pch = 21, fill = "pink", size = 4) + geom_smooth(method = "lm") + 
 #' labs(x = "number of absent workers due to illness", y = "lost revenue in dollars")
 #' @keywords datasets
-#' @export
-LOSTR <- source_data(paste(fgithub, "LOSTR.csv", sep = ""))
-#  LOSTR <- source_data(file=url(paste(site,"LOSTR.csv", sep = "")))
+"LOSTR"
 ###########################################################################
 #' @name MILKCARTON
 #' @title Milk Carton Drying Times
@@ -991,9 +900,7 @@ LOSTR <- source_data(paste(fgithub, "LOSTR.csv", sep = ""))
 #' guides(fill = FALSE) + scale_fill_brewer() + 
 #' labs(x = "size of container", y = "drying time in seconds")
 #' @keywords datasets
-#' @export
-MILKCARTON <- source_data(paste(fgithub, "MILKCARTON.csv", sep = ""))
-#  MILKCARTON <- source_data(file=url(paste(site,"MILKCARTON.csv", sep = "")))
+"MILKCARTON"
 #####################################################################################
 #' @name NC2010DMG
 #' @title North Carolina Demographics
@@ -1043,8 +950,7 @@ MILKCARTON <- source_data(paste(fgithub, "MILKCARTON.csv", sep = ""))
 #' guides(fill = FALSE) + scale_fill_brewer() + 
 #' labs(x = "size of container", y = "drying time in seconds")
 #' @keywords datasets
-#' @export
-NC2010DMG <- source_data(paste(fgithub, "NC2010DMG.csv", sep = ""))
+"NC2010DMG"
 #####################################################################################
 #' @name PAMTEMP
 #' @title Pamplona Temperatures
@@ -1072,10 +978,7 @@ NC2010DMG <- source_data(paste(fgithub, "NC2010DMG.csv", sep = ""))
 #' theme_bw() + 
 #' labs(x = "", y = "Average Temperature (Celcius)")
 #' @keywords datasets
-#' @export
-PAMTEMP <- source_data(paste(fgithub, "PAMTEMP.csv", sep = ""))
-#  PAMTEMP <- source_data(file=url(paste(site,"PAMTEMP.csv", sep = "")))
-###########################################################################
+"PAMTEMP"
 #####################################################################################
 #' @name PHENYL
 #' @title Phenylketonuria
@@ -1100,9 +1003,7 @@ PAMTEMP <- source_data(paste(fgithub, "PAMTEMP.csv", sep = ""))
 #' with(data = PHENYL,
 #' t.test(Q10.1, conf.level = 0.99))
 #' @keywords datasets
-#' @export
-PHENYL <- source_data(paste(fgithub, "PHENYL.csv", sep = ""))
-#  PHENYL <- source_data(file=url(paste(site,"PHENYL.csv", sep = "")))
+"PHENYL"
 ###########################################################################
 #' @name PHONE
 #' @title Telephone Call Times
@@ -1118,9 +1019,7 @@ PHENYL <- source_data(paste(fgithub, "PHENYL.csv", sep = ""))
 #' with(data = PHONE, 
 #' SIGN.test(call.time, md = 2.1))
 #' @keywords datasets
-#' @export
-PHONE <- source_data(paste(fgithub, "PHONE.csv", sep = ""))
-#  PHONE <- source_data(file=url(paste(site,"PHONE.csv", sep = "")))
+"PHONE"
 ###########################################################################
 #' @name RAT
 #' @title Rat Survival Time
@@ -1138,9 +1037,7 @@ PHONE <- source_data(paste(fgithub, "PHONE.csv", sep = ""))
 #' ggplot(data = RAT, aes(x = survival.time)) + geom_density(alpha = 0.2, fill = "blue") +
 #' labs(x = "Survival time in weeks")
 #' @keywords datasets
-#' @export
-RAT <- source_data(paste(fgithub, "RAT.csv", sep = ""))
-#  RAT <- source_data(file=url(paste(site,"RAT.csv", sep = "")))
+"RAT"
 ###########################################################################
 #' @name RATBP
 #' @title Rat Blood Pressure
@@ -1161,9 +1058,7 @@ RAT <- source_data(paste(fgithub, "RAT.csv", sep = ""))
 #' guides(fill = FALSE) + labs(x = "", y = "drops in blood pressure in mm  of Hg") + 
 #' scale_fill_brewer()
 #' @keywords datasets
-#' @export
-RATBP <- source_data(paste(fgithub, "RATBP.csv", sep = ""))
-#  RATBP <- source_data(file=url(paste(site,"RATBP.csv", sep = "")))
+"RATBP"
 ###########################################################################
 #' @name REFRIGERATOR
 #' @title Refrigerator Energy Consumption
@@ -1183,9 +1078,7 @@ RATBP <- source_data(paste(fgithub, "RATBP.csv", sep = ""))
 #' geom_boxplot() + labs(y = "energy consumption in kilowatts for a 24 hour period") + 
 #' guides(fill = FALSE) + scale_fill_brewer()
 #' @keywords datasets
-#' @export
-REFRIGERATOR <- source_data(paste(fgithub, "REFRIGERATOR.csv", sep = ""))
-#  REFRIGERATOR <- source_data(file=url(paste(site,"REFRIGERATOR.csv", sep = "")))
+"REFRIGERATOR"
 ###########################################################################
 #' @name ROACHEGGS
 #' @title Oriental Cockroaches
@@ -1205,9 +1098,7 @@ REFRIGERATOR <- source_data(paste(fgithub, "REFRIGERATOR.csv", sep = ""))
 #' nlm(negloglike, .2)
 #' rm(p, negloglike)
 #' @keywords datasets
-#' @export
-ROACHEGGS <- source_data(paste(fgithub, "ROACHEGGS.csv", sep = ""))
-#  ROACHEGGS <- source_data(file=url(paste(site,"ROACHEGGS.csv", sep = "")))
+"ROACHEGGS"
 ###########################################################################
 #' @name SALINITY
 #' @title Surface-Water Salinity
@@ -1224,9 +1115,7 @@ ROACHEGGS <- source_data(paste(fgithub, "ROACHEGGS.csv", sep = ""))
 #' # Boxplot
 #' ggplot(data = SALINITY, aes(x = salinity)) + geom_density(fill = "yellow", alpha = 0.3)
 #' @keywords datasets
-#' @export
-SALINITY <- source_data(paste(fgithub, "SALINITY.csv", sep = ""))
-#  SALINITY <- source_data(file=url(paste(site,"SALINITY.csv", sep = "")))
+"SALINITY"
 ###########################################################################
 #' @name SATFRUIT
 #' @title Fruit Trees
@@ -1258,9 +1147,7 @@ SALINITY <- source_data(paste(fgithub, "SALINITY.csv", sep = ""))
 #' @examples
 #' pairs(SATFRUIT[,15:17])
 #' @keywords datasets
-#' @export
-SATFRUIT <- source_data(paste(fgithub, "SATFRUIT.csv", sep = ""))
-#  SATFRUIT <- source_data(file=url(paste(site,"SATFRUIT.csv", sep = "")))
+"SATFRUIT"
 ###########################################################################
 #' @name SBIQ
 #' @title County IQ
@@ -1276,9 +1163,7 @@ SATFRUIT <- source_data(paste(fgithub, "SATFRUIT.csv", sep = ""))
 #' @examples
 #' ggplot(data = SBIQ, aes(sample = score, color = county)) + stat_qq()
 #' @keywords datasets
-#' @export
-SBIQ <- source_data(paste(fgithub, "SBIQ.csv", sep = ""))
-#  SBIQ <- source_data(file=url(paste(site,"SBIQ.csv", sep = "")))
+"SBIQ"
 ###########################################################################
 #' @name SCHIZO
 #' @title Dopamine Activity
@@ -1295,9 +1180,7 @@ SBIQ <- source_data(paste(fgithub, "SBIQ.csv", sep = ""))
 #' @examples
 #' ggplot(data = SCHIZO, aes(x = classification, y = dopamine)) + geom_boxplot()
 #' @keywords datasets
-#' @export
-SCHIZO <- source_data(paste(fgithub, "SCHIZO.csv", sep = ""))
-#  SCHIZO <- source_data(file=url(paste(site,"SCHIZO.csv", sep = "")))
+"SCHIZO"
 ###########################################################################
 #' @name SCORE
 #' @title Standardized Test Scores
@@ -1312,9 +1195,7 @@ SCHIZO <- source_data(paste(fgithub, "SCHIZO.csv", sep = ""))
 #' @examples
 #' ggplot(data = SCORE, aes(sample = scores)) + stat_qq()
 #' @keywords datasets
-#' @export
-SCORE <- source_data(paste(fgithub, "SCORE.csv", sep = ""))
-#  SCORE <- source_data(file=url(paste(site,"SCORE.csv", sep = "")))
+"SCORE"
 ###########################################################################
 #' @name SDS4
 #' @title M1 Motorspeedway Times
@@ -1334,9 +1215,7 @@ SCORE <- source_data(paste(fgithub, "SCORE.csv", sep = ""))
 #' geom_density(fill = "cornsilk", alpha = 0.5) + 
 #' labs(x = "interarrival times to the nearest second", y = "")
 #' @keywords datasets
-#' @export
-SDS4 <- source_data(paste(fgithub, "SDS4.csv", sep = ""))
-#  SDS4 <- source_data(file=url(paste(site,"SDS4.csv", sep = "")))
+"SDS4"
 ###########################################################################
 #' @name SIMDATAST
 #' @title Simulated Data (Predictors)
@@ -1355,9 +1234,7 @@ SDS4 <- source_data(paste(fgithub, "SDS4.csv", sep = ""))
 #' @examples
 #' ggplot(data = SIMDATAST, aes(x = x1, y = y1)) + geom_point() + geom_smooth()
 #' @keywords datasets
-#' @export
-SIMDATAST <- source_data(paste(fgithub, "SIMDATAST.csv", sep = ""))
-#  SIMDATAST <- source_data(file=url(paste(site,"SIMDATAST.csv", sep = "")))
+"SIMDATAST"
 ###########################################################################
 #' @name SIMDATAXT
 #' @title Simulated Data (Logarithms)
@@ -1376,9 +1253,7 @@ SIMDATAST <- source_data(paste(fgithub, "SIMDATAST.csv", sep = ""))
 #' @examples
 #' ggplot(data = SIMDATAXT, aes(x = x1, y = y)) + geom_point() + geom_smooth()
 #' @keywords datasets
-#' @export
-SIMDATAXT <- source_data(paste(fgithub, "SIMDATAXT.csv", sep = ""))
-#  SIMDATAXT <- source_data(file=url(paste(site,"SIMDATAXT.csv", sep = "")))
+"SIMDATAXT"
 ###########################################################################
 #' @name SOCCER
 #' @title World Cup  Soccer
@@ -1397,9 +1272,7 @@ SIMDATAXT <- source_data(paste(fgithub, "SIMDATAXT.csv", sep = ""))
 #' @examples
 #' xtabs(~goals, data = SOCCER)
 #' @keywords datasets
-#' @export
-SOCCER <- source_data(paste(fgithub, "SOCCER.csv", sep = ""))
-#  SOCCER <- source_data(file=url(paste(site,"SOCCER.csv", sep = "")))
+"SOCCER"
 ###########################################################################
 #' @name STATTEMPS
 #' @title Student Temperatures
@@ -1417,9 +1290,7 @@ SOCCER <- source_data(paste(fgithub, "SOCCER.csv", sep = ""))
 #' p <- ggplot(data = STATTEMPS, aes(x = gender, y =temperature, fill = class))
 #' p + geom_violin()
 #' @keywords datasets
-#' @export
-STATTEMPS <- source_data(paste(fgithub, "STATTEMPS.csv", sep = ""))
-#  STATTEMPS <- source_data(file=url(paste(site,"STATTEMPS.csv", sep = "")))
+"STATTEMPS"
 ###########################################################################
 #' @name STSCHOOL
 #' @title School Satisfaction
@@ -1437,9 +1308,7 @@ STATTEMPS <- source_data(paste(fgithub, "STATTEMPS.csv", sep = ""))
 #' @examples
 #' with(data = STSCHOOL, t.test(x, y, var.equal=TRUE))
 #' @keywords datasets
-#' @export
-STSCHOOL <- source_data(paste(fgithub, "STSCHOOL.csv", sep = ""))
-#  STSCHOOL <- source_data(file=url(paste(site,"STSCHOOL.csv", sep = "")))
+"STSCHOOL"
 ############################################################################  
 #' @name SUNDIG
 #' @title Workstation Comparison
@@ -1456,9 +1325,7 @@ STSCHOOL <- source_data(paste(fgithub, "STSCHOOL.csv", sep = ""))
 #' @examples
 #' with(data = SUNDIG, t.test(sun, digital, paired=TRUE)$conf)
 #' @keywords datasets
-#' @export
-SUNDIG <- source_data(paste(fgithub, "SUNDIG.csv", sep = ""))
-#  SUNDIG <- source_data(file=url(paste(site,"SUNDIG.csv", sep = "")))
+"SUNDIG"
 ###########################################################################
 #' @name SUNFLOWER
 #' @title Sunflower Defoliation
@@ -1480,9 +1347,7 @@ SUNDIG <- source_data(paste(fgithub, "SUNDIG.csv", sep = ""))
 #' ggplot(data = SUNFLOWER, aes(numseed, yield, color = defoli)) + geom_point() + 
 #' geom_smooth(method = "lm", se = FALSE) + facet_grid(location ~ .)
 #' @keywords datasets
-#' @export
-SUNFLOWER <- source_data(paste(fgithub, "SUNFLOWER.csv", sep = ""))
-#  SUNFLOWER <- source_data(file=url(paste(site,"SUNFLOWER.csv", sep = "")))
+"SUNFLOWER"
 ###########################################################################
 #' @name SURFACESPAIN
 #' @title Surface Area for Spanish Communities
@@ -1505,9 +1370,7 @@ SUNFLOWER <- source_data(paste(fgithub, "SUNFLOWER.csv", sep = ""))
 #' # Trellis Approach
 #' barchart(community ~ surface, data = SURFACESPAIN)
 #' @keywords datasets
-#' @export
-SURFACESPAIN <- source_data(paste(fgithub, "SURFACESPAIN.csv", sep = ""))
-#  SURFACESPAIN <- source_data(file=url(paste(site,"SURFACESPAIN.csv", sep = "")))
+"SURFACESPAIN"
 ###########################################################################
 #' @name SWIMTIMES
 #' @title Swim Times
@@ -1526,9 +1389,7 @@ SURFACESPAIN <- source_data(paste(fgithub, "SURFACESPAIN.csv", sep = ""))
 #' ggplot(data = SWIMTIMES, aes(x = diet, y = seconds, fill = diet)) + geom_violin() + 
 #' guides(fill = FALSE) + scale_fill_brewer()
 #' @keywords datasets
-#' @export
-SWIMTIMES <- source_data(paste(fgithub, "SWIMTIMES.csv", sep = ""))
-#  SWIMTIMES <- source_data(file=url(paste(site,"SWIMTIMES.csv", sep = "")))
+"SWIMTIMES"
 ###########################################################################
 #' @name TENNIS
 #' @title Speed Detector
@@ -1544,9 +1405,7 @@ SWIMTIMES <- source_data(paste(fgithub, "SWIMTIMES.csv", sep = ""))
 #' @examples
 #' with(data = TENNIS, boxplot(speed1, speed2))
 #' @keywords datasets
-#' @export
-TENNIS <- source_data(paste(fgithub, "TENNIS.csv", sep = ""))
-#  TENNIS <- source_data(file=url(paste(site,"TENNIS.csv", sep = "")))
+"TENNIS"
 ###########################################################################
 #' @name TESTSCORES 
 #' @title Statistics Grades
@@ -1562,9 +1421,7 @@ TENNIS <- source_data(paste(fgithub, "TENNIS.csv", sep = ""))
 #' ggplot(data = TESTSCORES, aes(x = grade)) + geom_histogram(binwidth = 5, 
 #' fill = "cornsilk", color = "gray60", alpha = 0.7)
 #' @keywords datasets
-#' @export
-TESTSCORES <- source_data(paste(fgithub, "TESTSCORES.csv", sep = ""))
-#  TESTSCORES <- source_data(file=url(paste(site,"TESTSCORES.csv", sep = "")))
+"TESTSCORES"
 ###########################################################################
 #' @name TIRE
 #' @title Stopping Distance
@@ -1590,9 +1447,7 @@ TESTSCORES <- source_data(paste(fgithub, "TESTSCORES.csv", sep = ""))
 #' stat_summary(fun.y = mean, geom = "point", fill = "black", shape = 23, size = 3) +
 #' labs(x = "Tire Brand", y = "Stopping distance in feet")
 #' @keywords datasets
-#' @export
-TIRE <- source_data(paste(fgithub, "TIRE.csv", sep = ""))
-#  TIRE <- source_data(file=url(paste(site,"TIRE.csv", sep = "")))
+"TIRE"
 ###########################################################################
 #' @name TIREWEAR
 #' @title Tire Wear
@@ -1614,9 +1469,7 @@ TIRE <- source_data(paste(fgithub, "TIRE.csv", sep = ""))
 #' interaction.plot(block, treat, wear, type = "b", legend = FALSE)) 
 #' par(mfrow=c(1, 1), cex = 1)
 #' @keywords datasets
-#' @export
-TIREWEAR <- source_data(paste(fgithub, "TIREWEAR.csv", sep = ""))
-#  TIREWEAR <- source_data(file=url(paste(site,"TIREWEAR.csv", sep = "")))
+"TIREWEAR"
 ###########################################################################
 #' @name TITANIC3
 #' @title Titanic Survival Status
@@ -1650,9 +1503,7 @@ TIREWEAR <- source_data(paste(fgithub, "TIREWEAR.csv", sep = ""))
 #' @examples
 #' with(TITANIC3, table(pclass, sex))
 #' @keywords datasets
-#' @export
-TITANIC3 <- source_data(paste(fgithub, "TITANIC3.csv", sep = ""))
-#  TITANIC3 <- source_data(file=url(paste(site,"TITANIC3.csv", sep = "")))
+"TITANIC3"
 ###########################################################################
 #' @name TOE
 #' @title Nuclear Energy
@@ -1668,9 +1519,7 @@ TITANIC3 <- source_data(paste(fgithub, "TITANIC3.csv", sep = ""))
 #' ggplot(data = TOE, aes(x = energy)) + geom_density(color = "red", alpha = 0.3, 
 #' fill = "pink")
 #' @keywords datasets
-#' @export
-TOE <- source_data(paste(fgithub, "TOE.csv", sep = ""))
-#  TOE <- source_data(file=url(paste(site,"TOE.csv", sep = "")))
+"TOE"
 ###########################################################################
 #' @name TOP20
 #' @title Tennis Income
@@ -1688,9 +1537,7 @@ TOE <- source_data(paste(fgithub, "TOE.csv", sep = ""))
 #' geom_histogram(binwidth = 1, fill = "lightblue", color = "blue") + 
 #' labs(x = "yearly income in millions of dollars")
 #' @keywords datasets
-#' @export
-TOP20 <- source_data(paste(fgithub, "TOP20.csv", sep = ""))
-#  TOP20 <- source_data(file=url(paste(site,"TOP20.csv", sep = "")))
+"TOP20"
 ###########################################################################
 #' @name URLADDRESS
 #' @title Megabytes Downloaded
@@ -1708,9 +1555,7 @@ TOP20 <- source_data(paste(fgithub, "TOP20.csv", sep = ""))
 #' geom_point(color = "blue") + 
 #' labs(x = "number of minutes connected", y = "megabytes dowloaded")
 #' @keywords datasets
-#' @export
-URLADDRESS <- source_data(paste(fgithub, "URLADDRESS.csv", sep = ""))
-#  URLADDRESS <- source_data(file=url(paste(site,"URLADDRESS.csv", sep = "")))
+"URLADDRESS"
 ###########################################################################
 #' @name VIT2005
 #' @title Apartments in Vitoria
@@ -1745,9 +1590,7 @@ URLADDRESS <- source_data(paste(fgithub, "URLADDRESS.csv", sep = ""))
 #' anova(modSimpl, modTotal)
 #' rm(modSimpl, modTotal)
 #' @keywords datasets
-#' @export
-VIT2005 <- source_data(paste(fgithub, "VIT2005.csv", sep = ""))
-#  VIT2005 <- source_data(file=url(paste(site,"VIT2005.csv", sep = "")))
+"VIT2005"
 ###########################################################################
 #' @name WAIT
 #' @title Waiting Time
@@ -1762,9 +1605,7 @@ VIT2005 <- source_data(paste(fgithub, "VIT2005.csv", sep = ""))
 #' @examples
 #' with(data= WAIT, wilcox.test(minutes, mu = 6, alternative = "less"))
 #' @keywords datasets
-#' @export
-WAIT <- source_data(paste(fgithub, "WAIT.csv", sep = ""))
-#  WAIT <- source_data(file=url(paste(site,"WAIT.csv", sep = "")))
+"WAIT"
 ###########################################################################
 #' @name WASHER
 #' @title Washer Diameter
@@ -1779,9 +1620,7 @@ WAIT <- source_data(paste(fgithub, "WAIT.csv", sep = ""))
 #' @examples
 #' ggplot(data = WASHER, aes(x = diameter)) + geom_density(fill = "blue", alpha = 0.2)
 #' @keywords datasets
-#' @export
-WASHER <- source_data(paste(fgithub, "WASHER.csv", sep = ""))
-#  WASHER <- source_data(file=url(paste(site,"WASHER.csv", sep = "")))
+"WASHER"
 ###########################################################################
 #' @name WATER
 #' @title Sodium Content of Water
@@ -1801,9 +1640,7 @@ WASHER <- source_data(paste(fgithub, "WASHER.csv", sep = ""))
 #' geom_density(alpha = 0.2)
 #' t.test(sodium ~ source, data = WATER, alternative = "less")
 #' @keywords datasets
-#' @export
-WATER <- source_data(paste(fgithub, "WATER.csv", sep = ""))
-#  WATER <- source_data(file=url(paste(site,"WATER.csv", sep = "")))
+"WATER"
 ###########################################################################
 #' @name WCST
 #' @title Wisconsin Card Sorting Test
@@ -1820,9 +1657,7 @@ WATER <- source_data(paste(fgithub, "WATER.csv", sep = ""))
 #' ggplot(data = WCST, aes(x = score)) + geom_density(fill = "lightblue", alpha = 0.8, 
 #' color ="blue")
 #' @keywords datasets
-#' @export
-WCST <- source_data(paste(fgithub, "WCST.csv", sep = ""))
-#  WCST <- source_data(file=url(paste(site,"WCST.csv", sep = "")))
+"WCST"
 ##########################################################################
 #' @name WEIGHTGAIN
 #' @title Weight Gain in Rats
@@ -1843,9 +1678,7 @@ WCST <- source_data(paste(fgithub, "WCST.csv", sep = ""))
 #' fill = proteinsource)) + geom_boxplot()
 #' aov(weightgain ~ proteinsource*proteinamount, data = WEIGHTGAIN)
 #' @keywords datasets
-#' @export
-WEIGHTGAIN <- source_data(paste(fgithub, "WEIGHTGAIN.csv", sep = ""))
-#  WEIGHTGAIN <- source_data(file=url(paste(site,"WEIGHTGAIN.csv", sep = "")))
+"WEIGHTGAIN"
 ###########################################################################
 #' @name WHEATSPAIN
 #' @title Wheat Surface Area in Spain
@@ -1864,9 +1697,7 @@ WEIGHTGAIN <- source_data(paste(fgithub, "WEIGHTGAIN.csv", sep = ""))
 #' geom_bar(stat="identity", color = "orange", fill = "gold") + coord_flip() + 
 #' labs(x = "") 
 #' @keywords datasets
-#' @export
-WHEATSPAIN <- source_data(paste(fgithub, "WHEATSPAIN.csv", sep = ""))
-#  WHEATSPAIN <- source_data(file=url(paste(site,"WHEATSPAIN.csv", sep = "")))
+"WHEATSPAIN"
 ###########################################################################
 #' @name WHEATUSA2004
 #' @title USA Wheat Surface 2004
@@ -1884,9 +1715,7 @@ WHEATSPAIN <- source_data(paste(fgithub, "WHEATSPAIN.csv", sep = ""))
 #' geom_bar(stat = "identity", color = "gold", fill = "yellow") + coord_flip() + 
 #' labs(x = "") 
 #' @keywords datasets
-#' @export
-WHEATUSA2004 <- source_data(paste(fgithub, "WHEATUSA2004.csv", sep = ""))
-#  WHEATUSA2004 <- source_data(file=url(paste(site,"WHEATUSA2004.csv", sep = "")))
+"WHEATUSA2004"
 ###########################################################################
 #' @name WOOL
 #' @title Wool Production
@@ -1904,17 +1733,9 @@ WHEATUSA2004 <- source_data(paste(fgithub, "WHEATUSA2004.csv", sep = ""))
 #' guides(fill = FALSE) + scale_fill_brewer()
 #' t.test(production ~ location, data = WOOL)
 #' @keywords datasets
-#' @export
-WOOL <- source_data(paste(fgithub, "WOOL.csv", sep = ""))
-#  WOOL <- source_data(file=url(paste(site,"WOOL.csv", sep = "")))
-#########################################################################
-##
-## Import to namespace 11/19/14
-#' @import ggplot2 lattice e1071 grid repmis
-####
-# save.image(file = "~/Dropbox/git_repositories/Data/PASWR2.RData")
-##########################################################################
-rm('site', 'f','f1', 'fgithub')
-#########################################################################
-
-
+"WOOL"
+#####################################################################################
+#####################################################################################
+#' @import ggplot2 e1071 lattice grid
+#'
+NULL
