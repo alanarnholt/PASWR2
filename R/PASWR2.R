@@ -1910,7 +1910,7 @@ WOOL <- source_data(paste(fgithub, "WOOL.csv", sep = ""))
 #########################################################################
 ##
 ## Import to namespace 11/19/14
-#' @import ggplot2 lattice e1071 grid
+#' @import ggplot2 lattice e1071 grid repmis
 ####
 # save.image(file = "~/Dropbox/git_repositories/Data/PASWR2.RData")
 ##########################################################################
