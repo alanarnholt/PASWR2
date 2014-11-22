@@ -12,12 +12,12 @@ PASWR2
 The package is available for download from
 [CRAN](http://cran.r-project.org/web/packages/PASWR2/).
 
-You may download the most recent version using the [devtools](http://github.com/hdaley/devtools) command `install_github` to install **PASWR2** in R.
+You may download the most recent version using the [devtools](http://github.com/hdaley/devtools) function `install_github()` to install **PASWR2** in R.
 
 However, you need to make sure you're set up to develop packages. This is platform specific:
 
 * On Windows, download and install [Rtools](http://http://cran.r-project.org/bin/windows/Rtools/).
-* On the Mac, make sure you have xcode installed.
+* On the Mac, make sure you have [Xcode](https://developer.apple.com/xcode/) installed.
 * On Linux, make sure you have the R-dev packages installed.
 
 You can check everything is installed correctly with the `has_devel()` function from the **devtools** package. Type the following at 
