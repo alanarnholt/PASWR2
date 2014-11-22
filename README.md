@@ -20,12 +20,12 @@ However, you need to make sure you're set up to develop packages. This is platfo
 * On the Mac, make sure you have xcode installed.
 * On Linux, make sure you have the R-dev packages installed.
 
-You can check everything is installed correctly with the `has_devel()` function from the **devtools** package. Type the following at the **R** prompt:
+You can check everything is installed correctly with the `has_devel()` function from the **devtools** package. Type the following at 
+the **R** prompt:
 
 ```{S}
-install.packages(c("devtools", "repmis"), dependencies = TRUE)    
-library(devtools)
-has_devel()
+install.packages("devtools", dependencies = TRUE)    
+devtools::has_devel()
 ```
 
 If everything is installed correctly, the function will print some output and then return **TRUE**.
