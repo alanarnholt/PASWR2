@@ -7,6 +7,9 @@ PASWR2
 
 **PASWR2**: Functions and data sets for the text *Probability and Statistics with R*, Second Edition (In Press)
 
+Please report any **bugs** or **suggestions** at:
+<https://github.com/alanarnholt/PASWR2/issues>.
+
 ## Installation
 
 The package is available for download from
