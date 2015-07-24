@@ -12,7 +12,7 @@ PASWR2
 Please report any **bugs** or **suggestions** at:
 <https://github.com/alanarnholt/PASWR2/issues>.
 
-## Installation
+### Installation
 
 The package is available for download from
 [CRAN](http://cran.r-project.org/web/packages/PASWR2/).
