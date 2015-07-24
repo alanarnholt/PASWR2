@@ -1,11 +1,13 @@
 PASWR2
 ========
 
+[<img src="PASWR2Ecover.jpg" align="right" />](http://www.amazon.com/Probability-Statistics-R-Second-Edition/dp/1466504390/ref=dp_ob_title_bk)
+
 ### Version 1.01
 
 ### Alan T. Arnholt
 
-**PASWR2**: Functions and data sets for the text *Probability and Statistics with R*, Second Edition (In Press)
+**PASWR2**: Functions and data sets for the text *Probability and Statistics with R*, Second Edition
 
 Please report any **bugs** or **suggestions** at:
 <https://github.com/alanarnholt/PASWR2/issues>.
