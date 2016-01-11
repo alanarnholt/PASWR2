@@ -1,8 +1,8 @@
 #' @title Normality Tester
 #' 
-#' @description Q-Q plots of randomly generated normal data of the same sample size as the tested data are generated and ploted on the perimeter of the graph while a Q-Q plot of the actual data is depicted in the center of the graph.
+#' @description Q-Q plots of randomly generated normal data of the same sample size as the tested data are generated and plotted on the perimeter of the graph while a Q-Q plot of the actual data is depicted in the center of the graph.
 #' 
-#' @details Q-Q plots of randomly generated normal data of the same size as the tested data are generated and ploted on the perimeter of the graph sheet while a Q-Q plot of the actual data is depicted in the center of the graph. The p-values are calculated based on the Shapiro-Wilk W-statistic. Function will only work on numeric vectors containing less than or equal to 5000 observations.  Best used for moderate sized samples (n < 50).
+#' @details Q-Q plots of randomly generated normal data of the same size as the tested data are generated and plotted on the perimeter of the graph sheet while a Q-Q plot of the actual data is depicted in the center of the graph. The p-values are calculated based on the Shapiro-Wilk W-statistic. Function will only work on numeric vectors containing less than or equal to 5000 observations.  Best used for moderate sized samples (n < 50).
 #' 
 #' @param actual.data is a numeric vector. Missing and infinite values are allowed, but are ignored in the calculation. The length of \code{actual.data} must be less than 5000 after dropping nonfinite values. 
 #' 

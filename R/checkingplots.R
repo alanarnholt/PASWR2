@@ -10,6 +10,7 @@
 #' 
 #' @seealso \code{\link{twoway.plots}}, \code{\link{oneway.plots}}
 #' 
+#' 
 #' @export
 #' 
 #' @examples
@@ -27,7 +28,7 @@
 #' x = "Ordered Residuals") + geom_hline(yintercept = c(-3,-2, 2, 3), 
 #' linetype = "dashed", col = "pink") + theme_bw()
 #' p2 <- ggplot(data = mod.aov, aes(sample = .stdresid, color = tire)) +
-#' stat_qq()  + geom_abline(a = 0, b = 1, linetype = "dashed", col = "pink") + theme_bw()
+#' stat_qq()  + geom_abline(intercept = 0, slope = 1, linetype = "dashed", col = "pink") + theme_bw()
 #' p3 <- ggplot(data = mod.aov, aes(x = .fitted, y = .stdresid, color = tire)) + 
 #' geom_point() + geom_hline(yintercept = 0, linetype = "dashed") + 
 #' labs(y = "Standardized Residuals", x = "Fitted Values") + 
@@ -36,7 +37,8 @@
 #' p1
 #' p2
 #' p3
-#' # Use the following (not run) to get all graphs on the same device
+#' multiplot(p1, p2, p3, cols = 1)
+#' # Or use the following (not run) to get all graphs on the same device
 #' # library(gridExtra)
 #' # grid.arrange(p1, p2, p3, nrow=3)
 #' rm(mod.aov, p1, p2, p3)

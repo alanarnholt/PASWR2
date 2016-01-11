@@ -1,9 +1,7 @@
 PASWR2
 ========
 
-[<img src="PASWR2Ecover.jpg" align="right" />](http://www.amazon.com/Probability-Statistics-R-Second-Edition/dp/1466504390/ref=dp_ob_title_bk)
-
-### Version 1.01
+### Version 1.02
 
 ### Alan T. Arnholt
 

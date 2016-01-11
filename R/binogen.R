@@ -4,7 +4,7 @@
 #' 
 #' @param samples number of repeated samples to generate
 #' @param n number of Bernoulli trials
-#' @param pi probability of sucess for each Bernoulli trial
+#' @param pi probability of success for each Bernoulli trial
 #' 
 #' @return 
 #' \item{\code{simulated.distribution}}{Simulated binomial distribution}

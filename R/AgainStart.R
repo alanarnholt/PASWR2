@@ -75,7 +75,7 @@ NULL
 #' # remove the legend
 #' p + geom_boxplot() + guides(fill = FALSE)
 #' # violin plot
-#' p + geom_violin(scale = 'equal') + guides(fill = FALSE)
+#' p + geom_violin(scale = 'area') + guides(fill = FALSE)
 #' p + geom_violin(scale = 'count') + guides(fill = FALSE)
 #' p + geom_violin() + geom_boxplot(width = 0.15, fill = 'black') + guides(fill = FALSE) + 
 #' stat_summary(fun.y = median, geom = "point", fill = "white", shape = 23, size = 3)
@@ -186,7 +186,7 @@ NULL
 #' @title Beech Trees
 #' @aliases BIOMASS
 #' @docType data
-#' @description Several measurements of 42 beech trees (\emph{Fagus Sylvatica}) taken from a forest in Navarra (Spain)
+#' @description Several measurements of 42 beech trees (\emph{Fagus Sylvatica}) taken from a forest in Navarre (Spain)
 #' @format A data frame with 42 observations on the following 4 variables: 
 #' \itemize{
 #' \item \code{diameter} (diameter of the stem in centimeters)
@@ -521,7 +521,7 @@ NULL
 #' @title Retained Carbon in Beech Trees
 #' @aliases FAGUS
 #' @docType data
-#' @description The carbon retained by leaves measured in kg/ha is recorded for forty-one different plots of mountainous regions of Navarra (Spain), depending on the forest classification: areas with 90\% or more beech trees (\emph{Fagus Sylvatica}) are labeled monospecific, while areas with many species of trees are labeled multispecific.
+#' @description The carbon retained by leaves measured in kg/ha is recorded for forty-one different plots of mountainous regions of Navarre (Spain), depending on the forest classification: areas with 90\% or more beech trees (\emph{Fagus Sylvatica}) are labeled monospecific, while areas with many species of trees are labeled multispecific.
 #' @format A data frame with 41 observations on the following 3 variables: 
 #' \itemize{
 #' \item \code{plot} (plot number)
@@ -959,8 +959,8 @@ NULL
 #' @description The data frame \code{PAMTEMP} has records of the temperature and precipitation for Pamplona, Spain from January 1, 1990 to December 31, 2010. 
 #' @format A data frame with 7547 observations on the following 7 variables: 
 #' \itemize{
-#' \item \code{tmax} (maximum daily temperature in celcius)
-#' \item \code{tmin} (minimum daily temperature in celcius)
+#' \item \code{tmax} (maximum daily temperature in Celsius)
+#' \item \code{tmin} (minimum daily temperature in Celsius)
 #' \item \code{precip} (daily precipitation in mm)
 #' \item \code{day} (day of the month)
 #' \item \code{month} (month of the year)
@@ -1046,7 +1046,7 @@ NULL
 #' @description Twelve rats were chosen, and a drug was administered to six rats, the treatment group, chosen at random. The other six rats, the control group, received a placebo. The drops in blood pressure (mmHg) for the treatment group (with probability distribution F) and the control group (with probability distribution G), respectively, were recorded.
 #' @format A data frame with 12 observations on the following 2 variables: 
 #' \itemize{
-#' \item \code{mmHg} (drops in blood pressure in mm of Hg where positve values are decreases, negative values are increases)
+#' \item \code{mmHg} (drops in blood pressure in mm of Hg where positive values are decreases, negative values are increases)
 #' \item \code{group} (factor with levels \code{control} and \code{treatment})
 #' }
 #' @source The data is originally from Ott and Mendenhall (\emph{Understanding Statistics}, 1985, problem 8.17).
@@ -1121,7 +1121,7 @@ NULL
 #' @title Fruit Trees
 #' @aliases SATFRUIT
 #' @docType data
-#' @description To estimate the total surface occupied by fruit trees in 3 small areas (R63, R67, and R68) of Navarra (Spain) in 2001, a sample of 47 square segments has been taken. The experimental units are square segments or quadrats of 4 hectares, obtained by random sampling after overlaying a square grid on the study domain. 
+#' @description To estimate the total surface occupied by fruit trees in 3 small areas (R63, R67, and R68) of Navarre (Spain) in 2001, a sample of 47 square segments has been taken. The experimental units are square segments or quadrats of 4 hectares, obtained by random sampling after overlaying a square grid on the study domain. 
 #' @format A data frame with 47 observations on the following 17 variables: 
 #' \itemize{
 #' \item \code{quadrat} (number of the sampled segment or quadrat)
@@ -1281,7 +1281,7 @@ NULL
 #' @description In a study conducted at Appalachian State University, students used digital oral thermometers to record their temperatures each day they came to class.  A randomly selected day of student temperatures is provided in \code{STATTEMPS}.  Information is also provided with regard to subject gender and the hour of the day when the students' temperatures were measured.
 #' @format A data frame with 34 observations on the following 3 variables: 
 #' \itemize{
-#' \item \code{temperature} (temperature in farenheit)
+#' \item \code{temperature} (temperature in Fahrenheit)
 #' \item \code{gender} (a factor with levels \code{Female} and \code{Male})
 #' \item \code{class} (a factor with levels \code{8 a.m.} and \code{9 a.m.})
 #' }
@@ -1331,7 +1331,7 @@ NULL
 #' @title Sunflower Defoliation
 #' @aliases SUNFLOWER
 #' @docType data
-#' @description Seventy-two field trials were conducted by applying four defoliation treatments (non-defoliated control, 33\%, 66\%, and 100\%) at different growth stages (\code{stage}) ranging from pre-flowering (1) to physiological maturity (5) in four different locations of Navarra, Spain: Carcastillo (1), Melida (2), Murillo (3), and Unciti (4). There are two response variables: \code{yield} in kg/ha of the sunflower and \code{numseed}, the number of seeds per sunflower head. Data are stored in the data frame \code{SUNFLOWER}.
+#' @description Seventy-two field trials were conducted by applying four defoliation treatments (non-defoliated control, 33\%, 66\%, and 100\%) at different growth stages (\code{stage}) ranging from pre-flowering (1) to physiological maturity (5) in four different locations of Navarre, Spain: Carcastillo (1), Melida (2), Murillo (3), and Unciti (4). There are two response variables: \code{yield} in kg/ha of the sunflower and \code{numseed}, the number of seeds per sunflower head. Data are stored in the data frame \code{SUNFLOWER}.
 #' @format A data frame with 72 observations on the following 5 variables: 
 #' \itemize{
 #' \item \code{location} (a factor with levels \code{A}, \code{B}, \code{C}, and \code{D} for locations Carcastillo, Melida, Murillo, and Unciti, respectively)
@@ -1356,7 +1356,7 @@ NULL
 #' @description Surface area (\eqn{\texttt{km}^2}) for seventeen autonomous Spanish communities.
 #' @format A data frame with 17 observations on the following 2 variables: 
 #' \itemize{
-#' \item \code{community} (a factor with levels \code{Andalucia}, \code{Aragon},\code{Asturias}, \code{Baleares}, \code{C.Valenciana}, \code{Canarias}, \code{Cantabria}, \code{Castilla-La Mancha}, \code{Castilla-Leon}, \code{Cataluna}, \code{Extremadura}, \code{Galicia}, \code{La Rioja}, \code{Madrid}, \code{Murcia}, \code{Navarra}, and \code{P.Vasco})
+#' \item \code{community} (a factor with levels \code{Andalucia}, \code{Aragon},\code{Asturias}, \code{Baleares}, \code{C.Valenciana}, \code{Canarias}, \code{Cantabria}, \code{Castilla-La Mancha}, \code{Castilla-Leon}, \code{Cataluna}, \code{Extremadura}, \code{Galicia}, \code{La Rioja}, \code{Madrid}, \code{Murcia}, \code{Navarre}, and \code{P.Vasco})
 #' \item \code{surface} (surface area in \eqn{\texttt{km}^2})
 #' }
 #' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
@@ -1479,7 +1479,7 @@ NULL
 #' @format A data frame with 1309 observations on the following 14 variables: 
 #' \itemize{
 #' \item \code{pclass} (a factor with levels \code{1st}, \code{2nd}, and \code{3rd})
-#' \item \code{survived} (Survival wehre 0 = No; 1 = Yes)
+#' \item \code{survived} (Survival where 0 = No; 1 = Yes)
 #' \item \code{name} (Name)
 #' \item \code{sex} (a factor with levels \code{female} and \code{male})
 #' \item \code{age} (age in years)
@@ -1546,14 +1546,14 @@ NULL
 #' @description The manager of a URL commercial address is interested in predicting the number of megabytes downloaded, \code{megasd}, by clients according to the number minutes they are connected, \code{mconnected}. The manager randomly selects (megabyte, minute) pairs, and records the data.  The pairs (\code{megasd}, \code{mconnected}) are stored in the data frame \code{URLADDRESS}.
 #' @format A data frame with 30 observations on the following 2 variables: 
 #' \itemize{
-#' \item \code{megasd} (megabytes dowloaded)
+#' \item \code{megasd} (megabytes downloaded)
 #' \item \code{mconnected} (number of minutes connected)
 #' }
 #' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 #' @examples
 #' ggplot(data = URLADDRESS, aes(x = mconnected, y = megasd)) + 
 #' geom_point(color = "blue") + 
-#' labs(x = "number of minutes connected", y = "megabytes dowloaded")
+#' labs(x = "number of minutes connected", y = "megabytes downloaded")
 #' @keywords datasets
 "URLADDRESS"
 ###########################################################################
@@ -1663,7 +1663,7 @@ NULL
 #' @title Weight Gain in Rats
 #' @aliases WEIGHTGAIN
 #' @docType data
-#' @description The data come from an experiment to study the gain in weight of rats fed on four different diets, distinguished by amount of protein (low and high) and by source of pretein (beef and cereal).
+#' @description The data come from an experiment to study the gain in weight of rats fed on four different diets, distinguished by amount of protein (low and high) and by source of protein (beef and cereal).
 #' @format A data frame with 40 observations on the following 3 variables: 
 #' \itemize{
 #' \item \code{proteinsource} (a factor with levels \code{Beef} and \code{Cereal})
@@ -1687,7 +1687,7 @@ NULL
 #' @description Seventeen Spanish communities and their corresponding surface area (in hecatares) dedicated to growing wheat
 #' @format A data frame with 17 observations on the following 3 variables: 
 #' \itemize{
-#' \item \code{community} (a factor with levels \code{Andalucia}, \code{Aragon}, \code{Asturias}, \code{Baleares}, \code{C.Valenciana}, \code{Canarias}, \code{Cantabria}, \code{Castilla-La Mancha}, \code{Castilla-Leon}, \code{Cataluna}, \code{Extremadura}, \code{Galicia}, \code{La Rioja}, \code{Madrid}, \code{Murcia}, \code{Navarra}, and \code{P.Vasco})
+#' \item \code{community} (a factor with levels \code{Andalucia}, \code{Aragon}, \code{Asturias}, \code{Baleares}, \code{C.Valenciana}, \code{Canarias}, \code{Cantabria}, \code{Castilla-La Mancha}, \code{Castilla-Leon}, \code{Cataluna}, \code{Extremadura}, \code{Galicia}, \code{La Rioja}, \code{Madrid}, \code{Murcia}, \code{Navarre}, and \code{P.Vasco})
 #' \item \code{hectares} (surface area measured in hectares)
 #' \item \code{acres} (surface area measured in acres)
 #' }
@@ -1736,6 +1736,6 @@ NULL
 "WOOL"
 #####################################################################################
 #####################################################################################
-#' @import ggplot2 e1071 lattice grid
-#'
+#' @import e1071 lattice grid
+#' @importFrom ggplot2 ggplot geom_boxplot labs scale_x_discrete guides scale_fill_brewer
 NULL

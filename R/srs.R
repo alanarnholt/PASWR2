@@ -7,7 +7,7 @@
 #' @param popvalues are values of the population.  \code{NA}s and \code{Inf}s are allowed but will be removed from the population. 
 #' @param n the sample size 
 #' 
-#' @return The function \code{srs()} returns a matrix containing the posible simple random samples of size \code{n} taken from a population of finite values \code{popvalues}.
+#' @return The function \code{srs()} returns a matrix containing the possible simple random samples of size \code{n} taken from a population of finite values \code{popvalues}.
 #' 
 #' @author Alan T. Arnholt <arnholtat@@appstate.edu> 
 #' 

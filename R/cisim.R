@@ -6,7 +6,7 @@
 #' 
 #' @param samples the number of samples desired.
 #' @param n the size of each sample
-#' @param parameter If constructing confidence intervals for the population mean or the population variance, parameter is the population mean (i.e., type is one of either \code{"Mean"} or \code{"Var"}). If constructing confidence intervals for the poulation proportion of successes, the value entered for parameter represents the population proportion of successes (\code{Pi}), and as such, must be a number between 0 and 1.
+#' @param parameter If constructing confidence intervals for the population mean or the population variance, parameter is the population mean (i.e., type is one of either \code{"Mean"} or \code{"Var"}). If constructing confidence intervals for the population proportion of successes, the value entered for parameter represents the population proportion of successes (\code{Pi}), and as such, must be a number between 0 and 1.
 #' @param sigma is the population standard deviation. \code{sigma} is not required if confidence intervals are of type \code{"Pi"}.
 #' @param conf.level confidence level for the graphed confidence intervals, restricted to lie between zero and one
 #' @param type character string, one of \code{"Mean"}, \code{"Var"}, or \code{"Pi"}, or just the initial letter of each, indicating the type of confidence interval simulation to perform

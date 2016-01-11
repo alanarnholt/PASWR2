@@ -16,7 +16,7 @@
 #' @return A list of class \code{htest}, containing the following components:
 #' \item{\code{statistic}}{the value of the test statistic with a name describing it}
 #' \item{\code{p.value}}{the p-value for the test}
-#' \item{\code{null.value}}{the location paramter \code{mu}}
+#' \item{\code{null.value}}{the location parameter \code{mu}}
 #' \item{\code{alternative}}{a character string describing the alternative hypothesis}
 #' \item{\code{method}}{the type of test applied}
 #' \item{\code{data.name}}{a character string giving the names of the data}
