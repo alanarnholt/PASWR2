@@ -1737,5 +1737,5 @@ NULL
 #####################################################################################
 #####################################################################################
 #' @import e1071 lattice grid
-#' @importFrom ggplot2 ggplot geom_boxplot labs scale_x_discrete guides scale_fill_brewer
+#' @importFrom ggplot2 ggplot 
 NULL
