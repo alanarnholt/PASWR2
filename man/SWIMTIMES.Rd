@@ -4,7 +4,7 @@
 \name{SWIMTIMES}
 \alias{SWIMTIMES}
 \title{Swim Times}
-\format{A data frame with 17 observations on the following 2 variables: 
+\format{A data frame with 28 observations on the following 2 variables: 
 \itemize{
 \item \code{seconds} (time improvement in seconds)
 \item \code{diet} (a factor with levels \code{lowfat} and \code{highfat})

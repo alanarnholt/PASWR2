@@ -241,7 +241,7 @@ NULL
 #' @aliases CALCULUS
 #' @docType data
 #' @description Mathematical assessment scores for 36 students enrolled in a biostatistics course according to whether or not the students had successfully completed a calculus course prior to enrolling in the biostatistics course
-#' @format A data frame with 18 observations on the following 2 variables: 
+#' @format A data frame with 36 observations on the following 2 variables: 
 #' \itemize{
 #' \item \code{score} (assessment score for each student)
 #' \item \code{calculus} (a factor with levels \code{NO} and \code{YES} for students who did not  and did successfully complete calculus prior to enrolling in the biostatistics course) 
@@ -1377,7 +1377,7 @@ NULL
 #' @aliases SWIMTIMES
 #' @docType data
 #' @description Swimmers' improvements in seconds for two diets are stored in the data frame \code{SWIMTIMES}. The values in \code{seconds} represent the time improvement in seconds for swimmers.
-#' @format A data frame with 17 observations on the following 2 variables: 
+#' @format A data frame with 28 observations on the following 2 variables: 
 #' \itemize{
 #' \item \code{seconds} (time improvement in seconds)
 #' \item \code{diet} (a factor with levels \code{lowfat} and \code{highfat})
