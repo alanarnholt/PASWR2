@@ -1738,4 +1738,7 @@ NULL
 #####################################################################################
 #' @import e1071 lattice grid
 #' @importFrom ggplot2 ggplot 
+#' @importFrom graphics abline axis box boxplot dotchart hist legend lines mtext par plot plot.design points polygon segments text title
+#' @importFrom stats complete.cases dbinom density dnorm fitted fivenum interaction.plot ks.test median pnorm pt qchisq qnorm qqline qqnorm qt quantile rbinom rnorm rstandard sd setNames shapiro.test var
+#' @importFrom utils combn
 NULL
