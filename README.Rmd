@@ -1,3 +1,8 @@
+---
+output: 
+  html_document: 
+    keep_md: yes
+---
 PASWR2
 ========
 
@@ -29,8 +34,7 @@ However, you need to make sure you're set up to develop packages. This is platfo
 You can check everything is installed correctly with the `has_devel()` function from the **devtools** package. Type the following at 
 the **R** prompt:
 
-
-```s
+```{S}
 install.packages("devtools", dependencies = TRUE)    
 devtools::has_devel()
 ```
@@ -39,8 +43,7 @@ If everything is installed correctly, the function will print some output and th
 
 To install the **PASWR2** package, type the following at the **R** prompt:
 
-
-```s
+```{S}
 devtools::install_github('alanarnholt/PASWR2')
 ```
     
