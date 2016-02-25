@@ -30,7 +30,7 @@ You can check everything is installed correctly with the `has_devel()` function 
 the **R** prompt:
 
 
-```s
+```r
 install.packages("devtools", dependencies = TRUE)    
 devtools::has_devel()
 ```
@@ -40,7 +40,7 @@ If everything is installed correctly, the function will print some output and th
 To install the **PASWR2** package, type the following at the **R** prompt:
 
 
-```s
+```r
 devtools::install_github('alanarnholt/PASWR2')
 ```
     
