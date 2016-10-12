@@ -84,11 +84,11 @@
 <li>On Linux, make sure you have the R-dev packages installed.</li>
 </ul>
 <p>You can check everything is installed correctly with the <code>has_devel()</code> function from the <strong>devtools</strong> package. Type the following at the <strong>R</strong> prompt:</p>
-<div class="sourceCode"><pre class="sourceCode s"><code class="sourceCode gnuassembler">install.packages(<span class="st">"devtools"</span>, dependencies = TRUE)    
-<span class="kw">devtools::</span>has_devel()</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">install.packages</span>(<span class="st">"devtools"</span>, <span class="dt">dependencies =</span> <span class="ot">TRUE</span>)    
+devtools::<span class="kw">has_devel</span>()</code></pre></div>
 <p>If everything is installed correctly, the function will print some output and then return <strong>TRUE</strong>.</p>
 <p>To install the <strong>PASWR2</strong> package, type the following at the <strong>R</strong> prompt:</p>
-<div class="sourceCode"><pre class="sourceCode s"><code class="sourceCode gnuassembler"><span class="kw">devtools::</span>install_github(<span class="ch">'a</span>lanarnholt/PASWR2<span class="ch">')</span></code></pre></div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">devtools::<span class="kw">install_github</span>(<span class="st">'alanarnholt/PASWR2'</span>)</code></pre></div>
 <p>It is possible to install <strong>PASWR2</strong> with <a href="http://git-scm.com/">GIT</a> and the <strong>R CMD build</strong> assuming you have GIT installed and the appropriate tools to build <strong>R</strong> from source.</p>
 <div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">git</span> clone https://github.com/alanarnholt/PASWR2.git
 <span class="kw">R</span> CMD build PASWR2
