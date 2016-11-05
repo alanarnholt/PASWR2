@@ -12,6 +12,7 @@ navbar:
   - text: Reference
     href: reference/index.html
   right:
+    - text: "Alan T. Arnholt"
+      href: https://alanarnholt.github.io/
     - icon: fa-github fa-lg
       href: https://github.com/alanarnholt/PASWR2/
-           
