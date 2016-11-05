@@ -6,14 +6,13 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>PAMTEMP. PASWR2</title>
+<title>Pamplona Temperatures — PAMTEMP • PASWR2</title>
 
 <!-- jquery -->
 <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha384-nrOSfDHtoPMzJHjVTdCopGqIqeYETSXhZDFyniQ8ZHcVy08QesyHcnOUpMpqnmWq" crossorigin="anonymous"></script>
-
 <!-- Bootstrap -->
-<link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/yeti/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
 
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 <!-- Font Awesome icons -->
@@ -22,6 +21,7 @@
 
 <!-- pkgdown -->
 <link href="../pkgdown.css" rel="stylesheet">
+<script src="../jquery.sticky-kit.min.js"></script>
 <script src="../pkgdown.js"></script>
 
 <!-- mathjax -->
@@ -34,10 +34,9 @@
   </head>
 
   <body>
-    <div class="container">
+    <div class="container template-reference-topic">
       <header>
-      
-<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+      <div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
@@ -56,6 +55,7 @@
   <a href="../reference/index.html">Reference</a>
 </li>
       </ul>
+      
       <ul class="nav navbar-nav navbar-right">
         <li>
   <a href="https://github.com/alanarnholt/PASWR2/">
@@ -67,25 +67,25 @@
     </div><!--/.nav-collapse -->
   </div><!--/.container -->
 </div><!--/.navbar -->
+
       
       </header>
 
-      <div class="page-header">
-  <h1>Pamplona Temperatures</h1>
-</div>
+      <div class="row">
+  <div class="col-md-9 contents">
+    <div class="page-header">
+    <h1>Pamplona Temperatures</h1>
+    </div>
 
-<div class="row">
-  <div class="col-md-9">
     
     <p>The data frame <code>PAMTEMP</code> has records of the temperature and precipitation for Pamplona, Spain from January 1, 1990 to December 31, 2010.</p>
     
 
     <pre><span class='no'>PAMTEMP</span></pre>
         
-    <div class="Format">
-      <h2>Format</h2>
+    <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-      <p>A data frame with 7547 observations on the following 7 variables: 
+    <p>A data frame with 7547 observations on the following 7 variables: 
 <ul>
 <li> <code>tmax</code> (maximum daily temperature in Celsius)
 </li>
@@ -102,15 +102,13 @@
 <li> <code>tmean</code> (the average of <code>tmax</code> and <code>tmin</code>)
 </li>
 </ul></p>
-    </div>
-
-    <div class="References">
-      <h2>References</h2>
-
-      <p>Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. <em>Probability and Statistics with R</em>, Second Edition. Chapman &amp; Hall / CRC.</p>
-    </div>
     
-    <h2 id="examples">Examples</h2>
+    <h2 class="hasAnchor" id="references"><a class="anchor" href="#references"></a>References</h2>
+
+    <p>Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. <em>Probability and Statistics with R</em>, Second Edition. Chapman &amp; Hall / CRC.</p>
+    
+
+    <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'><span class='fu'>str</span>(<span class='no'>PAMTEMP</span>)</div><div class='output co'>#&gt; &#39;data.frame&#39;:	7547 obs. of  7 variables:
 #&gt;  $ tmax  : num  10 11.8 10 8.3 5.6 5.8 7.8 10 10.2 7.6 ...
 #&gt;  $ tmin  : num  6 3.2 5.4 4.1 0.4 0.8 3 4 3 -0.4 ...
@@ -118,21 +116,35 @@
 #&gt;  $ day   : int  1 2 3 4 5 6 7 8 9 10 ...
 #&gt;  $ month : Factor w/ 12 levels &quot;Apr&quot;,&quot;Aug&quot;,&quot;Dec&quot;,..: 5 5 5 5 5 5 5 5 5 5 ...
 #&gt;  $ year  : int  1990 1990 1990 1990 1990 1990 1990 1990 1990 1990 ...
-#&gt;  $ tmean : num  8 7.5 7.7 6.2 3 3.3 5.4 7 6.6 3.6 ...
-#&gt; </div><div class='input'><span class='fu'>levels</span>(<span class='no'>PAMTEMP</span>$<span class='no'>month</span>)</div><div class='output co'>#&gt;  [1] &quot;Apr&quot; &quot;Aug&quot; &quot;Dec&quot; &quot;Feb&quot; &quot;Jan&quot; &quot;Jul&quot; &quot;Jun&quot; &quot;Mar&quot; &quot;May&quot; &quot;Nov&quot; &quot;Oct&quot; &quot;Sep&quot;
-#&gt; </div><div class='input'><span class='no'>PAMTEMP</span>$<span class='no'>month</span> <span class='kw'>&lt;-</span> <span class='fu'>factor</span>(<span class='no'>PAMTEMP</span>$<span class='no'>month</span>, <span class='kw'>levels</span> <span class='kw'>=</span> <span class='no'>month.abb</span>[<span class='fl'>1</span>:<span class='fl'>12</span>])
-<span class='fu'>levels</span>(<span class='no'>PAMTEMP</span>$<span class='no'>month</span>)</div><div class='output co'>#&gt;  [1] &quot;Jan&quot; &quot;Feb&quot; &quot;Mar&quot; &quot;Apr&quot; &quot;May&quot; &quot;Jun&quot; &quot;Jul&quot; &quot;Aug&quot; &quot;Sep&quot; &quot;Oct&quot; &quot;Nov&quot; &quot;Dec&quot;
-#&gt; </div><div class='input'><span class='fu'>ggplot</span>(<span class='kw'>data</span> <span class='kw'>=</span> <span class='no'>PAMTEMP</span>, <span class='fu'>aes</span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='fl'>1</span>:<span class='fu'>dim</span>(<span class='no'>PAMTEMP</span>)[<span class='fl'>1</span>], <span class='kw'>y</span> <span class='kw'>=</span> <span class='no'>tmean</span>)) +
+#&gt;  $ tmean : num  8 7.5 7.7 6.2 3 3.3 5.4 7 6.6 3.6 ...</div><div class='input'><span class='fu'>levels</span>(<span class='no'>PAMTEMP</span>$<span class='no'>month</span>)</div><div class='output co'>#&gt;  [1] &quot;Apr&quot; &quot;Aug&quot; &quot;Dec&quot; &quot;Feb&quot; &quot;Jan&quot; &quot;Jul&quot; &quot;Jun&quot; &quot;Mar&quot; &quot;May&quot; &quot;Nov&quot; &quot;Oct&quot; &quot;Sep&quot;</div><div class='input'><span class='no'>PAMTEMP</span>$<span class='no'>month</span> <span class='kw'>&lt;-</span> <span class='fu'>factor</span>(<span class='no'>PAMTEMP</span>$<span class='no'>month</span>, <span class='kw'>levels</span> <span class='kw'>=</span> <span class='no'>month.abb</span>[<span class='fl'>1</span>:<span class='fl'>12</span>])
+<span class='fu'>levels</span>(<span class='no'>PAMTEMP</span>$<span class='no'>month</span>)</div><div class='output co'>#&gt;  [1] &quot;Jan&quot; &quot;Feb&quot; &quot;Mar&quot; &quot;Apr&quot; &quot;May&quot; &quot;Jun&quot; &quot;Jul&quot; &quot;Aug&quot; &quot;Sep&quot; &quot;Oct&quot; &quot;Nov&quot; &quot;Dec&quot;</div><div class='input'><span class='fu'>ggplot</span>(<span class='kw'>data</span> <span class='kw'>=</span> <span class='no'>PAMTEMP</span>, <span class='fu'>aes</span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='fl'>1</span>:<span class='fu'>dim</span>(<span class='no'>PAMTEMP</span>)[<span class='fl'>1</span>], <span class='kw'>y</span> <span class='kw'>=</span> <span class='no'>tmean</span>)) +
 <span class='fu'>geom_line</span>() +
 <span class='fu'>theme_bw</span>() +
 <span class='fu'>labs</span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='st'>""</span>, <span class='kw'>y</span> <span class='kw'>=</span> <span class='st'>"Average Temperature (Celcius)"</span>)</div><img src='PAMTEMP-8.png' alt='' width='540' height='400' /></pre>
   </div>
-  <div class="col-md-3">
+  <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
+    <h2>Contents</h2>
+    <ul class="nav nav-pills nav-stacked">
+      
+      <li><a href="#format">Format</a></li>
+
+      <li><a href="#references">References</a></li>
+      
+      <li><a href="#examples">Examples</a></li>
+    </ul>
+
   </div>
 </div>
 
       <footer>
-      <p>Built by <a href="http://hadley.github.io/pkgdown/">pkgdown</a>. Styled with <a href="http://getbootstrap.com">Bootstrap 3</a>.</p>
+      <div class="copyright">
+  <p>Developed by Alan Arnholt.</p>
+</div>
+
+<div class="pkgdown">
+  <p>Site built with <a href="http://hadley.github.io/pkgdown/">pkgdown</a>.</p>
+</div>
+
       </footer>
    </div>
 
