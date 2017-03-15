@@ -113,7 +113,7 @@
     
     <h2 id="examples">Examples</h2>
     <pre class="examples"><div class='input'><span class='no'>p</span> <span class='kw'>&lt;-</span> <span class='fu'>ggplot</span>(<span class='kw'>data</span> <span class='kw'>=</span> <span class='no'>FERTILIZE</span>, <span class='fu'>aes</span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='no'>height</span>, <span class='kw'>color</span> <span class='kw'>=</span> <span class='no'>fertilization</span>))
-<span class='no'>p</span> + <span class='fu'>geom_density</span>()</div><img src='FERTILIZE-2.png' alt='' width='540' height='400' /><div class='input'><span class='fu'>t.test</span>(<span class='no'>height</span> ~ <span class='no'>fertilization</span>, <span class='kw'>data</span> <span class='kw'>=</span> <span class='no'>FERTILIZE</span>)</div><div class='output co'>#&gt; 
+<span class='no'>p</span> + <span class='fu'>geom_density</span>()</div><strong class='error'>Error in grid.Call(L_textBounds, as.graphicsAnnot(x$label), x$x, x$y,     resolveHJust(x$just, x$hjust), resolveVJust(x$just, x$vjust),     x$rot, 0): polygon edge not found</strong><img src='FERTILIZE-3.png' alt='' width='540' height='400' /><div class='input'><span class='fu'>t.test</span>(<span class='no'>height</span> ~ <span class='no'>fertilization</span>, <span class='kw'>data</span> <span class='kw'>=</span> <span class='no'>FERTILIZE</span>)</div><div class='output co'>#&gt; 
 #&gt; 	Welch Two Sample t-test
 #&gt; 
 #&gt; data:  height by fertilization
