@@ -32,4 +32,3 @@ eda(x = rnorm(100))
 Alan T. Arnholt <arnholtat@appstate.edu>
 }
 \keyword{hplot}
-

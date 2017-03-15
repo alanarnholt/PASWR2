@@ -39,4 +39,3 @@ nsize(b = 0.02, sigma = 0.1, conf.level = 0.95, type = "mu")
 Alan T. Arnholt <arnholtat@appstate.edu>
 }
 \keyword{programming}
-

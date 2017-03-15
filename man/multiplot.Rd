@@ -25,11 +25,10 @@ multiplot(p1, p2, cols = 2)
 multiplot(p1, p2, cols = 2, layout=matrix(c(1, 0, 0, 2), byrow = TRUE, nrow = 2))
 
 }
-\author{
-Winston Chang <winston@stdout.org>
-}
 \seealso{
 \code{\link{layout}}
 }
+\author{
+Winston Chang <winston@stdout.org>
+}
 \keyword{programming}
-

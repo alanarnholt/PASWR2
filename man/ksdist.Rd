@@ -19,11 +19,10 @@ Function to visualize the sampling distribution of \eqn{D_n}{D[n]} (the Kolmogor
 \examples{
 ksdist(n = 10, sims = 15000, alpha =0.05)
 }
-\author{
-Alan T. Arnholt <arnholtat@appstate.edu>
-}
 \seealso{
 \code{\link{ksldist}}
 }
+\author{
+Alan T. Arnholt <arnholtat@appstate.edu>
+}
 \keyword{hplot}
-

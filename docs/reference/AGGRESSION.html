@@ -6,13 +6,14 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>TV and Behavior — AGGRESSION • PASWR2</title>
+<title>AGGRESSION. PASWR2</title>
 
 <!-- jquery -->
 <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha384-nrOSfDHtoPMzJHjVTdCopGqIqeYETSXhZDFyniQ8ZHcVy08QesyHcnOUpMpqnmWq" crossorigin="anonymous"></script>
-<!-- Bootstrap -->
 
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- Bootstrap -->
+<link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/yeti/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 <!-- Font Awesome icons -->
@@ -21,7 +22,6 @@
 
 <!-- pkgdown -->
 <link href="../pkgdown.css" rel="stylesheet">
-<script src="../jquery.sticky-kit.min.js"></script>
 <script src="../pkgdown.js"></script>
 
 <!-- mathjax -->
@@ -34,9 +34,10 @@
   </head>
 
   <body>
-    <div class="container template-reference-topic">
+    <div class="container">
       <header>
-      <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
@@ -55,7 +56,6 @@
   <a href="../reference/index.html">Reference</a>
 </li>
       </ul>
-      
       <ul class="nav navbar-nav navbar-right">
         <li>
   <a href="https://alanarnholt.github.io/">Alan T. Arnholt</a>
@@ -70,87 +70,74 @@
     </div><!--/.nav-collapse -->
   </div><!--/.container -->
 </div><!--/.navbar -->
-
       
       </header>
 
-      <div class="row">
-  <div class="col-md-9 contents">
-    <div class="page-header">
-    <h1>TV and Behavior</h1>
-    </div>
+      <div class="page-header">
+  <h1>TV and Behavior</h1>
+</div>
 
+<div class="row">
+  <div class="col-md-9">
     
     <p>Data regarding the aggressive behavior in relation to exposure to violent television programs.</p>
     
 
     <pre><span class='no'>AGGRESSION</span></pre>
         
-    <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
+    <div class="Format">
+      <h2>Format</h2>
 
-    <p>A data frame with 16 observations on the following two variables: 
+      <p>A data frame with 16 observations on the following two variables: 
 <ul>
 <li> <code>violence</code> (an integer vector)
 </li>
 <li> <code>noviolence</code> (an integer vector)
 </li>
 </ul></p>
-    
-    <h2 class="hasAnchor" id="source"><a class="anchor" href="#source"></a>Source</h2>
+    </div>
 
-    <p>Gibbons, J. D. (1977) <em>Nonparametric Methods for Quantitavie Analysis</em>. American Science Press.</p>
-    
-    <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
+    <div class="Source">
+      <h2>Source</h2>
 
-    <p>This is data regarding aggressive behavior in relation to exposure to violent television programs from Gibbons (1997) with the following exposition: &#8220;&#8230; a group of children are matched as well as possible as regards home environment, genetic  factors, intelligence, parental attitudes, and so forth, in an effort to minimize factors other than TV that might influence a tendency for aggressive behavior.  In each of the resulting 16 pairs, one child is randomly selected to view the most violent shows on TV, while the other watches cartoons, situation comedies, and the like.  The children are then subjected to a series of tests designed to produce an ordinal measure of their aggression factors.&#8221; (pages 143-144)</p>
-    
-    <h2 class="hasAnchor" id="references"><a class="anchor" href="#references"></a>References</h2>
+      <p>Gibbons, J. D. (1977) <em>Nonparametric Methods for Quantitavie Analysis</em>. American Science Press.</p>
+    </div>
 
-    <p>Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. <em>Probability and Statistics with R</em>, Second Edition. Chapman &amp; Hall / CRC.</p>
-    
+    <div class="Details">
+      <h2>Details</h2>
 
-    <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
+      <p>This is data regarding aggressive behavior in relation to exposure to violent television programs from Gibbons (1997) with the following exposition: &#8220;&#8230; a group of children are matched as well as possible as regards home environment, genetic  factors, intelligence, parental attitudes, and so forth, in an effort to minimize factors other than TV that might influence a tendency for aggressive behavior.  In each of the resulting 16 pairs, one child is randomly selected to view the most violent shows on TV, while the other watches cartoons, situation comedies, and the like.  The children are then subjected to a series of tests designed to produce an ordinal measure of their aggression factors.&#8221; (pages 143-144)</p>
+    </div>
+
+    <div class="References">
+      <h2>References</h2>
+
+      <p>Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. <em>Probability and Statistics with R</em>, Second Edition. Chapman &amp; Hall / CRC.</p>
+    </div>
+    
+    <h2 id="examples">Examples</h2>
     <pre class="examples"><div class='input'><span class='no'>AL</span> <span class='kw'>&lt;-</span> <span class='fu'>reshape</span>(<span class='no'>AGGRESSION</span>, <span class='kw'>varying</span> <span class='kw'>=</span> <span class='fu'>c</span>(<span class='st'>"violence"</span>, <span class='st'>"noviolence"</span>),
 <span class='kw'>v.names</span> <span class='kw'>=</span> <span class='st'>"aggression"</span>, <span class='kw'>direction</span> <span class='kw'>=</span> <span class='st'>"long"</span>)
 <span class='fu'>ggplot</span>(<span class='kw'>data</span> <span class='kw'>=</span> <span class='no'>AL</span>, <span class='fu'>aes</span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='fu'>factor</span>(<span class='no'>time</span>), <span class='kw'>y</span> <span class='kw'>=</span> <span class='no'>aggression</span>, <span class='kw'>fill</span> <span class='kw'>=</span> <span class='fu'>factor</span>(<span class='no'>time</span>))) +
 <span class='fu'>geom_boxplot</span>() + <span class='fu'>labs</span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='st'>""</span>) + <span class='fu'>scale_x_discrete</span>(<span class='kw'>breaks</span> <span class='kw'>=</span> <span class='fu'>c</span>(<span class='fl'>1</span>, <span class='fl'>2</span>),
 <span class='kw'>labels</span> <span class='kw'>=</span> <span class='fu'>c</span>(<span class='st'>"Violence"</span>, <span class='st'>"No Violence"</span>)) + <span class='fu'>guides</span>(<span class='kw'>fill</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>) + <span class='fu'>scale_fill_brewer</span>()</div><img src='AGGRESSION-2.png' alt='' width='540' height='400' /><div class='input'><span class='fu'>rm</span>(<span class='no'>AL</span>)
 <span class='fu'>with</span>(<span class='kw'>data</span> <span class='kw'>=</span> <span class='no'>AGGRESSION</span>,
-<span class='fu'>wilcox.test</span>(<span class='no'>violence</span>, <span class='no'>noviolence</span>, <span class='kw'>paired</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>, <span class='kw'>alternative</span> <span class='kw'>=</span> <span class='st'>"greater"</span>))</div><div class='output co'>#&gt; <span class='warning'>Warning: cannot compute exact p-value with ties</span></div><div class='output co'>#&gt; 
+<span class='fu'>wilcox.test</span>(<span class='no'>violence</span>, <span class='no'>noviolence</span>, <span class='kw'>paired</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>, <span class='kw'>alternative</span> <span class='kw'>=</span> <span class='st'>"greater"</span>))</div><div class='output'><strong class='text-warning'>Warning message:
+cannot compute exact p-value with ties</strong></div><div class='output co'>#&gt; 
 #&gt; 	Wilcoxon signed rank test with continuity correction
 #&gt; 
 #&gt; data:  violence and noviolence
 #&gt; V = 118.5, p-value = 0.00479
 #&gt; alternative hypothesis: true location shift is greater than 0
+#&gt; 
 #&gt; </div></pre>
   </div>
-  <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
-    <h2>Contents</h2>
-    <ul class="nav nav-pills nav-stacked">
-      
-      <li><a href="#format">Format</a></li>
-
-      <li><a href="#source">Source</a></li>
-
-      <li><a href="#details">Details</a></li>
-
-      <li><a href="#references">References</a></li>
-      
-      <li><a href="#examples">Examples</a></li>
-    </ul>
-
+  <div class="col-md-3">
   </div>
 </div>
 
       <footer>
-      <div class="copyright">
-  <p>Developed by Alan Arnholt.</p>
-</div>
-
-<div class="pkgdown">
-  <p>Site built with <a href="http://hadley.github.io/pkgdown/">pkgdown</a>.</p>
-</div>
-
+      <p>Built by <a href="http://hadley.github.io/pkgdown/">pkgdown</a>. Styled with <a href="http://getbootstrap.com">Bootstrap 3</a>.</p>
       </footer>
    </div>
 

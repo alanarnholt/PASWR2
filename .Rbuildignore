@@ -5,3 +5,4 @@ README.html
 ^\.travis\.yml$
 ^docs$
 ^_pkgdown\.yml$
+bootstrap.css

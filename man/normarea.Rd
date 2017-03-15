@@ -30,4 +30,3 @@ normarea(lower = 70, upper = 130, m = 100, sig = 15)
 Alan T. Arnholt <arnholtat@appstate.edu>
 }
 \keyword{hplot}
-

@@ -25,11 +25,10 @@ ggplot(data = TIRE, aes(tire, stopdist, fill = tire)) + geom_boxplot() +
 guides(fill = FALSE) + theme_bw()
 
 }
-\author{
-Alan T. Arnholt <arnholtat@appstate.edu>
-}
 \seealso{
 \code{\link{twoway.plots}}, \code{\link{checking.plots}}
 }
+\author{
+Alan T. Arnholt <arnholtat@appstate.edu>
+}
 \keyword{hplot}
-

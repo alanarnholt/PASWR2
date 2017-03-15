@@ -29,4 +29,3 @@ summary(aov(butterfat ~ breed + age, data = COWS))
 \itemize{ \item Sokal, R. R. and Rohlf, F. J. 1994. \emph{Biometry}.  W. H. Freeman, New York, third edition. \item Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.}
 }
 \keyword{datasets}
-

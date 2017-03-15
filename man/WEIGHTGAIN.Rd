@@ -31,4 +31,3 @@ aov(weightgain ~ proteinsource*proteinamount, data = WEIGHTGAIN)
 Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. London: Chapman & Hall.
 }
 \keyword{datasets}
-

@@ -11,4 +11,3 @@ The PASWR2 Package
 Data sets and functions for \emph{Probability and Statistics with R}, Second Edition.
 }
 \keyword{package}
-

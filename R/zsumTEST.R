@@ -186,7 +186,11 @@ zsum.test <- function (mean.x, sigma.x = NULL, n.x = NULL, mean.y = NULL, sigma.
   }
   cint <- mu + cint * stderr
   names(zstat) <- "z"
-  names(mu) <- "difference in means"
+  names(mu) <- if (!is.null(mean.y)){ 
+    "difference in means"
+  } else {
+    "mean"
+  }  
   attr(cint, "conf.level") <- conf.level
   rval <- list(statistic = zstat, p.value = pval, 
                conf.int = cint, estimate = estimate, null.value = mu, 

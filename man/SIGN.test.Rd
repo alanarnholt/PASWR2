@@ -53,6 +53,7 @@ A linear interpolation is returned for the related confidence interval (returned
 
 The reported confidence interval is based on linear interpolation. The lower and upper confidence levels are exact.
 }
+
 \examples{
 with(data = PHONE, SIGN.test(call.time, md = 2.1))
 # Computes two-sided sign-test for the null hypothesis
@@ -60,9 +61,6 @@ with(data = PHONE, SIGN.test(call.time, md = 2.1))
 # hypothesis is that the median is not 2.1.  An interpolated
 # upper 95\% upper bound for the population median will be computed. 
 
-}
-\author{
-Alan T. Arnholt <arnholtat@appstate.edu>
 }
 \references{
 \itemize{
@@ -75,5 +73,7 @@ Alan T. Arnholt <arnholtat@appstate.edu>
 \seealso{
 \code{\link{z.test}}, \code{\link{zsum.test}}, \code{\link{tsum.test}}
 }
+\author{
+Alan T. Arnholt <arnholtat@appstate.edu>
+}
 \keyword{htest}
-

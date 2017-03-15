@@ -44,4 +44,3 @@ with(TITANIC3, table(pclass, sex))
 }
 }
 \keyword{datasets}
-

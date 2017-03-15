@@ -50,4 +50,3 @@ cisim(100, 50, 0.5, type = "Pi", conf.level = 0.92)
 Alan T. Arnholt <arnholtat@appstate.edu>
 }
 \keyword{programming}
-

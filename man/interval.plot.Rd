@@ -38,4 +38,3 @@ interval.plot(ll, ul, parameter = 80)
 Alan T. Arnholt <arnholtat@appstate.edu>
 }
 \keyword{programming}
-

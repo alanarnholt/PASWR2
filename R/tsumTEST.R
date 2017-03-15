@@ -179,7 +179,11 @@ tsum.test <- function (mean.x, s.x = NULL, n.x = NULL, mean.y = NULL, s.y = NULL
   cint <- mu + cint * stderr
   names(tstat) <- "t"
   names(df) <- "df"
-  names(mu) <- "difference in means"
+  names(mu) <- if (!is.null(mean.y)){ 
+    "difference in means"
+  } else {
+    "mean"
+  }  
   attr(cint, "conf.level") <- conf.level
   rval <- list(statistic = tstat, parameter = df, p.value = pval, 
                conf.int = cint, estimate = estimate, null.value = mu, 

@@ -25,4 +25,3 @@ ggplot(data = SALINITY, aes(x = salinity)) + geom_density(fill = "yellow", alpha
 Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 }
 \keyword{datasets}
-

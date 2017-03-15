@@ -29,4 +29,3 @@ ggplot(data = HUBBLE, aes(sample = team1 - team2)) + stat_qq(color = "blue")
 Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 }
 \keyword{datasets}
-

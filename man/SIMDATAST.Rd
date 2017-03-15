@@ -25,4 +25,3 @@ ggplot(data = SIMDATAST, aes(x = x1, y = y1)) + geom_point() + geom_smooth()
 Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 }
 \keyword{datasets}
-

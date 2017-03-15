@@ -32,4 +32,3 @@ qqmath(~ lifetime, group = facility, type = c('p', 'r'), auto.key=TRUE, data = B
 Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 }
 \keyword{datasets}
-

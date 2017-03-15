@@ -25,11 +25,10 @@ If non-finite values are entered as part of the population, they are removed; an
 srs(popvalues = c(5, 8, 3, NA, Inf), n = 2)
 
 }
-\author{
-Alan T. Arnholt <arnholtat@appstate.edu>
-}
 \seealso{
 \code{\link{combn}}
 }
+\author{
+Alan T. Arnholt <arnholtat@appstate.edu>
+}
 \keyword{programming}
-

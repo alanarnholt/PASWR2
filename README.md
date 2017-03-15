@@ -1,7 +1,7 @@
 PASWR2
 ========
 
-### Version 1.0.2
+### Version 1.0.3
 
 [![Travis-CI Build Status](https://travis-ci.org/alanarnholt/PASWR2.svg?branch=master)](https://travis-ci.org/alanarnholt/PASWR2)
 [![Downloads from the RStudio CRAN mirror](http://cranlogs.r-pkg.org/badges/PASWR2)](http://cran.rstudio.com/package=PASWR2)

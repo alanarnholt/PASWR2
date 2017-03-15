@@ -28,4 +28,3 @@ ggplot(data = JANKA, aes(x = density, y = hardness)) + geom_point() + geom_smoot
 Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 }
 \keyword{datasets}
-

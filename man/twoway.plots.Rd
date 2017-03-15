@@ -40,11 +40,10 @@ p4
 ## library(gridExtra)
 ## grid.arrange(p1, p2, p3, p4, nrow=2)
 }
-\author{
-Alan T. Arnholt <arnholtat@appstate.edu>
-}
 \seealso{
 \code{\link{oneway.plots}}, \code{\link{checking.plots}}
 }
+\author{
+Alan T. Arnholt <arnholtat@appstate.edu>
+}
 \keyword{hplot}
-

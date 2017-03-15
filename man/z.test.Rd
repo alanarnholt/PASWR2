@@ -61,6 +61,7 @@ The assumption of normality for the underlying distribution or a sufficiently la
 
  For each of the above tests, an expression for the related confidence interval (returned component \code{conf.int}) can be obtained in the usual way by inverting the expression for the test statistic. Note that, as explained under the description of \code{conf.int}, the confidence interval will be half-infinite when alternative is not \code{"two.sided"} ; infinity will be represented by \code{Inf}.
 }
+
 \examples{
 with(data = GROCERY, z.test(x = amount, sigma.x = 30, conf.level = 0.97)$conf)
 # Example 8.3 from PASWR.
@@ -89,9 +90,6 @@ z.test(x, sigma.x = 0.5, y, sigma.y = 0.5, conf.level = 0.90)
 rm(x, y)  
 
 }
-\author{
-Alan T. Arnholt <arnholtat@appstate.edu>
-}
 \references{
 \itemize{
  \item Kitchens, L.J. 2003. \emph{Basic Statistics and Data Analysis}. Duxbury. 
@@ -103,5 +101,7 @@ Alan T. Arnholt <arnholtat@appstate.edu>
 \seealso{
 \code{\link{zsum.test}}, \code{\link{tsum.test}}
 }
+\author{
+Alan T. Arnholt <arnholtat@appstate.edu>
+}
 \keyword{htest}
-

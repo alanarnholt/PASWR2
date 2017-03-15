@@ -47,11 +47,10 @@ multiplot(p1, p2, p3, cols = 1)
 rm(mod.aov, p1, p2, p3)
 
 }
-\author{
-Alan T. Arnholt <arnholtat@appstate.edu>
-}
 \seealso{
 \code{\link{twoway.plots}}, \code{\link{oneway.plots}}
 }
+\author{
+Alan T. Arnholt <arnholtat@appstate.edu>
+}
 \keyword{hplot}
-

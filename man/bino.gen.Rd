@@ -28,4 +28,3 @@ bino.gen(samples=50000, n = 10, pi = 0.80)
 Alan T. Arnholt <arnholtat@appstate.edu>
 }
 \keyword{programming}
-
