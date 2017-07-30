@@ -84,71 +84,102 @@
     </div>
 
     
-    <p>This function will test a hypothesis based on the sign test and reports linearly interpolated confidence intervals for one sample problems.</p>
+    <p>This function will test a hypothesis based on the sign test and reports 
+linearly interpolated confidence intervals for one sample problems.</p>
     
 
-    <pre class="usage"><span class='fu'>SIGN.test</span>(<span class='no'>x</span>, <span class='kw'>y</span> <span class='kw'>=</span> <span class='kw'>NULL</span>, <span class='kw'>md</span> <span class='kw'>=</span> <span class='fl'>0</span>, <span class='kw'>alternative</span> <span class='kw'>=</span> <span class='fu'>c</span>(<span class='st'>"two.sided"</span>, <span class='st'>"less"</span>,
-  <span class='st'>"greater"</span>), <span class='kw'>conf.level</span> <span class='kw'>=</span> <span class='fl'>0.95</span>)</pre>
+    <pre class="usage"><span class='fu'>SIGN.test</span>(<span class='no'>x</span>, <span class='kw'>y</span> <span class='kw'>=</span> <span class='kw'>NULL</span>, <span class='kw'>md</span> <span class='kw'>=</span> <span class='fl'>0</span>, <span class='kw'>alternative</span> <span class='kw'>=</span> <span class='st'>"two.sided"</span>,
+  <span class='kw'>conf.level</span> <span class='kw'>=</span> <span class='fl'>0.95</span>, <span class='no'>...</span>)</pre>
     
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a> Arguments</h2>
     <table class="ref-arguments">
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
       <th>x</th>
-      <td><p><code>NA</code>s and <code>Inf</code>s are allowed but will be removed</p></td>
+      <td><p>numeric vector; <code>NA</code>s and <code>Inf</code>s are allowed but will be
+removed.</p></td>
     </tr>
     <tr>
       <th>y</th>
-      <td><p>optional numeric vector; <code>NA</code>s and <code>Inf</code>s are allowed but will be removed</p></td>
+      <td><p>optional numeric vector; <code>NA</code>s and <code>Inf</code>s are allowed but
+will be removed.</p></td>
     </tr>
     <tr>
       <th>md</th>
-      <td><p>a single number representing the value of the population median specified by the null hypothesis</p></td>
+      <td><p>a single number representing the value of the population median
+specified by the null hypothesis</p></td>
     </tr>
     <tr>
       <th>alternative</th>
-      <td><p>is a character string, one of <code>"greater"</code>, <code>"less"</code>, or <code>"two.sided"</code>, or the initial letter of each, indicating the specification of the alternative hypothesis. For one-sample tests, <code>alternative</code> refers to the true median of the parent population in relation to the hypothesized value of the median.</p></td>
+      <td><p>is a character string, one of <code>"greater"</code>,
+<code>"less"</code>, or <code>"two.sided"</code>, or the initial letter of each,
+indicating the specification of the alternative hypothesis. For one-sample
+tests, <code>alternative</code> refers to the true median of the parent population
+in relation to the hypothesized value of the median.</p></td>
     </tr>
     <tr>
       <th>conf.level</th>
-      <td><p>confidence level for the returned confidence interval, restricted to lie between zero and one</p></td>
+      <td><p>confidence level for the returned confidence interval,
+restricted to lie between zero and one</p></td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td><p>further arguments to be passed to or from methods</p></td>
     </tr>
     </table>
     
     <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
-    <p>A list of class <code>htest</code>, containing the following components:</p>
-<dt><code>statistic</code></dt><dd><p>the S-statistic (the number of positive differences between the data and the hypothesized median), with names attribute &#8220;S.&#8221;</p></dd>
-<dt><code>p.value</code></dt><dd><p>the p-value for the test</p></dd>
-<dt><code>conf.int</code></dt><dd><p>is a confidence interval (vector of length 2) for the true median based on linear interpolation. The confidence level is recorded in the attribute <code>conf.level</code>. When the alternative is not <code>"two.sided,"</code> the confidence interval will be half-infinite, to reflect the interpretation of a confidence interval as the set of all values <code>k</code> for which one would not reject the null hypothesis that the true mean or difference in means is <code>k</code>. Here infinity will be represented by <code>Inf</code>.</p></dd>
-<dt><code>estimate</code></dt><dd><p>is a vector of length 1, giving the sample median; this estimates the corresponding population parameter. Component <code>estimate</code> has a names attribute describing its elements.</p></dd>
-<dt><code>null.value</code></dt><dd><p>is the value of the median specified by the null hypothesis. This equals the input argument <code>md</code>. Component <code>null.value</code> has a names attribute describing its elements.</p></dd>
-<dt><code>alternative</code></dt><dd><p>records the value of the input argument alternative: <code>"greater"</code>, <code>"less"</code>, or <code>"two.sided"</code></p></dd>
-<dt><code>data.name</code></dt><dd><p>a character string (vector of length 1) containing the actual name of the input vector <code>x</code></p></dd>
+    <p>A list of class <code>htest_S</code>, containing the following components:</p>
+<dt>statistic</dt><dd><p>the S-statistic (the number of positive differences between
+the data and the hypothesized median), with names attribute &#8220;S&#8221;.</p></dd>
+<dt>p.value</dt><dd><p>the p-value for the test</p></dd> 
+<dt>conf.int</dt><dd><p>is a confidence interval (vector of length 2) for the true 
+median based on linear interpolation. The confidence level is recorded in the attribute
+<code>conf.level</code>. When the alternative is not <code>"two.sided"</code>, the
+confidence interval will be half-infinite, to reflect the interpretation of
+a confidence interval as the set of all values <code>k</code> for which one would
+not reject the null hypothesis that the true mean or difference in means is
+<code>k</code>. Here infinity will be represented by <code>Inf</code>.</p></dd>
+<dt>estimate</dt><dd><p>is avector of length 1, giving the sample median; this
+estimates the corresponding population parameter. Component <code>estimate</code>
+has a names attribute describing its elements.</p></dd> 
+<dt>null.value</dt><dd><p>is the value of the median specified by the null hypothesis. 
+This equals the input argument <code>md</code>. Component <code>null.value</code> has a 
+names attribute describing its elements.</p></dd> 
+<dt>alternative</dt><dd><p>records the value of the input argument alternative: 
+<code>"greater"</code>, <code>"less"</code>, or <code>"two.sided"</code></p></dd> 
+<dt>data.name</dt><dd><p>a character string (vector of length 1)
+containing the actual name of the input vector <code>x</code></p></dd>
+<dt>Confidence.Intervals</dt><dd><p>a 3 by 3 matrix containing the lower achieved 
+confidence interval, the interpolated confidence interval, and the upper 
+achived confidence interval</p></dd>
 
     
     <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
 
-    <p>Computes a &#8220;Dependent-samples Sign-Test&#8221; if both <code>x</code> and <code>y</code> are provided.  If only <code>x</code> is provided,  computes the &#8220;Sign-Test.&#8221;</p>
-    
-    <h2 class="hasAnchor" id="null-hypothesis"><a class="anchor" href="#null-hypothesis"></a>Null Hypothesis</h2>
-
-    
-    <p>For the one-sample sign-test, the null hypothesis is that the median of the population from which <code>x</code> is drawn is <code>md</code>. For the two-sample dependent case, the null hypothesis is that the median for the differences of the populations from which <code>x</code> and <code>y</code> are drawn is <code>md</code>. The alternative hypothesis indicates the direction of divergence of the population median for <code>x</code> from <code>md</code> (i.e., <code>"greater"</code>, <code>"less"</code>, <code>"two.sided"</code>.)</p>
-    
-    <h2 class="hasAnchor" id="assumptions"><a class="anchor" href="#assumptions"></a>Assumptions</h2>
-
-    <p>The median test assumes the parent population is continuous.</p>
-    
-    <h2 class="hasAnchor" id="confidence-interval"><a class="anchor" href="#confidence-interval"></a>Confidence Interval</h2>
-
-    
-    <p>A linear interpolation is returned for the related confidence interval (returned component <code>conf.int</code>), which can be obtained by interpolating between the possible achieved confidence levels closest to the desired level. Note that, as explained under the description of <code>conf.int</code>, the confidence interval will be half-infinite when alternative is not <code>"two.sided"</code>; infinity will be represented by <code>Inf</code>.</p>
+    <p>Computes a &#8220;Dependent-samples Sign-Test&#8221; if both <code>x</code> and <code>y</code> 
+are provided.  If only <code>x</code> is provided,  computes the &#8220;Sign-Test.&#8221;</p>
     
     <h2 class="hasAnchor" id="note"><a class="anchor" href="#note"></a>Note</h2>
 
+    <p>The reported confidence interval is based on linear interpolation. The
+lower and upper confidence levels are exact.</p>
     
-    <p>The reported confidence interval is based on linear interpolation. The lower and upper confidence levels are exact.</p>
+    <h2 class="hasAnchor" id="null-hypothesis"><a class="anchor" href="#null-hypothesis"></a>Null Hypothesis</h2>
+
+    <p>For the one-sample sign-test, the null hypothesis
+is that the median of the population from which <code>x</code> is drawn is
+<code>md</code>. For the two-sample dependent case, the null hypothesis is that
+the median for the differences of the populations from which <code>x</code> and
+<code>y</code> are drawn is <code>md</code>. The alternative hypothesis indicates the
+direction of divergence of the population median for <code>x</code> from <code>md</code>
+(i.e., <code>"greater"</code>, <code>"less"</code>, <code>"two.sided"</code>.)</p>
+    
+    <h2 class="hasAnchor" id="assumptions"><a class="anchor" href="#assumptions"></a>Assumptions</h2>
+
+    
+    <p>The median test assumes the parent population is continuous.</p>
     
     <h2 class="hasAnchor" id="references"><a class="anchor" href="#references"></a>References</h2>
 
@@ -176,10 +207,14 @@
 #&gt; sample estimates:
 #&gt; median of x 
 #&gt;         2.1 
-#&gt; </div><div class='output co'>#&gt;                   Conf.Level L.E.pt U.E.pt
+#&gt; 
+#&gt; Achieved and Interpolated Confidence Intervals: 
+#&gt; 
+#&gt;                   Conf.Level L.E.pt U.E.pt
 #&gt; Lower Achieved CI     0.9069 0.8000 5.2000
 #&gt; Interpolated CI       0.9500 0.7262 5.4952
-#&gt; Upper Achieved CI     0.9653 0.7000 5.6000</div><div class='input'># Computes two-sided sign-test for the null hypothesis
+#&gt; Upper Achieved CI     0.9653 0.7000 5.6000
+#&gt; </div><div class='input'># Computes two-sided sign-test for the null hypothesis
 # that the population median is 2.1.  The alternative
 # hypothesis is that the median is not 2.1.  An interpolated
 # upper 95% upper bound for the population median will be computed. 
@@ -195,13 +230,11 @@
 
       <li><a href="#details">Details</a></li>
 
+      <li><a href="#note">Note</a></li>
+
       <li><a href="#null-hypothesis">Null Hypothesis</a></li>
 
       <li><a href="#assumptions">Assumptions</a></li>
-
-      <li><a href="#confidence-interval">Confidence Interval</a></li>
-
-      <li><a href="#note">Note</a></li>
 
       <li><a href="#references">References</a></li>
 

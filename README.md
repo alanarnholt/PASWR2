@@ -1,7 +1,7 @@
 PASWR2
 ========
 
-### Version 1.0.3
+### Version 1.0.4
 
 [![Travis-CI Build Status](https://travis-ci.org/alanarnholt/PASWR2.svg?branch=master)](https://travis-ci.org/alanarnholt/PASWR2)
 [![Downloads from the RStudio CRAN mirror](http://cranlogs.r-pkg.org/badges/PASWR2)](http://cran.rstudio.com/package=PASWR2)
@@ -16,7 +16,7 @@ Please report any **bugs** or **suggestions** at:
 ### Installation
 
 The package is available for download from
-[CRAN](http://cran.r-project.org/web/packages/PASWR2/).
+[CRAN](http://cran.rstudio.com/package=PASWR2).
 
 You may download the most recent version using the [devtools](http://github.com/hdaley/devtools) function `install_github()` to install **PASWR2** in R.
 
