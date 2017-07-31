@@ -17,4 +17,6 @@ Imports:
     e1071
 LazyData: TRUE
 License: GPL-2
+URL: https://alanarnholt.github.io/PASWR2/
+BugReports: https://github.com/alanarnholt/PASWR2/issues
 RoxygenNote: 6.0.1
