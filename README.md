@@ -1,10 +1,10 @@
 PASWR2
 ========
 
-### Version 1.0.3
+### Version 1.0.4
 
 [![Travis-CI Build Status](https://travis-ci.org/alanarnholt/PASWR2.svg?branch=master)](https://travis-ci.org/alanarnholt/PASWR2)
-[![Downloads from the RStudio CRAN mirror](http://cranlogs.r-pkg.org/badges/PASWR2)](http://cran.rstudio.com/package=PASWR2)
+[![Downloads from the RStudio CRAN mirror](https://cranlogs.r-pkg.org/badges/PASWR2)](https://CRAN.R-project.org/package=PASWR2)
 
 ### Alan T. Arnholt
 
@@ -16,13 +16,13 @@ Please report any **bugs** or **suggestions** at:
 ### Installation
 
 The package is available for download from
-[CRAN](http://cran.r-project.org/web/packages/PASWR2/).
+[CRAN](https://CRAN.R-project.org/package=PASWR2).
 
-You may download the most recent version using the [devtools](http://github.com/hdaley/devtools) function `install_github()` to install **PASWR2** in R.
+You may download the most recent version using the [devtools](https://github.com/hadley/devtools) function `install_github()` to install **PASWR2** in R.
 
 However, you need to make sure you're set up to develop packages. This is platform specific:
 
-* On Windows, download and install [Rtools](http://http://cran.r-project.org/bin/windows/Rtools/).
+* On Windows, download and install [Rtools](https://cran.r-project.org/bin/windows/Rtools/).
 * On the Mac, make sure you have [Xcode](https://developer.apple.com/xcode/) installed.
 * On Linux, make sure you have the R-dev packages installed.
 

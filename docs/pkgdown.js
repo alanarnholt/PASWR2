@@ -7,9 +7,23 @@ $(function() {
 
   var cur_path = paths(location.pathname);
   $("#navbar ul li a").each(function(index, value) {
+<<<<<<< HEAD
     var path = paths(value.pathname);
     if (is_prefix(cur_path, path)) {
       $(value.parentElement).addClass("active");
+=======
+    if (value.text == "Home")
+      return;
+    if (value.getAttribute("href") === "#")
+      return;
+
+    var path = paths(value.pathname);
+    if (is_prefix(cur_path, path)) {
+      // Add class to parent <li>, and enclosing <li> if in dropdown
+      var menu_anchor = $(value);
+      menu_anchor.parent().addClass("active");
+      menu_anchor.closest("li.dropdown").addClass("active");
+>>>>>>> 91dbbbc50ba5fb861dc30514e3be4d29bb7dfb2f
     }
   });
 });
