@@ -141,6 +141,6 @@ cisim <- function (samples = 100, n = 30, parameter = 0.5, sigma = 1,
       }
     }
     abline(h = parameter)
-    cat(percentage, "\b% of the random confidence intervals do not contain Pi =", parameter, "\b.", "\n")
+    cat(percentage, "\b% of the random confidence intervals do not contain Pi =", parameter,".", "\n", sep ="")
   }
 }
