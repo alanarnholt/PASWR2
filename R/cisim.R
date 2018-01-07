@@ -85,7 +85,9 @@ cisim <- function (samples = 100, n = 30, parameter = 0.5, sigma = 1,
       }
     }
     abline(h = parameter)
-    cat(percentage, "\b% of the random confidence intervals do not contain Mu = ", parameter,".", "\n", sep ="")
+    cat("\n")
+    cat(percentage, "% of the random confidence intervals do not contain Mu = ", parameter,".", "\n", sep ="")
+    cat("\n")
   }
   else if (type == "Var") {
     for(i in 1:samples){
@@ -114,7 +116,9 @@ cisim <- function (samples = 100, n = 30, parameter = 0.5, sigma = 1,
       }
     }
     abline(h = variance)
-    cat(percentage, "\b% of the random confidence intervals do not contain Var = ", sigma^2,".", "\n", sep ="")
+    cat("\n")
+    cat(percentage, "% of the random confidence intervals do not contain Var = ", sigma^2,".", "\n", sep ="")
+    cat("\n")
   }
   else if (type == "Pi") {
     X <- rbinom(samples, n, parameter)
@@ -141,6 +145,8 @@ cisim <- function (samples = 100, n = 30, parameter = 0.5, sigma = 1,
       }
     }
     abline(h = parameter)
-    cat(percentage, "\b% of the random confidence intervals do not contain Pi = ", parameter,".", "\n", sep ="")
+    cat("\n")
+    cat(percentage, "% of the random confidence intervals do not contain Pi = ", parameter,".", "\n", sep ="")
+    cat("\n")
   }
 }
