@@ -12,7 +12,7 @@
 #' @export
 #' 
 #' @examples
-#' ksldist(n = 10, sims = 15000, alpha = 0.05)
+#' ksldist(n = 10, sims = 1500, alpha = 0.05)
 #' @keywords hplot
 #######################################################################
 ksldist <- function (n = 10, sims = 10000, alpha = 0.05)
