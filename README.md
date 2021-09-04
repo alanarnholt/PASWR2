@@ -18,7 +18,7 @@ Please report any **bugs** or **suggestions** at:
 The package is available for download from
 [CRAN](https://CRAN.R-project.org/package=PASWR2).
 
-You may download the most recent version using the [devtools](https://github.com/hadley/devtools) function `install_github()` to install **PASWR2** in R.
+You may download the most recent version using the [devtools](https://github.com/r-lib/devtools) function `install_github()` to install **PASWR2** in R.
 
 However, you need to make sure you're set up to develop packages. This is platform specific:
 
