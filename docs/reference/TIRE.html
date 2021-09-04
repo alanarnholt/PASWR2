@@ -127,15 +127,16 @@
 <li><p><code>tire</code> (a factor with levels <code>A</code>, <code>B</code>, <code>C</code>, and <code>D</code>)</p></li>
 <li><p><code>order</code> (order the experiment was conducted)</p></li>
 </ul>
+
     <h2 class="hasAnchor" id="references"><a class="anchor" href="#references"></a>References</h2>
 
     <p>Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. <em>Probability and Statistics with R</em>, Second Edition. Chapman &amp; Hall / CRC.</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'><span class='fu'>ggplot</span><span class='op'>(</span>data <span class='op'>=</span> <span class='va'>TIRE</span>, <span class='fu'>aes</span><span class='op'>(</span>x <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/stats/reorder.factor.html'>reorder</a></span><span class='op'>(</span><span class='va'>tire</span>, <span class='va'>stopdist</span>, FUN <span class='op'>=</span> <span class='va'>median</span><span class='op'>)</span>, y <span class='op'>=</span> <span class='va'>stopdist</span>, 
-fill <span class='op'>=</span> <span class='va'>tire</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span> <span class='fu'>geom_boxplot</span><span class='op'>(</span><span class='op'>)</span> <span class='op'>+</span> <span class='fu'>guides</span><span class='op'>(</span>fill <span class='op'>=</span> <span class='cn'>FALSE</span><span class='op'>)</span> <span class='op'>+</span> 
+fill <span class='op'>=</span> <span class='va'>tire</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span> <span class='fu'>geom_boxplot</span><span class='op'>(</span><span class='op'>)</span> <span class='op'>+</span> <span class='fu'>guides</span><span class='op'>(</span>fill <span class='op'>=</span> <span class='st'>"none"</span><span class='op'>)</span> <span class='op'>+</span> 
 <span class='fu'>labs</span><span class='op'>(</span>y <span class='op'>=</span> <span class='st'>"Stopping distance in feet"</span>, x <span class='op'>=</span> <span class='st'>"Tire Brand"</span><span class='op'>)</span> <span class='op'>+</span> <span class='fu'>scale_fill_brewer</span><span class='op'>(</span><span class='op'>)</span>
-</div><div class='output co'>#&gt; <span class='warning'>Warning: `guides(&lt;scale&gt; = FALSE)` is deprecated. Please use `guides(&lt;scale&gt; = "none")` instead.</span></div><div class='img'><img src='TIRE-1.png' alt='' width='700' height='433' /></div><div class='input'><span class='fu'><a href='https://rdrr.io/r/base/summary.html'>summary</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/stats/aov.html'>aov</a></span><span class='op'>(</span><span class='va'>stopdist</span> <span class='op'>~</span> <span class='va'>tire</span>, data <span class='op'>=</span> <span class='va'>TIRE</span><span class='op'>)</span><span class='op'>)</span>
+</div><div class='img'><img src='TIRE-1.png' alt='' width='700' height='433' /></div><div class='input'><span class='fu'><a href='https://rdrr.io/r/base/summary.html'>summary</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/stats/aov.html'>aov</a></span><span class='op'>(</span><span class='va'>stopdist</span> <span class='op'>~</span> <span class='va'>tire</span>, data <span class='op'>=</span> <span class='va'>TIRE</span><span class='op'>)</span><span class='op'>)</span>
 </div><div class='output co'>#&gt;             Df Sum Sq Mean Sq F value  Pr(&gt;F)   
 #&gt; tire         3   5673  1891.0   5.328 0.00732 **
 #&gt; Residuals   20   7099   354.9                   

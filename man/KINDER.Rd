@@ -4,11 +4,13 @@
 \name{KINDER}
 \alias{KINDER}
 \title{Kindergarten Class}
-\format{A data frame with 20 observations on the following 2 variables: 
+\format{
+A data frame with 20 observations on the following 2 variables: 
 \itemize{
 \item \code{ht} (height in inches of each child)
 \item \code{wt} (weight in pounds of each child)
-}}
+}
+}
 \usage{
 KINDER
 }

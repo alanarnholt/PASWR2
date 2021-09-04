@@ -4,12 +4,14 @@
 \name{FORMULA1}
 \alias{FORMULA1}
 \title{Pit Stop Times}
-\format{A data frame with 10 observations on the following 3 variables: 
+\format{
+A data frame with 10 observations on the following 3 variables: 
 \itemize{
 \item \code{race} (number corresponding to a race site)
 \item \code{team1} (pit stop times for team one)
 \item \code{team2} (pit stop times for team two)
-}}
+}
+}
 \usage{
 FORMULA1
 }

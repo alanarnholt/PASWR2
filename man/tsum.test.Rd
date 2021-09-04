@@ -4,9 +4,19 @@
 \alias{tsum.test}
 \title{Summarized t-test}
 \usage{
-tsum.test(mean.x, s.x = NULL, n.x = NULL, mean.y = NULL, s.y = NULL,
-  n.y = NULL, alternative = c("two.sided", "less", "greater"), mu = 0,
-  var.equal = FALSE, conf.level = 0.95, ...)
+tsum.test(
+  mean.x,
+  s.x = NULL,
+  n.x = NULL,
+  mean.y = NULL,
+  s.y = NULL,
+  n.y = NULL,
+  alternative = c("two.sided", "less", "greater"),
+  mu = 0,
+  var.equal = FALSE,
+  conf.level = 0.95,
+  ...
+)
 }
 \arguments{
 \item{mean.x}{a single number representing the sample mean of \code{x}}

@@ -4,11 +4,13 @@
 \name{HOUSE}
 \alias{HOUSE}
 \title{House Prices}
-\format{A data frame with 14 observations on the following 2 variables: 
+\format{
+A data frame with 14 observations on the following 2 variables: 
 \itemize{
 \item \code{neighborhood} (a factor with levels \code{Blowing Rock}, \code{Cove Creek}, \code{Green Valley}, \code{Park Valley}, \code{Parkway}, and \code{Valley Crucis})
 \item \code{price} (price of house in thousands of dollars)
-}}
+}
+}
 \usage{
 HOUSE
 }

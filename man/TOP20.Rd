@@ -4,12 +4,14 @@
 \name{TOP20}
 \alias{TOP20}
 \title{Tennis Income}
-\format{A data frame with 15 observations on the following variable: 
+\format{
+A data frame with 15 observations on the following variable: 
 \itemize{
 \item \code{income} (yearly income in millions of dollars)
-}}
+}
+}
 \source{
-\url{http://www.atpworldtour.com/}
+\url{https://www.atpworldtour.com/}
 }
 \usage{
 TOP20

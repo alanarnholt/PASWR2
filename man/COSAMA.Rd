@@ -4,11 +4,13 @@
 \name{COSAMA}
 \alias{COSAMA}
 \title{Cosmed Versus Amatek}
-\format{A data frame with 14 observations on the following 3 variables: 
+\format{
+A data frame with 14 observations on the following 3 variables: 
 \itemize{\item \code{subject} (subject number)
 \item \code{cosmed} (measured VO2 with Cosmed)
 \item \code{amatek} (measured VO2 with Amatek) 
-}}
+}
+}
 \usage{
 COSAMA
 }

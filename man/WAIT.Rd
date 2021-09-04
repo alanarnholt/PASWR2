@@ -4,10 +4,12 @@
 \name{WAIT}
 \alias{WAIT}
 \title{Waiting Time}
-\format{A data frame with 15 observations on the following variable: 
+\format{
+A data frame with 15 observations on the following variable: 
 \itemize{
 \item \code{minutes} (waiting time in minutes)
-}}
+}
+}
 \usage{
 WAIT
 }

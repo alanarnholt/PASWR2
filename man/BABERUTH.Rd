@@ -4,7 +4,8 @@
 \name{BABERUTH}
 \alias{BABERUTH}
 \title{George Herman Ruth}
-\format{A data frame with 22 observation of the following 14 variables:
+\format{
+A data frame with 22 observation of the following 14 variables:
 \itemize{
 \item\code{year} (year in which the season occurred) 
 \item \code{team} (team for which he played \code{Bos-A}, \code{Bos-N}, or \code{NY-A}) 
@@ -20,9 +21,10 @@
 \item \code{bb} (base on balls or walks) 
 \item \code{ba} (batting average = h/ab)
 \item \code{slg} (slugging percentage = total bases/at bats)
-}}
+}
+}
 \source{
-\url{http://www.baseball-reference.com/about/bat_glossary.shtml}
+\url{https://www.baseball-reference.com/about/bat_glossary.shtml}
 }
 \usage{
 BABERUTH
@@ -34,7 +36,7 @@ Baseball statistics for George Herman Ruth (The Bambino or the Sultan of Swat)
 ggplot(data = BABERUTH, aes(x = ba)) + geom_histogram(binwidth = 0.03) + 
 facet_grid(team ~ .) + labs(x = "Batting average")
 ggplot(data = BABERUTH, aes(x = g, y = ab, color = rbi)) + geom_point() + 
-labs(x = "Number of Games Played", y = "Times at Bat", color = "Runs\\n Batted In", 
+labs(x = "Number of Games Played", y = "Times at Bat", color = "Runs\n Batted In", 
 title = "George Herman Ruth")
 }
 \references{

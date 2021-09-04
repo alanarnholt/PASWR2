@@ -4,12 +4,14 @@
 \name{TIREWEAR}
 \alias{TIREWEAR}
 \title{Tire Wear}
-\format{A data frame with 16 observations on the following 3 variables: 
+\format{
+A data frame with 16 observations on the following 3 variables: 
 \itemize{
 \item \code{wear} (tread loss measured in thousandths of an inch)
 \item \code{treat} (a factor with levels \code{A}, \code{B}, \code{C}, and \code{D})
 \item \code{block} (a factor with levels \code{Car1}, \code{Car2}, \code{Car3}, and \code{Car4})
-}}
+}
+}
 \usage{
 TIREWEAR
 }

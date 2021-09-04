@@ -4,11 +4,13 @@
 \name{APTSIZE}
 \alias{APTSIZE}
 \title{Apartment Size}
-\format{A data frame with 15 observations on the following two variables:
+\format{
+A data frame with 15 observations on the following two variables:
 \itemize{
 \item \code{size} (apartment size in square meters)
 \item \code{location} (\code{factor} with two levels \code{SanJorge} and \code{Mendebaldea})
-}}
+}
+}
 \usage{
 APTSIZE
 }

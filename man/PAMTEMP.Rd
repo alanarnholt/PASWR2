@@ -4,7 +4,8 @@
 \name{PAMTEMP}
 \alias{PAMTEMP}
 \title{Pamplona Temperatures}
-\format{A data frame with 7547 observations on the following 7 variables: 
+\format{
+A data frame with 7547 observations on the following 7 variables: 
 \itemize{
 \item \code{tmax} (maximum daily temperature in Celsius)
 \item \code{tmin} (minimum daily temperature in Celsius)
@@ -13,7 +14,8 @@
 \item \code{month} (month of the year)
 \item \code{year} (year)
 \item \code{tmean} (the average of \code{tmax} and \code{tmin})
-}}
+}
+}
 \usage{
 PAMTEMP
 }

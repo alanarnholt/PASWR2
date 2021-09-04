@@ -4,11 +4,13 @@
 \name{CALCULUS}
 \alias{CALCULUS}
 \title{Calculus Assessment Scores}
-\format{A data frame with 36 observations on the following 2 variables: 
+\format{
+A data frame with 36 observations on the following 2 variables: 
 \itemize{
 \item \code{score} (assessment score for each student)
 \item \code{calculus} (a factor with levels \code{NO} and \code{YES} for students who did not  and did successfully complete calculus prior to enrolling in the biostatistics course) 
-}}
+}
+}
 \usage{
 CALCULUS
 }

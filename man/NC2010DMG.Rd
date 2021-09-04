@@ -4,7 +4,8 @@
 \name{NC2010DMG}
 \alias{NC2010DMG}
 \title{North Carolina Demographics}
-\format{A data frame with 100 observations (counties) on the following 32 variables: 
+\format{
+A data frame with 100 observations (counties) on the following 32 variables: 
 \itemize{
 \item \code{countyName} (Name of North Carolina county)
 \item \code{pop2010} (Total population of the county in 2010)
@@ -37,10 +38,11 @@
 \item \code{evanrate} (Evangelical rates of adherence per 1,000 population in 2010)
 \item \code{churches} (The number of churches in the county in 2010)
 \item \code{colleges} (The number of colleges in the county in 2010)
-}}
+}
+}
 \source{
 The original data was provided by E.L. Davison, Department of Sociology, Appalachian State University.  Variables
-\code{countyName} through \code{popden} were obtained from \url{http://factfinder2.census.gov/faces/nav/jsf/pages/searchresults.xhtml?refresh=t#"} and further cleaned by Maureen O'Donnell and Eitan Lees. The variables \code{pctfor} through \code{mccain08} were obtained from \url{http://www.ncsbe.gov/}. The variables \code{evanrate} and \code{churches} were obtained from \url{http://thearda.com}, while the information for \code{colleges} was obtained from \url{http://collegestats.org/colleges/north-carolina}.
+\code{countyName} through \code{popden} were obtained from \url{https://data.census.gov/cedsci/} and further cleaned by Maureen O'Donnell and Eitan Lees. The variables \code{pctfor} through \code{mccain08} were obtained from \url{https://www.ncsbe.gov/}. The variables \code{evanrate} and \code{churches} were obtained from \url{https://thearda.com}, while the information for \code{colleges} was obtained from \url{https://collegestats.org/colleges/north-carolina}.
 }
 \usage{
 NC2010DMG

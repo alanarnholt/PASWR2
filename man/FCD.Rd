@@ -4,11 +4,13 @@
 \name{FCD}
 \alias{FCD}
 \title{Fat Cats}
-\format{A data frame with 36 observations on the following 2 variables: 
+\format{
+A data frame with 36 observations on the following 2 variables: 
 \itemize{
 \item \code{weight} (difference in weight (grams))
 \item \code{diet} (a factor with levels \code{A}, \code{B}, and \code{C})
-}}
+}
+}
 \usage{
 FCD
 }

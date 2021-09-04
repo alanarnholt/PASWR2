@@ -4,12 +4,14 @@
 \name{SUNDIG}
 \alias{SUNDIG}
 \title{Workstation Comparison}
-\format{A data frame with 5 observations on the following 3 variables: 
+\format{
+A data frame with 5 observations on the following 3 variables: 
 \itemize{
 \item \code{sun} (time in seconds for a Sun workstation to complete a simulation)
 \item \code{digital} (time in seconds for a Digital workstation to complete a simulation)
 \item \code{difference} (difference between \code{sun} and \code{digital})
-}}
+}
+}
 \usage{
 SUNDIG
 }

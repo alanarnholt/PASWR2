@@ -4,12 +4,14 @@
 \name{COWS}
 \alias{COWS}
 \title{Butterfat of Cows}
-\format{A data frame with 100 observations on the following 3 variables: 
+\format{
+A data frame with 100 observations on the following 3 variables: 
 \itemize{
 \item \code{butterfat} (average butterfat percentage)
 \item \code{age} (a factor with levels \code{2 years old} and \code{Mature})
 \item \code{breed} (a factor with levels \code{Ayrshire}, \code{Canadian}, \code{Guernsey}, \code{Holstein-Friesian}, and \code{Jersey}) 
-}}
+}
+}
 \source{
 Canadian record book of purebred dairy cattle.
 }

@@ -4,11 +4,13 @@
 \name{LEDDIODE}
 \alias{LEDDIODE}
 \title{LED Diodes}
-\format{A data frame with 30 observations on the following 2 variables: 
+\format{
+A data frame with 30 observations on the following 2 variables: 
 \itemize{
 \item \code{diameter} (diameter of diode measured in millimeters)
 \item \code{supplier} (factor with levels \code{supplierA} and \code{supplierB})
-}}
+}
+}
 \usage{
 LEDDIODE
 }

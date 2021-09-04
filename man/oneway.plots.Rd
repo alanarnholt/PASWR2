@@ -22,7 +22,7 @@ with(data = TIRE, oneway.plots(stopdist, tire))
 ggplot(data = TIRE, aes(tire, stopdist, fill = tire)) + 
 geom_dotplot(binaxis = "y", stackdir = "center") + coord_flip() + theme_bw()
 ggplot(data = TIRE, aes(tire, stopdist, fill = tire)) + geom_boxplot() +
-guides(fill = FALSE) + theme_bw()
+guides(fill = "none") + theme_bw()
 
 }
 \seealso{

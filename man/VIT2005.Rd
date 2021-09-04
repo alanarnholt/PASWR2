@@ -4,7 +4,8 @@
 \name{VIT2005}
 \alias{VIT2005}
 \title{Apartments in Vitoria}
-\format{A data frame with 218 observations on the following 5 variables: 
+\format{
+A data frame with 218 observations on the following 5 variables: 
 \itemize{
 \item \code{totalprice} (the market total price (in Euros) of the apartment including garage(s) and storage room(s))
 \item \code{area} (the total living area of the apartment in square meters)
@@ -21,7 +22,8 @@
 \item \code{streetcategory} (an ordered factor from best to worst indicating the category of the street with levels \code{S2}, \code{S3}, \code{S4}, and \code{S5})
 \item \code{heating} (a factor indicating the type of heating with levels \code{1A}, \code{3A}, \code{3B}, and \code{4A} which correspond to: no heating, low-standard private heating, high-standard private heating, and central heating, respectively.)
 \item \code{storage} (the number of storage rooms outside of the apartment)
-}}
+}
+}
 \usage{
 VIT2005
 }

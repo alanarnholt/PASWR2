@@ -1437,7 +1437,7 @@ NULL
 #' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 #' @examples
 #' ggplot(data = TIRE, aes(x = reorder(tire, stopdist, FUN = median), y = stopdist, 
-#' fill = tire)) + geom_boxplot() + guides(fill = FALSE) + 
+#' fill = tire)) + geom_boxplot() + guides(fill = "none") + 
 #' labs(y = "Stopping distance in feet", x = "Tire Brand") + scale_fill_brewer()
 #' summary(aov(stopdist ~ tire, data = TIRE))
 #' p <- ggplot(data = TIRE, aes(x = reorder(tire, stopdist, FUN = mean), 

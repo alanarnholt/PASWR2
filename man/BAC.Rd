@@ -4,11 +4,13 @@
 \name{BAC}
 \alias{BAC}
 \title{Blood Alcohol Content}
-\format{A data frame with 10 observations of the following 2 variables: 
+\format{
+A data frame with 10 observations of the following 2 variables: 
 \itemize{
 \item \code{X} (blood alcohol content measured in g/L) 
 \item \code{Y} (blood alcohol content measured in g/L)
-}}
+}
+}
 \usage{
 BAC
 }

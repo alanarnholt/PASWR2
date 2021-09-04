@@ -4,10 +4,12 @@
 \name{RAT}
 \alias{RAT}
 \title{Rat Survival Time}
-\format{A data frame with 20 observations on the following variable: 
+\format{
+A data frame with 20 observations on the following variable: 
 \itemize{
 \item \code{survival.time} (number of weeks survived)
-}}
+}
+}
 \source{
 Lawless, J. 1982. \emph{Statistical Models and Methods for Lifetime Data}. John Wiley, New York.
 }

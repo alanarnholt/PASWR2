@@ -4,10 +4,12 @@
 \name{TESTSCORES}
 \alias{TESTSCORES}
 \title{Statistics Grades}
-\format{A data frame with 29 observations on the following variable: 
+\format{
+A data frame with 29 observations on the following variable: 
 \itemize{
 \item \code{grade} (test score)
-}}
+}
+}
 \usage{
 TESTSCORES
 }

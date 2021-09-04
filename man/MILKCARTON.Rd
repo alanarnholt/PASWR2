@@ -4,11 +4,13 @@
 \name{MILKCARTON}
 \alias{MILKCARTON}
 \title{Milk Carton Drying Times}
-\format{A data frame with 80 observations on the following 2 variables: 
+\format{
+A data frame with 80 observations on the following 2 variables: 
 \itemize{
 \item \code{seconds} (drying time in seconds)
 \item \code{size} (factor with levels \code{halfgallon} and \code{wholegallon})
-}}
+}
+}
 \usage{
 MILKCARTON
 }

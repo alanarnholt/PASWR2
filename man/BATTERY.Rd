@@ -4,11 +4,13 @@
 \name{BATTERY}
 \alias{BATTERY}
 \title{Lithium Batteries}
-\format{A data frame with 100 observations on the following two variables: 
+\format{
+A data frame with 100 observations on the following two variables: 
 \itemize{
 \item \code{lifetime} (life time measured in hours)
 \item \code{facility} (\code{factor} with two levels \code{A} and \code{B})  
-}}
+}
+}
 \usage{
 BATTERY
 }

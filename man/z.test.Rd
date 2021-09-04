@@ -4,9 +4,18 @@
 \alias{z.test}
 \title{z-Test}
 \usage{
-z.test(x, sigma.x = NULL, y = NULL, sigma.y = NULL, sigma.d = NULL,
-  alternative = c("two.sided", "less", "greater"), mu = 0, paired = FALSE,
-  conf.level = 0.95, ...)
+z.test(
+  x,
+  sigma.x = NULL,
+  y = NULL,
+  sigma.y = NULL,
+  sigma.d = NULL,
+  alternative = c("two.sided", "less", "greater"),
+  mu = 0,
+  paired = FALSE,
+  conf.level = 0.95,
+  ...
+)
 }
 \arguments{
 \item{x}{a (non-empty) numeric vector of data values}
@@ -85,7 +94,7 @@ z.test(x, sigma.x = 0.5, y, sigma.y = 0.5, conf.level = 0.90)
 # sigma.y are both assumed to equal 0.5. The null hypothesis 
 # is that the population mean for 'x' less that for 'y' is zero.  
 # The alternative hypothesis is that this difference is not
-# zero.  A 90\\\% confidence interval for the true difference will 
+# zero.  A 90\\% confidence interval for the true difference will 
 # be computed.
 rm(x, y)  
 

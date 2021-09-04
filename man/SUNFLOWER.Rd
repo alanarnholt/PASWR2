@@ -4,14 +4,16 @@
 \name{SUNFLOWER}
 \alias{SUNFLOWER}
 \title{Sunflower Defoliation}
-\format{A data frame with 72 observations on the following 5 variables: 
+\format{
+A data frame with 72 observations on the following 5 variables: 
 \itemize{
 \item \code{location} (a factor with levels \code{A}, \code{B}, \code{C}, and \code{D} for locations Carcastillo, Melida, Murillo, and Unciti, respectively)
 \item \code{stage} (a factor with levels \code{stage1}, \code{stage2}, \code{stage3}, \code{stage4}, and \code{stage5})
 \item \code{defoli} (a factor with levels \code{control}, \code{treat1}, \code{treat2}, and \code{treat3})
 \item \code{yield} (sunflower yield in kg/ha)
 \item \code{numseed} (number of seeds per sunflower head)
-}}
+}
+}
 \source{
 Muro, J., \emph{et. al.} 2001. \dQuote{Defoliation Effects on Sunflower Yield Reduction.} \emph{Agronomy Journal}, \bold{93}: 634-637.
 }

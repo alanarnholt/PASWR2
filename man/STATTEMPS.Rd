@@ -4,12 +4,14 @@
 \name{STATTEMPS}
 \alias{STATTEMPS}
 \title{Student Temperatures}
-\format{A data frame with 34 observations on the following 3 variables: 
+\format{
+A data frame with 34 observations on the following 3 variables: 
 \itemize{
 \item \code{temperature} (temperature in Fahrenheit)
 \item \code{gender} (a factor with levels \code{Female} and \code{Male})
 \item \code{class} (a factor with levels \code{8 a.m.} and \code{9 a.m.})
-}}
+}
+}
 \usage{
 STATTEMPS
 }

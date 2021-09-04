@@ -4,7 +4,8 @@
 \name{EPIDURALF}
 \alias{EPIDURALF}
 \title{Traditional Sitting Position Versus Hamstring Stretch Position}
-\format{A data frame with 342 observations on the following 7 variables: 
+\format{
+A data frame with 342 observations on the following 7 variables: 
 \itemize{
 \item \code{doctor} (a factor with levels \code{Dr. A}, \code{Dr. B}, \code{Dr. C}, and \code{Dr. D})
 \item \code{kg} (weight in kg of patient)
@@ -13,7 +14,8 @@
 \item \code{treatment} (a factor with levels \code{Hamstring Stretch} and \code{Traditional Sitting})
 \item \code{oc} (number of obstructive contacts)
 \item \code{complications} (a factor with levels \code{Failure - person got dizzy}, \code{Failure - too many OCs}, \code{None}, \code{Paresthesia}, and \code{Wet Tap})
-}}
+}
+}
 \source{
 Fisher, K. S., Arnholt, A. T., Douglas, M. E., Vandiver, S. L., Nguyen, D. H. 2009. \dQuote{A Randomized Trial of the Traditional Sitting Position Versus the Hamstring Stretch Position for Labor Epidural Needle Placement.} \emph{Journal of Anesthesia & Analgesia}, Vol 109, No. 2: 532-534.
 }

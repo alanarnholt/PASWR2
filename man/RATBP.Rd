@@ -4,11 +4,13 @@
 \name{RATBP}
 \alias{RATBP}
 \title{Rat Blood Pressure}
-\format{A data frame with 12 observations on the following 2 variables: 
+\format{
+A data frame with 12 observations on the following 2 variables: 
 \itemize{
 \item \code{mmHg} (drops in blood pressure in mm of Hg where positive values are decreases, negative values are increases)
 \item \code{group} (factor with levels \code{control} and \code{treatment})
-}}
+}
+}
 \source{
 The data is originally from Ott and Mendenhall (\emph{Understanding Statistics}, 1985, problem 8.17).
 }

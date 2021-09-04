@@ -4,11 +4,13 @@
 \name{SBIQ}
 \alias{SBIQ}
 \title{County IQ}
-\format{A data frame with 80 observations on the following 2 variables: 
+\format{
+A data frame with 80 observations on the following 2 variables: 
 \itemize{
 \item \code{score} (IQ score)
 \item \code{county} (factor with levels \code{County1} and \code{County2})
-}}
+}
+}
 \usage{
 SBIQ
 }

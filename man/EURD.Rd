@@ -4,12 +4,14 @@
 \name{EURD}
 \alias{EURD}
 \title{European Union Research and Development}
-\format{A data frame with 15 observations on the following 3 variables: 
+\format{
+A data frame with 15 observations on the following 3 variables: 
 \itemize{
 \item \code{country} (a character vector with values \code{Bulgaria}, \code{Croatia}, \code{Cyprus}, \code{Czech Republic}, \code{Estonia}, \code{France}, \code{Hungary}, \code{Latvia}, \code{Lithuania}, \code{Malta}, \code{Portugal}, \code{Romania}, \code{Slovakia}, and \code{Slovenia})
 \item \code{rd2002} (research and development investments in millions of Euros for 2002)
 \item \code{rd2003} (research and development investments in millions of Euros for 2003)
-}}
+}
+}
 \usage{
 EURD
 }

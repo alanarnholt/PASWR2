@@ -4,8 +4,14 @@
 \alias{wilcoxe.test}
 \title{Wilcoxon Exact Test}
 \usage{
-wilcoxe.test(x, y = NULL, mu = 0, paired = FALSE,
-  alternative = c("two.sided", "less", "greater"), conf.level = 0.95)
+wilcoxe.test(
+  x,
+  y = NULL,
+  mu = 0,
+  paired = FALSE,
+  alternative = c("two.sided", "less", "greater"),
+  conf.level = 0.95
+)
 }
 \arguments{
 \item{x}{is a numeric vector of data values.  Non-finite (i.e. infinite or missing) values will be omitted.}

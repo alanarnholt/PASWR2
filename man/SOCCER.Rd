@@ -4,12 +4,14 @@
 \name{SOCCER}
 \alias{SOCCER}
 \title{World Cup  Soccer}
-\format{A data frame with 575 observations on the following 3 variables: 
+\format{
+A data frame with 575 observations on the following 3 variables: 
 \itemize{
 \item \code{cgt} (cumulative goal time in minutes - total time accumulated when a particular goal is scored)
 \item \code{game} (game in which goals were scored)
 \item \code{goals} (number of goals scored in regulation period)
-}}
+}
+}
 \source{
 Chu, S. 2003. \dQuote{Using Soccer Goals to Motivate the Poisson Process.} \emph{INFORMS} Transaction on Education, \bold{3}, \bold{2}: 62-68.
 }
@@ -20,7 +22,7 @@ SOCCER
 \code{SOCCER} contains how many goals were scored in the regulation 90 minute periods of World Cup soccer matches from 1990 to 2002.
 }
 \details{
-The World Cup is played once every four years. National teams from all over the world compete. In 2002 and in 1998, thirty-six teams were invited; whereas, in 1994 and in 1990, only 24 teams participated. The data frame \code{SOCCER} contains three columns: \code{cgt}, \code{game}, and \code{goals}. All of the information contained in \code{Soccer} is indirectly available from the FIFA World Cup website, located at \url{http://fifaworldcup.yahoo.com/}.
+The World Cup is played once every four years. National teams from all over the world compete. In 2002 and in 1998, thirty-six teams were invited; whereas, in 1994 and in 1990, only 24 teams participated. The data frame \code{SOCCER} contains three columns: \code{cgt}, \code{game}, and \code{goals}. All of the information contained in \code{Soccer} is indirectly available from the FIFA World Cup website, located at \url{https://www.fifa.com/FWCRedirectPage/final_redirectpage.html}.
 }
 \examples{
 xtabs(~goals, data = SOCCER)

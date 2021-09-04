@@ -4,11 +4,13 @@
 \name{GRADES}
 \alias{GRADES}
 \title{GPA and SAT Scores}
-\format{A data frame with 200 observations on the following 2 variables: 
+\format{
+A data frame with 200 observations on the following 2 variables: 
 \itemize{
 \item \code{sat} (SAT score)
 \item \code{gpa} (grade point average)
-}}
+}
+}
 \usage{
 GRADES
 }
