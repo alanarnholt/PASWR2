@@ -42,7 +42,7 @@ A data frame with 100 observations (counties) on the following 32 variables:
 }
 \source{
 The original data was provided by E.L. Davison, Department of Sociology, Appalachian State University.  Variables
-\code{countyName} through \code{popden} were obtained from \url{https://data.census.gov/cedsci/} and further cleaned by Maureen O'Donnell and Eitan Lees. The variables \code{pctfor} through \code{mccain08} were obtained from \url{https://www.ncsbe.gov/}. The variables \code{evanrate} and \code{churches} were obtained from \url{https://thearda.com}, while the information for \code{colleges} was obtained from \url{https://collegestats.org/colleges/north-carolina}.
+\code{countyName} through \code{popden} were obtained from \url{https://data.census.gov/cedsci/} and further cleaned by Maureen O'Donnell and Eitan Lees. The variables \code{pctfor} through \code{mccain08} were obtained from \url{https://www.ncsbe.gov/}. The variables \code{evanrate} and \code{churches} were obtained from \url{https://thearda.com}, while the information for \code{colleges} was obtained from \url{https://collegestats.org/colleges/north-carolina/}.
 }
 \usage{
 NC2010DMG
@@ -53,7 +53,7 @@ North Carolina county demographics for 2010 and county voter information for the
 \examples{
 ggplot(data = MILKCARTON, aes(x = size, y = seconds)) + geom_boxplot()
 ggplot(data = MILKCARTON, aes(x = size, y = seconds, fill = size)) + geom_boxplot() + 
-guides(fill = FALSE) + scale_fill_brewer() + 
+guides(fill = "none") + scale_fill_brewer() + 
 labs(x = "size of container", y = "drying time in seconds")
 }
 \references{

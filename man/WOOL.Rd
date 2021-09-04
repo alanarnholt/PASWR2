@@ -19,7 +19,7 @@ Random sample of wool production in thousands of kilograms on 5 different days a
 }
 \examples{
 ggplot(data = WOOL, aes(location, production, fill = location)) + geom_boxplot() + 
-guides(fill = FALSE) + scale_fill_brewer()
+guides(fill = "none") + scale_fill_brewer()
 t.test(production ~ location, data = WOOL)
 }
 \references{

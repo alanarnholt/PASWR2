@@ -19,11 +19,11 @@ Salaries for engineering graduates 10 years after graduation
 }
 \examples{
 ggplot(data = ENGINEER, aes(x = university, y = salary, fill = university)) + 
-geom_boxplot() + guides(fill = FALSE) + scale_fill_brewer() + 
+geom_boxplot() + guides(fill = "none") + scale_fill_brewer() + 
 labs(y = "salary 10 years after graduation \n in thousands of dollars")
 # Violin Plots
 ggplot(data = ENGINEER, aes(x = university, y = salary, fill = university)) + 
-geom_violin() + guides(fill = FALSE) + scale_fill_brewer() + 
+geom_violin() + guides(fill = "none") + scale_fill_brewer() + 
 labs(y = "salary 10 years after graduation \n in thousands of dollars")
 }
 \references{
