@@ -112,7 +112,7 @@ NULL
 #' \item \code{ba} (batting average = h/ab)
 #' \item \code{slg} (slugging percentage = total bases/at bats)
 #' }
-#' @source \url{http://www.baseball-reference.com/about/bat_glossary.shtml}
+#' @source \url{https://www.baseball-reference.com/about/bat_glossary.shtml}
 #' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 #' @examples
 #' ggplot(data = BABERUTH, aes(x = ba)) + geom_histogram(binwidth = 0.03) + 
@@ -942,7 +942,7 @@ NULL
 #' \item \code{colleges} (The number of colleges in the county in 2010)
 #' }
 #' @source The original data was provided by E.L. Davison, Department of Sociology, Appalachian State University.  Variables
-#' \code{countyName} through \code{popden} were obtained from \url{http://factfinder2.census.gov/faces/nav/jsf/pages/searchresults.xhtml?refresh=t#"} and further cleaned by Maureen O'Donnell and Eitan Lees. The variables \code{pctfor} through \code{mccain08} were obtained from \url{http://www.ncsbe.gov/}. The variables \code{evanrate} and \code{churches} were obtained from \url{http://thearda.com}, while the information for \code{colleges} was obtained from \url{http://collegestats.org/colleges/north-carolina}.
+#' \code{countyName} through \code{popden} were obtained from \url{https://data.census.gov/cedsci/} and further cleaned by Maureen O'Donnell and Eitan Lees. The variables \code{pctfor} through \code{mccain08} were obtained from \url{https://www.ncsbe.gov/}. The variables \code{evanrate} and \code{churches} were obtained from \url{https://thearda.com}, while the information for \code{colleges} was obtained from \url{https://collegestats.org/colleges/north-carolina}.
 #' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 #' @examples
 #' ggplot(data = MILKCARTON, aes(x = size, y = seconds)) + geom_boxplot()
@@ -1266,7 +1266,7 @@ NULL
 #' \item \code{game} (game in which goals were scored)
 #' \item \code{goals} (number of goals scored in regulation period)
 #' }
-#' @details The World Cup is played once every four years. National teams from all over the world compete. In 2002 and in 1998, thirty-six teams were invited; whereas, in 1994 and in 1990, only 24 teams participated. The data frame \code{SOCCER} contains three columns: \code{cgt}, \code{game}, and \code{goals}. All of the information contained in \code{Soccer} is indirectly available from the FIFA World Cup website, located at \url{http://fifaworldcup.yahoo.com/}.
+#' @details The World Cup is played once every four years. National teams from all over the world compete. In 2002 and in 1998, thirty-six teams were invited; whereas, in 1994 and in 1990, only 24 teams participated. The data frame \code{SOCCER} contains three columns: \code{cgt}, \code{game}, and \code{goals}. All of the information contained in \code{Soccer} is indirectly available from the FIFA World Cup website, located at \url{https://www.fifa.com/FWCRedirectPage/final_redirectpage.html}.
 #' @source Chu, S. 2003. \dQuote{Using Soccer Goals to Motivate the Poisson Process.} \emph{INFORMS} Transaction on Education, \bold{3}, \bold{2}: 62-68.
 #' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 #' @examples
@@ -1494,7 +1494,7 @@ NULL
 #' \item \code{home.dest} (Home/Destination)
 #' }
 #' @details Thomas Cason from the University of Virginia has greatly updated and improved the \code{titanic} data frame using the \emph{Encyclopedia Titanica} and created a new dataset called \code{TITANIC3}. This dataset reflects the state of data available as of August 2, 1999. Some duplicate passengers have been dropped; many errors have been corrected; many missing ages have been filled in; and new variables have been created.
-#' @source \url{http://biostat.mc.vanderbilt.edu/twiki/pub/Main/DataSets/titanic.html}
+#' @source \url{https://hbiostat.org/data/repo/titanic.html}
 #' @references \itemize{ 
 #' \item Harrell, F. E. 2001.
 #'  \emph{Regression Modeling Strategies with Applications to Linear Models, Logistic Regression, and Survival Analysis}.  Springer.
@@ -1530,7 +1530,7 @@ NULL
 #' \itemize{
 #' \item \code{income} (yearly income in millions of dollars)
 #' }
-#' @source \url{http://www.atpworldtour.com/}
+#' @source \url{https://www.atpworldtour.com/}
 #' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 #' @examples
 #' ggplot(data = TOP20, aes(x = income)) + 
