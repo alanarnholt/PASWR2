@@ -25,7 +25,7 @@ NULL
 #' v.names = "aggression", direction = "long")
 #' ggplot(data = AL, aes(x = factor(time), y = aggression, fill = factor(time))) + 
 #' geom_boxplot() + labs(x = "") + scale_x_discrete(breaks = c(1, 2), 
-#' labels = c("Violence", "No Violence")) + guides(fill = FALSE) + scale_fill_brewer()
+#' labels = c("Violence", "No Violence")) + guides(fill = "none") + scale_fill_brewer()
 #' rm(AL)
 #' with(data = AGGRESSION, 
 #' wilcox.test(violence, noviolence, paired = TRUE, alternative = "greater"))
@@ -73,17 +73,17 @@ NULL
 #' labels =c("Mendebaldea", "San Jorge")) + scale_fill_brewer()
 #' p + geom_boxplot()
 #' # remove the legend
-#' p + geom_boxplot() + guides(fill = FALSE)
+#' p + geom_boxplot() + guides(fill = "none")
 #' # violin plot
-#' p + geom_violin(scale = 'area') + guides(fill = FALSE)
-#' p + geom_violin(scale = 'count') + guides(fill = FALSE)
-#' p + geom_violin() + geom_boxplot(width = 0.15, fill = 'black') + guides(fill = FALSE) + 
-#' stat_summary(fun.y = median, geom = "point", fill = "white", shape = 23, size = 3)
+#' p + geom_violin(scale = 'area') + guides(fill = "none")
+#' p + geom_violin(scale = 'count') + guides(fill = "none")
+#' p + geom_violin() + geom_boxplot(width = 0.15, fill = 'black') + guides(fill = "none") + 
+#' stat_summary(fun = median, geom = "point", fill = "white", shape = 23, size = 3)
 #' # dotplot
 #' p + geom_dotplot(binaxis = "y", stackdir = "center", binwidth = 3) + 
-#' guides(fill = FALSE)
+#' guides(fill = "none")
 #' p + geom_boxplot(width = 0.4) + geom_dotplot(binaxis = "y", stackdir = "center", 
-#' binwidth = 3) + guides(fill = FALSE) + scale_fill_brewer(type = "qual", palette = 1)
+#' binwidth = 3) + guides(fill = "none") + scale_fill_brewer(type = "qual", palette = 1)
 #' # base graphics
 #' boxplot(size ~ location, data = APTSIZE, col = c("red", "yellow"), 
 #' ylab = "Apartment size (square meters)")
@@ -112,7 +112,7 @@ NULL
 #' \item \code{ba} (batting average = h/ab)
 #' \item \code{slg} (slugging percentage = total bases/at bats)
 #' }
-#' @source \url{http://www.baseball-reference.com/about/bat_glossary.shtml}
+#' @source \url{https://www.baseball-reference.com/about/bat_glossary.shtml}
 #' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 #' @examples
 #' ggplot(data = BABERUTH, aes(x = ba)) + geom_histogram(binwidth = 0.03) + 
@@ -141,13 +141,13 @@ NULL
 #' # library(reshape2)
 #' # BACL <- melt(BAC, variable.name = "company", value.name = "bac")
 #' # ggplot(data = BACL, aes(x = company, y = bac, fill = company)) + 
-#' # geom_boxplot() + guides(fill = FALSE) + scale_fill_brewer() + 
+#' # geom_boxplot() + guides(fill = "none") + scale_fill_brewer() + 
 #' # labs(y = "blood alcohol content measured in g/L")
 #' # Convert with reshape()
 #' BACL <- reshape(BAC, varying = c("X", "Y"), v.names = "bac", timevar = "company", 
 #' direction = "long")
 #' ggplot(data = BACL, aes(x = factor(company), y = bac, fill = factor(company))) + 
-#' geom_boxplot() + guides(fill = FALSE) + scale_fill_brewer() + 
+#' geom_boxplot() + guides(fill = "none") + scale_fill_brewer() + 
 #' labs(y = "blood alcohol content measured in g/L", x = "") + 
 #' scale_x_discrete(breaks = c(1, 2), labels = c("Company X", "Company Y"))
 #' 
@@ -173,7 +173,7 @@ NULL
 #' q <- ggplot(data = BATTERY, aes(x = facility, y = lifetime))
 #' q + geom_violin()
 #' ggplot(data = BATTERY, aes(x = facility, y = lifetime, fill = facility)) + 
-#' geom_violin() + scale_fill_brewer() + guides(fill = FALSE)
+#' geom_violin() + scale_fill_brewer() + guides(fill = "none")
 #' ggplot(data = BATTERY, aes(sample = lifetime)) + stat_qq() + facet_grid(. ~ facility)
 #' ggplot(data = BATTERY, aes(sample = lifetime, color = facility)) + stat_qq()
 #' # lattice approach
@@ -225,12 +225,12 @@ NULL
 #' # ggplot2 approach
 #' ggplot(data=BODYFAT, aes(x = sex, y = fat, fill = sex)) + geom_boxplot() + 
 #' labs(x = "",y = "Percent body fat") + scale_x_discrete(breaks=c("F", "M"), 
-#' labels =c("Female", "Male")) + guides(fill = FALSE) + 
+#' labels =c("Female", "Male")) + guides(fill = "none") + 
 #' scale_fill_manual(values = c("red", "green"))
 #' # Brewer Colors
 #' ggplot(data=BODYFAT, aes(x = sex, y = fat, fill = sex)) + geom_boxplot() + 
 #' labs(x = "", y = "Percent body fat") + scale_x_discrete(breaks=c("F", "M"), 
-#' labels =c("Female", "Male")) + guides(fill = FALSE) + scale_fill_brewer()
+#' labels =c("Female", "Male")) + guides(fill = "none") + scale_fill_brewer()
 #' ggplot(data=BODYFAT, aes(x = fat, fill = sex)) + geom_density(alpha = 0.4) + 
 #' scale_fill_brewer() 
 #' @keywords datasets
@@ -251,7 +251,7 @@ NULL
 #' # ggplot2 approach
 #' ggplot(data = CALCULUS, aes(sample = score)) + stat_qq() + facet_grid(. ~ calculus)
 #' ggplot(data = CALCULUS, aes(x = calculus, y = score, fill = calculus)) + geom_boxplot() + 
-#' guides(fill = FALSE) + scale_fill_brewer()
+#' guides(fill = "none") + scale_fill_brewer()
 #' ggplot(data = CALCULUS, aes(sample = score, color = calculus)) + stat_qq()
 #' # lattice approach
 #' qqmath(~score|calculus, data = CALCULUS)
@@ -316,15 +316,15 @@ NULL
 #' @examples
 #' # ggplot2 approach
 #' ggplot(data = CIRCUIT, aes(x = design, y = lifetime, fill = design)) + geom_boxplot() + 
-#' labs(x = "", y = "Lifetime in thousands of hours") + guides(fill = FALSE) + 
+#' labs(x = "", y = "Lifetime in thousands of hours") + guides(fill = "none") + 
 #' scale_fill_brewer()
 #' ggplot(data = CIRCUIT, aes(x = design, y = lifetime, fill = design)) + geom_violin() + 
-#' labs(x = "", y = "Lifetime in thousands of hours") + guides(fill = FALSE) + 
+#' labs(x = "", y = "Lifetime in thousands of hours") + guides(fill = "none") + 
 #' scale_fill_brewer()
 #' # Reorder the boxplots by medians
 #' ggplot(data = CIRCUIT, aes(x = reorder(design, lifetime, FUN = median),  lifetime, 
 #' fill = design)) + geom_boxplot() + labs(x = "", y = "Lifetime in thousands of hours") + 
-#' guides(fill = FALSE) + scale_fill_brewer()
+#' guides(fill = "none") + scale_fill_brewer()
 #' @keywords datasets
 "CIRCUIT"
 #####################################################################################
@@ -415,11 +415,11 @@ NULL
 #' @references \itemize{ \item Sokal, R. R. and Rohlf, F. J. 1994. \emph{Biometry}.  W. H. Freeman, New York, third edition. \item Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.}
 #' @examples
 #' ggplot(data = DROSOPHILA, aes(x = reorder(line, fecundity, FUN = median),  
-#' y = fecundity, fill = line)) + geom_boxplot() + guides(fill = FALSE) + 
+#' y = fecundity, fill = line)) + geom_boxplot() + guides(fill = "none") + 
 #' labs(y ="number of eggs laid per female \n per day for the first 14 days of life", 
 #' x = "") + scale_fill_brewer()
 #' ggplot(data = DROSOPHILA, aes(x = reorder(line, fecundity, FUN = median), 
-#' y = fecundity, fill = line)) + geom_violin() + guides(fill = FALSE) + 
+#' y = fecundity, fill = line)) + geom_violin() + guides(fill = "none") + 
 #' labs(y ="number of eggs laid per female \n per day for the first 14 days of life", 
 #' x = "") + scale_fill_brewer()
 #' summary(aov(fecundity ~ line, data = DROSOPHILA))
@@ -439,11 +439,11 @@ NULL
 #' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 #' @examples
 #' ggplot(data = ENGINEER, aes(x = university, y = salary, fill = university)) + 
-#' geom_boxplot() + guides(fill = FALSE) + scale_fill_brewer() + 
+#' geom_boxplot() + guides(fill = "none") + scale_fill_brewer() + 
 #' labs(y = "salary 10 years after graduation \n in thousands of dollars")
 #' # Violin Plots
 #' ggplot(data = ENGINEER, aes(x = university, y = salary, fill = university)) + 
-#' geom_violin() + guides(fill = FALSE) + scale_fill_brewer() + 
+#' geom_violin() + guides(fill = "none") + scale_fill_brewer() + 
 #' labs(y = "salary 10 years after graduation \n in thousands of dollars")
 #' @keywords datasets
 "ENGINEER"
@@ -491,7 +491,7 @@ NULL
 #' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 #' @examples
 #' ggplot(data = EPIDURALF, aes(x = treatment, y = oc, fill = treatment)) +
-#'  geom_boxplot() + guides(fill = FALSE) + scale_fill_brewer() + 
+#'  geom_boxplot() + guides(fill = "none") + scale_fill_brewer() + 
 #'  labs(y = "number of obstructive contacts")
 #' @keywords datasets
 "EPIDURALF"
@@ -612,7 +612,7 @@ NULL
 #' F1L <- reshape(FORMULA1, varying = c("team1", "team2"), v.names = "time", 
 #' timevar = "team", idvar = "race", direction = "long")
 #' ggplot(data = F1L, aes(x = factor(team), y = time, fill = factor(team))) + 
-#' geom_boxplot() + guides(fill = FALSE) + scale_x_discrete(breaks = 1:2, 
+#' geom_boxplot() + guides(fill = "none") + scale_x_discrete(breaks = 1:2, 
 #' labels = c("Team 1", "Team 2")) + labs(x = "", y = "Pit stop times in seconds")
 #' with(data = FORMULA1, 
 #' boxplot(team1, team2, col = c("red", "blue")))
@@ -897,7 +897,7 @@ NULL
 #' @examples
 #' ggplot(data = MILKCARTON, aes(x = size, y = seconds)) + geom_boxplot()
 #' ggplot(data = MILKCARTON, aes(x = size, y = seconds, fill = size)) + geom_boxplot() + 
-#' guides(fill = FALSE) + scale_fill_brewer() + 
+#' guides(fill = "none") + scale_fill_brewer() + 
 #' labs(x = "size of container", y = "drying time in seconds")
 #' @keywords datasets
 "MILKCARTON"
@@ -942,12 +942,12 @@ NULL
 #' \item \code{colleges} (The number of colleges in the county in 2010)
 #' }
 #' @source The original data was provided by E.L. Davison, Department of Sociology, Appalachian State University.  Variables
-#' \code{countyName} through \code{popden} were obtained from \url{http://factfinder2.census.gov/faces/nav/jsf/pages/searchresults.xhtml?refresh=t#"} and further cleaned by Maureen O'Donnell and Eitan Lees. The variables \code{pctfor} through \code{mccain08} were obtained from \url{http://www.ncsbe.gov/}. The variables \code{evanrate} and \code{churches} were obtained from \url{http://thearda.com}, while the information for \code{colleges} was obtained from \url{http://collegestats.org/colleges/north-carolina}.
+#' \code{countyName} through \code{popden} were obtained from \url{https://data.census.gov/cedsci/} and further cleaned by Maureen O'Donnell and Eitan Lees. The variables \code{pctfor} through \code{mccain08} were obtained from \url{https://www.ncsbe.gov/}. The variables \code{evanrate} and \code{churches} were obtained from \url{https://thearda.com}, while the information for \code{colleges} was obtained from \url{https://collegestats.org/colleges/north-carolina/}.
 #' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 #' @examples
 #' ggplot(data = MILKCARTON, aes(x = size, y = seconds)) + geom_boxplot()
 #' ggplot(data = MILKCARTON, aes(x = size, y = seconds, fill = size)) + geom_boxplot() + 
-#' guides(fill = FALSE) + scale_fill_brewer() + 
+#' guides(fill = "none") + scale_fill_brewer() + 
 #' labs(x = "size of container", y = "drying time in seconds")
 #' @keywords datasets
 "NC2010DMG"
@@ -1055,7 +1055,7 @@ NULL
 #' # Boxplot
 #' ggplot(data = RATBP, aes(x = group, y = mmHg)) + geom_boxplot()
 #' ggplot(data = RATBP, aes(x = group, y = mmHg, fill = group)) + geom_boxplot() + 
-#' guides(fill = FALSE) + labs(x = "", y = "drops in blood pressure in mm  of Hg") + 
+#' guides(fill = "none") + labs(x = "", y = "drops in blood pressure in mm  of Hg") + 
 #' scale_fill_brewer()
 #' @keywords datasets
 "RATBP"
@@ -1076,7 +1076,7 @@ NULL
 #' ggplot(data = REFRIGERATOR, aes(x = group, y = kilowatts)) + geom_boxplot()
 #' ggplot(data = REFRIGERATOR, aes(x = group, y = kilowatts, fill = group)) + 
 #' geom_boxplot() + labs(y = "energy consumption in kilowatts for a 24 hour period") + 
-#' guides(fill = FALSE) + scale_fill_brewer()
+#' guides(fill = "none") + scale_fill_brewer()
 #' @keywords datasets
 "REFRIGERATOR"
 ###########################################################################
@@ -1266,7 +1266,7 @@ NULL
 #' \item \code{game} (game in which goals were scored)
 #' \item \code{goals} (number of goals scored in regulation period)
 #' }
-#' @details The World Cup is played once every four years. National teams from all over the world compete. In 2002 and in 1998, thirty-six teams were invited; whereas, in 1994 and in 1990, only 24 teams participated. The data frame \code{SOCCER} contains three columns: \code{cgt}, \code{game}, and \code{goals}. All of the information contained in \code{Soccer} is indirectly available from the FIFA World Cup website, located at \url{http://fifaworldcup.yahoo.com/}.
+#' @details The World Cup is played once every four years. National teams from all over the world compete. In 2002 and in 1998, thirty-six teams were invited; whereas, in 1994 and in 1990, only 24 teams participated. The data frame \code{SOCCER} contains three columns: \code{cgt}, \code{game}, and \code{goals}. All of the information contained in \code{Soccer} is indirectly available from the FIFA World Cup website, located at \url{https://www.fifa.com/}.
 #' @source Chu, S. 2003. \dQuote{Using Soccer Goals to Motivate the Poisson Process.} \emph{INFORMS} Transaction on Education, \bold{3}, \bold{2}: 62-68.
 #' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 #' @examples
@@ -1387,7 +1387,7 @@ NULL
 #' @examples
 #' wilcox.test(seconds ~ diet, data = SWIMTIMES)
 #' ggplot(data = SWIMTIMES, aes(x = diet, y = seconds, fill = diet)) + geom_violin() + 
-#' guides(fill = FALSE) + scale_fill_brewer()
+#' guides(fill = "none") + scale_fill_brewer()
 #' @keywords datasets
 "SWIMTIMES"
 ###########################################################################
@@ -1437,14 +1437,14 @@ NULL
 #' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 #' @examples
 #' ggplot(data = TIRE, aes(x = reorder(tire, stopdist, FUN = median), y = stopdist, 
-#' fill = tire)) + geom_boxplot() + guides(fill = FALSE) + 
+#' fill = tire)) + geom_boxplot() + guides(fill = "none") + 
 #' labs(y = "Stopping distance in feet", x = "Tire Brand") + scale_fill_brewer()
 #' summary(aov(stopdist ~ tire, data = TIRE))
 #' p <- ggplot(data = TIRE, aes(x = reorder(tire, stopdist, FUN = mean), 
 #' y = stopdist, fill = tire))
 #' p + geom_boxplot(width = 0.6) + geom_dotplot(binaxis = "y", stackdir = "center",
-#' binwidth = 2) + guides(fill = FALSE) + scale_fill_brewer() + 
-#' stat_summary(fun.y = mean, geom = "point", fill = "black", shape = 23, size = 3) +
+#' binwidth = 2) + guides(fill = "none") + scale_fill_brewer() + 
+#' stat_summary(fun = mean, geom = "point", fill = "black", shape = 23, size = 3) +
 #' labs(x = "Tire Brand", y = "Stopping distance in feet")
 #' @keywords datasets
 "TIRE"
@@ -1494,7 +1494,7 @@ NULL
 #' \item \code{home.dest} (Home/Destination)
 #' }
 #' @details Thomas Cason from the University of Virginia has greatly updated and improved the \code{titanic} data frame using the \emph{Encyclopedia Titanica} and created a new dataset called \code{TITANIC3}. This dataset reflects the state of data available as of August 2, 1999. Some duplicate passengers have been dropped; many errors have been corrected; many missing ages have been filled in; and new variables have been created.
-#' @source \url{http://biostat.mc.vanderbilt.edu/twiki/pub/Main/DataSets/titanic.html}
+#' @source \url{https://hbiostat.org/data/repo/titanic.html}
 #' @references \itemize{ 
 #' \item Harrell, F. E. 2001.
 #'  \emph{Regression Modeling Strategies with Applications to Linear Models, Logistic Regression, and Survival Analysis}.  Springer.
@@ -1530,7 +1530,7 @@ NULL
 #' \itemize{
 #' \item \code{income} (yearly income in millions of dollars)
 #' }
-#' @source \url{http://www.atpworldtour.com/}
+#' @source \url{https://www.atptour.com/}
 #' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 #' @examples
 #' ggplot(data = TOP20, aes(x = income)) + 
@@ -1730,7 +1730,7 @@ NULL
 #' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. 2015. \emph{Probability and Statistics with R}, Second Edition. Chapman & Hall / CRC.
 #' @examples
 #' ggplot(data = WOOL, aes(location, production, fill = location)) + geom_boxplot() + 
-#' guides(fill = FALSE) + scale_fill_brewer()
+#' guides(fill = "none") + scale_fill_brewer()
 #' t.test(production ~ location, data = WOOL)
 #' @keywords datasets
 "WOOL"

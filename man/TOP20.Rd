@@ -11,7 +11,7 @@ A data frame with 15 observations on the following variable:
 }
 }
 \source{
-\url{http://www.atpworldtour.com/}
+\url{https://www.atptour.com/}
 }
 \usage{
 TOP20

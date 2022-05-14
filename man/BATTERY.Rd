@@ -23,7 +23,7 @@ p + geom_density()
 q <- ggplot(data = BATTERY, aes(x = facility, y = lifetime))
 q + geom_violin()
 ggplot(data = BATTERY, aes(x = facility, y = lifetime, fill = facility)) + 
-geom_violin() + scale_fill_brewer() + guides(fill = FALSE)
+geom_violin() + scale_fill_brewer() + guides(fill = "none")
 ggplot(data = BATTERY, aes(sample = lifetime)) + stat_qq() + facet_grid(. ~ facility)
 ggplot(data = BATTERY, aes(sample = lifetime, color = facility)) + stat_qq()
 # lattice approach

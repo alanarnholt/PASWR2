@@ -20,7 +20,7 @@ A plastics manufacturer makes two sizes of milk containers: half gallon and gall
 \examples{
 ggplot(data = MILKCARTON, aes(x = size, y = seconds)) + geom_boxplot()
 ggplot(data = MILKCARTON, aes(x = size, y = seconds, fill = size)) + geom_boxplot() + 
-guides(fill = FALSE) + scale_fill_brewer() + 
+guides(fill = "none") + scale_fill_brewer() + 
 labs(x = "size of container", y = "drying time in seconds")
 }
 \references{

@@ -20,14 +20,14 @@ The data frame \code{TIRE} has the stopping distances measured to the nearest fo
 }
 \examples{
 ggplot(data = TIRE, aes(x = reorder(tire, stopdist, FUN = median), y = stopdist, 
-fill = tire)) + geom_boxplot() + guides(fill = FALSE) + 
+fill = tire)) + geom_boxplot() + guides(fill = "none") + 
 labs(y = "Stopping distance in feet", x = "Tire Brand") + scale_fill_brewer()
 summary(aov(stopdist ~ tire, data = TIRE))
 p <- ggplot(data = TIRE, aes(x = reorder(tire, stopdist, FUN = mean), 
 y = stopdist, fill = tire))
 p + geom_boxplot(width = 0.6) + geom_dotplot(binaxis = "y", stackdir = "center",
-binwidth = 2) + guides(fill = FALSE) + scale_fill_brewer() + 
-stat_summary(fun.y = mean, geom = "point", fill = "black", shape = 23, size = 3) +
+binwidth = 2) + guides(fill = "none") + scale_fill_brewer() + 
+stat_summary(fun = mean, geom = "point", fill = "black", shape = 23, size = 3) +
 labs(x = "Tire Brand", y = "Stopping distance in feet")
 }
 \references{

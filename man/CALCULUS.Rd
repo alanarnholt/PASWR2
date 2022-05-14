@@ -21,7 +21,7 @@ Mathematical assessment scores for 36 students enrolled in a biostatistics cours
 # ggplot2 approach
 ggplot(data = CALCULUS, aes(sample = score)) + stat_qq() + facet_grid(. ~ calculus)
 ggplot(data = CALCULUS, aes(x = calculus, y = score, fill = calculus)) + geom_boxplot() + 
-guides(fill = FALSE) + scale_fill_brewer()
+guides(fill = "none") + scale_fill_brewer()
 ggplot(data = CALCULUS, aes(sample = score, color = calculus)) + stat_qq()
 # lattice approach
 qqmath(~score|calculus, data = CALCULUS)

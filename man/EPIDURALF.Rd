@@ -27,7 +27,7 @@ Intermediate results from a study to determine whether the traditional sitting p
 }
 \examples{
 ggplot(data = EPIDURALF, aes(x = treatment, y = oc, fill = treatment)) +
- geom_boxplot() + guides(fill = FALSE) + scale_fill_brewer() + 
+ geom_boxplot() + guides(fill = "none") + scale_fill_brewer() + 
  labs(y = "number of obstructive contacts")
 }
 \references{

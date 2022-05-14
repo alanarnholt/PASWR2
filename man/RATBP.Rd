@@ -24,7 +24,7 @@ Twelve rats were chosen, and a drug was administered to six rats, the treatment 
 # Boxplot
 ggplot(data = RATBP, aes(x = group, y = mmHg)) + geom_boxplot()
 ggplot(data = RATBP, aes(x = group, y = mmHg, fill = group)) + geom_boxplot() + 
-guides(fill = FALSE) + labs(x = "", y = "drops in blood pressure in mm  of Hg") + 
+guides(fill = "none") + labs(x = "", y = "drops in blood pressure in mm  of Hg") + 
 scale_fill_brewer()
 }
 \references{

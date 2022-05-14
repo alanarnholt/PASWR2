@@ -24,7 +24,7 @@ A data frame with 22 observation of the following 14 variables:
 }
 }
 \source{
-\url{http://www.baseball-reference.com/about/bat_glossary.shtml}
+\url{https://www.baseball-reference.com/about/bat_glossary.shtml}
 }
 \usage{
 BABERUTH

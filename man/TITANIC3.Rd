@@ -24,7 +24,7 @@ A data frame with 1309 observations on the following 14 variables:
 }
 }
 \source{
-\url{http://biostat.mc.vanderbilt.edu/twiki/pub/Main/DataSets/titanic.html}
+\url{https://hbiostat.org/data/repo/titanic.html}
 }
 \usage{
 TITANIC3
