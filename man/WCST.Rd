@@ -4,10 +4,12 @@
 \name{WCST}
 \alias{WCST}
 \title{Wisconsin Card Sorting Test}
-\format{A data frame with 50 observations on the following variable: 
+\format{
+A data frame with 50 observations on the following variable: 
 \itemize{
 \item \code{score} (score on the Wisconsin Card Sorting Test)
-}}
+}
+}
 \usage{
 WCST
 }

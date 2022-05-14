@@ -4,10 +4,12 @@
 \name{WASHER}
 \alias{WASHER}
 \title{Washer Diameter}
-\format{A data frame with 20 observations on the following variable: 
+\format{
+A data frame with 20 observations on the following variable: 
 \itemize{
 \item \code{diameter} (diameter of washer in cm)
-}}
+}
+}
 \usage{
 WASHER
 }

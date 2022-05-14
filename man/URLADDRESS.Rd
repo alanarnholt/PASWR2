@@ -4,11 +4,13 @@
 \name{URLADDRESS}
 \alias{URLADDRESS}
 \title{Megabytes Downloaded}
-\format{A data frame with 30 observations on the following 2 variables: 
+\format{
+A data frame with 30 observations on the following 2 variables: 
 \itemize{
 \item \code{megasd} (megabytes downloaded)
 \item \code{mconnected} (number of minutes connected)
-}}
+}
+}
 \usage{
 URLADDRESS
 }

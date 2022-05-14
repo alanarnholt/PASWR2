@@ -4,11 +4,13 @@
 \name{WOOL}
 \alias{WOOL}
 \title{Wool Production}
-\format{A data frame with 30 observations on the following 2 variables: 
+\format{
+A data frame with 30 observations on the following 2 variables: 
 \itemize{
 \item \code{production} (wool production in thousands of kilograms)
 \item \code{location} (a factor with levels \code{textileA} and \code{textileB}.)
-}}
+}
+}
 \usage{
 WOOL
 }

@@ -4,12 +4,14 @@
 \name{FAGUS}
 \alias{FAGUS}
 \title{Retained Carbon in Beech Trees}
-\format{A data frame with 41 observations on the following 3 variables: 
+\format{
+A data frame with 41 observations on the following 3 variables: 
 \itemize{
 \item \code{plot} (plot number)
 \item \code{carbon} (carbon retained by leaves measured in kg/ha)
 \item \code{type} (a factor with levels \code{monospecific} and \code{multispecific})
-}}
+}
+}
 \source{
 \emph{Gobierno de Navarra} and \emph{Gestion Ambiental Viveros y Repoblaciones de Navarra}, 2006.  The data were obtained within the European Project FORSEE.
 }

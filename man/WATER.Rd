@@ -4,13 +4,15 @@
 \name{WATER}
 \alias{WATER}
 \title{Sodium Content of Water}
-\format{A data frame with 30 observations on the following 4 variables: 
+\format{
+A data frame with 30 observations on the following 4 variables: 
 \itemize{
 \item \code{x} (sodium content measured in mg/L)
 \item \code{y} (sodium content measured in mg/L)
 \item \code{sodium} (combined sodium content measured in mg/L)
 \item \code{source} (a factor with levels \code{x} and \code{y})
-}}
+}
+}
 \usage{
 WATER
 }

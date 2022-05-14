@@ -4,11 +4,13 @@
 \name{HUBBLE}
 \alias{HUBBLE}
 \title{Hubble Telescope}
-\format{A data frame with 15 observations on the following 2 variables: 
+\format{
+A data frame with 15 observations on the following 2 variables: 
 \itemize{
 \item \code{team1} (days to complete scenario)
 \item \code{team2} (days to complete scenario)
-}}
+}
+}
 \usage{
 HUBBLE
 }

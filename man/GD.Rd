@@ -4,10 +4,12 @@
 \name{GD}
 \alias{GD}
 \title{Times Until Failure}
-\format{A data frame with 100 observations on the following variable: 
+\format{
+A data frame with 100 observations on the following variable: 
 \itemize{
 \item \code{attf} (times until failure in hours)
-}}
+}
+}
 \usage{
 GD
 }

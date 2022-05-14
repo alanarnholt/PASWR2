@@ -4,11 +4,13 @@
 \name{REFRIGERATOR}
 \alias{REFRIGERATOR}
 \title{Refrigerator Energy Consumption}
-\format{A data frame with 60 observations on the following 2 variables: 
+\format{
+A data frame with 60 observations on the following 2 variables: 
 \itemize{
 \item \code{kilowatts} (energy consumption in kilowatts for a 24 hour period)
 \item \code{group} (factor with levels \code{original} and \code{modified})
-}}
+}
+}
 \usage{
 REFRIGERATOR
 }

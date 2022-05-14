@@ -4,11 +4,13 @@
 \name{JANKA}
 \alias{JANKA}
 \title{Australian Eucalypt Hardwoods}
-\format{A data frame with 36 observations on the following 2 variables: 
+\format{
+A data frame with 36 observations on the following 2 variables: 
 \itemize{
 \item \code{density} (a measure of density of the timber)
 \item \code{hardness} (the Janka hardness of the timber)
-}}
+}
+}
 \source{
 Williams, E.J. 1959. \emph{Regression Analysis}.  John Wiley & Sons, New York.
 }

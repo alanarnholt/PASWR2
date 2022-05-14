@@ -4,14 +4,16 @@
 \name{SIMDATAXT}
 \alias{SIMDATAXT}
 \title{Simulated Data (Logarithms)}
-\format{A data frame with 200 observations on the following 4 variables: 
+\format{
+A data frame with 200 observations on the following 4 variables: 
 \itemize{
 \item \code{y1} (a numeric vector)
 \item \code{y2} (a numeric vector)
 \item \code{x1} (a numeric vector)
 \item \code{x2} (a numeric vector)
 \item \code{x3} (a numeric vector)
-}}
+}
+}
 \usage{
 SIMDATAXT
 }

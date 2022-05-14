@@ -4,12 +4,14 @@
 \name{TIRE}
 \alias{TIRE}
 \title{Stopping Distance}
-\format{A data frame with 24 observations on the following 3 variables: 
+\format{
+A data frame with 24 observations on the following 3 variables: 
 \itemize{
 \item \code{stopdist} (stopping distance measured to the nearest foot)
 \item \code{tire} (a factor with levels \code{A}, \code{B}, \code{C}, and \code{D})
 \item \code{order} (order the experiment was conducted)
-}}
+}
+}
 \usage{
 TIRE
 }

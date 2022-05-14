@@ -4,11 +4,13 @@
 \name{CHIPS}
 \alias{CHIPS}
 \title{Silicon Chips}
-\format{A data frame with 28 observations on the following 2 variables: 
+\format{
+A data frame with 28 observations on the following 2 variables: 
 \itemize{
 \item \code{number} (number of usable chips from each silicon sheet)
 \item \code{method} (a factor with levels \code{techniqueI} and \code{techniqueII}) 
-}}
+}
+}
 \usage{
 CHIPS
 }

@@ -4,13 +4,15 @@
 \name{STSCHOOL}
 \alias{STSCHOOL}
 \title{School Satisfaction}
-\format{A data frame with 26 observations on the following 4 variables: 
+\format{
+A data frame with 26 observations on the following 4 variables: 
 \itemize{
 \item \code{x} (satisfaction score)
 \item \code{y} (satisfaction score)
 \item \code{satisfaction} (combined satisfaction scores)
 \item \code{school} (a factor with levels \code{x} and \code{y})
-}}
+}
+}
 \usage{
 STSCHOOL
 }

@@ -4,11 +4,13 @@
 \name{LOSTR}
 \alias{LOSTR}
 \title{Lost Revenue Due to Worker Illness}
-\format{A data frame with 25 observations on the following 2 variables: 
+\format{
+A data frame with 25 observations on the following 2 variables: 
 \itemize{
 \item \code{numbersick} (number of absent workers due to illness)
 \item \code{lostrevenue} (lost revenue in dollars)
-}}
+}
+}
 \usage{
 LOSTR
 }

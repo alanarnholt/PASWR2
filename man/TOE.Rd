@@ -4,10 +4,12 @@
 \name{TOE}
 \alias{TOE}
 \title{Nuclear Energy}
-\format{A data frame with 12 observations on the following variable: 
+\format{
+A data frame with 12 observations on the following variable: 
 \itemize{
 \item \code{energy} (nuclear energy measured in tons of oil equivalent)
-}}
+}
+}
 \usage{
 TOE
 }

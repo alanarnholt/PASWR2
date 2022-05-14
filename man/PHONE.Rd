@@ -4,10 +4,12 @@
 \name{PHONE}
 \alias{PHONE}
 \title{Telephone Call Times}
-\format{A data frame with 23 observations on the following variable: 
+\format{
+A data frame with 23 observations on the following variable: 
 \itemize{
 \item \code{call.time} (time spent on long distance calls in minutes)
-}}
+}
+}
 \usage{
 PHONE
 }

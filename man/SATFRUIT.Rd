@@ -4,7 +4,8 @@
 \name{SATFRUIT}
 \alias{SATFRUIT}
 \title{Fruit Trees}
-\format{A data frame with 47 observations on the following 17 variables: 
+\format{
+A data frame with 47 observations on the following 17 variables: 
 \itemize{
 \item \code{quadrat} (number of the sampled segment or quadrat)
 \item \code{smallarea} (the small area, a factor with levels \code{R63}, \code{R67}, and \code{R68})
@@ -23,7 +24,8 @@
 \item \code{olives} (area classified as olives in the sampled segment)
 \item \code{fruit} (area classified as fruit trees in the sampled segment)
 \item \code{observed} (the observed area of fruit trees in the sampled segment)
-}}
+}
+}
 \source{
 Militino, A. F., \emph{et. al.} 2006. \dQuote{Using Small Area Models to Estimate the Total Area Occupied by Olive Trees.} \emph{Journal of Agricultural, Biological and Environmental Statistics}, \bold{11}: 450-461.
 }

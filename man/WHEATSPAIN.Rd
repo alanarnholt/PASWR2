@@ -4,12 +4,14 @@
 \name{WHEATSPAIN}
 \alias{WHEATSPAIN}
 \title{Wheat Surface Area in Spain}
-\format{A data frame with 17 observations on the following 3 variables: 
+\format{
+A data frame with 17 observations on the following 3 variables: 
 \itemize{
 \item \code{community} (a factor with levels \code{Andalucia}, \code{Aragon}, \code{Asturias}, \code{Baleares}, \code{C.Valenciana}, \code{Canarias}, \code{Cantabria}, \code{Castilla-La Mancha}, \code{Castilla-Leon}, \code{Cataluna}, \code{Extremadura}, \code{Galicia}, \code{La Rioja}, \code{Madrid}, \code{Murcia}, \code{Navarre}, and \code{P.Vasco})
 \item \code{hectares} (surface area measured in hectares)
 \item \code{acres} (surface area measured in acres)
-}}
+}
+}
 \usage{
 WHEATSPAIN
 }

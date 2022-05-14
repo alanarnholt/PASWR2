@@ -4,10 +4,12 @@
 \name{GROCERY}
 \alias{GROCERY}
 \title{Grocery Spending}
-\format{A data frame with 30 observations on the following variable: 
+\format{
+A data frame with 30 observations on the following variable: 
 \itemize{
 \item \code{amount} (total dollars spent on groceries)
-}}
+}
+}
 \usage{
 GROCERY
 }

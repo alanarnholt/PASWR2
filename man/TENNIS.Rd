@@ -4,11 +4,13 @@
 \name{TENNIS}
 \alias{TENNIS}
 \title{Speed Detector}
-\format{A data frame with 12 observations on the following 2 variables: 
+\format{
+A data frame with 12 observations on the following 2 variables: 
 \itemize{
 \item \code{speed1} (speed in kilometers per hour)
 \item \code{speed2} (speed in kilometers per hour)
-}}
+}
+}
 \usage{
 TENNIS
 }

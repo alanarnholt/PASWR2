@@ -4,11 +4,13 @@
 \name{FOOD}
 \alias{FOOD}
 \title{Carrot Shear}
-\format{A data frame with 16 observations on the following 2 variables: 
+\format{
+A data frame with 16 observations on the following 2 variables: 
 \itemize{
 \item \code{shear} (carrot shear measured in kN)
 \item \code{freezer} (a factor with levels \code{A}, \code{B}, \code{C}, and \code{D})
-}}
+}
+}
 \usage{
 FOOD
 }

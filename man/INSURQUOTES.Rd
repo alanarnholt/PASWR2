@@ -4,11 +4,13 @@
 \name{INSURQUOTES}
 \alias{INSURQUOTES}
 \title{Insurance Quotes}
-\format{A data frame with 15 observations on the following 2 variables: 
+\format{
+A data frame with 15 observations on the following 2 variables: 
 \itemize{
 \item \code{companyA} (quotes from company A in Euros)
 \item \code{companyB} (quotes from company B in Euros)
-}}
+}
+}
 \usage{
 INSURQUOTES
 }

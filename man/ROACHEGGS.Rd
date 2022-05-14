@@ -4,10 +4,12 @@
 \name{ROACHEGGS}
 \alias{ROACHEGGS}
 \title{Oriental Cockroaches}
-\format{A data frame with 81 observations on the following variable: 
+\format{
+A data frame with 81 observations on the following variable: 
 \itemize{
 \item \code{eggs} (numeric vector where a 0 indicates nothing hatched while a 1 indicates the birth of a cockroach.)
-}}
+}
+}
 \usage{
 ROACHEGGS
 }

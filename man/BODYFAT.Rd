@@ -4,12 +4,14 @@
 \name{BODYFAT}
 \alias{BODYFAT}
 \title{Body Fat Composition}
-\format{A data frame with 18 observations on the following 3 variables: 
+\format{
+A data frame with 18 observations on the following 3 variables: 
 \itemize{
 \item \code{age} (age in years)
 \item \code{fat} (percent body fat composition)
 \item \code{sex} (a factor with levels \code{F} for female and \code{M} for male) 
-}}
+}
+}
 \source{
 Mazess, R. B., Peppler, W. W., and Gibbons, M. (1984) \dQuote{Total Body Composition by Dual-Photon (153 Gd) Absorptiometry.} \emph{American Journal of Clinical Nutrition}, \bold{40}, \bold{4}: 834-839.
 }

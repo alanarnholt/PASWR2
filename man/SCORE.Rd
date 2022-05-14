@@ -4,10 +4,12 @@
 \name{SCORE}
 \alias{SCORE}
 \title{Standardized Test Scores}
-\format{A data frame with 20 observations on the following  variable: 
+\format{
+A data frame with 20 observations on the following  variable: 
 \itemize{
 \item \code{scores} (standardized test score)
-}}
+}
+}
 \usage{
 SCORE
 }

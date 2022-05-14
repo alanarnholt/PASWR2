@@ -4,13 +4,15 @@
 \name{CARS2004}
 \alias{CARS2004}
 \title{Cars in the European Union (2004)}
-\format{A data frame with 25 observations on the following 4 variables: 
+\format{
+A data frame with 25 observations on the following 4 variables: 
 \itemize{
 \item \code{country} (a factor with levels \code{Austria}, \code{Belgium}, \code{Cyprus}, \code{Czech Republic}, \code{Denmark}, \code{Estonia}, \code{Finland}, \code{France}, \code{Germany}, \code{Greece}, \code{Hungary}, \code{Ireland}, \code{Italy}, \code{Latvia}, \code{Lithuania}, \code{Luxembourg}, \code{Malta}, \code{Netherlands}, \code{Poland}, \code{Portugal}, \code{Slovakia}, \code{Slovenia}, \code{Spain}, \code{Sweden}, and \code{United Kingdom})
 \item \code{cars} (number of cars per 1000 inhabitants)
 \item \code{deaths} (total number of known mortal accidents) 
 \item \code{population} (country population/1000)
-}}
+}
+}
 \usage{
 CARS2004
 }

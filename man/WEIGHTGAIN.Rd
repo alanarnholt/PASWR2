@@ -4,12 +4,14 @@
 \name{WEIGHTGAIN}
 \alias{WEIGHTGAIN}
 \title{Weight Gain in Rats}
-\format{A data frame with 40 observations on the following 3 variables: 
+\format{
+A data frame with 40 observations on the following 3 variables: 
 \itemize{
 \item \code{proteinsource} (a factor with levels \code{Beef} and \code{Cereal})
 \item \code{proteinamount} (a factor with levels \code{High} and \code{Low})
 \item \code{weightgain} (weight gained in grams)
-}}
+}
+}
 \source{
 Hand, D. J., F. Daly, A. D. Lunn, K. J. McConway, and E. Ostrowski. 1994. \emph{A Handbook of Small Datasets}. Chapman and Hall/CRC, London.
 }

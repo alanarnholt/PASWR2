@@ -4,7 +4,8 @@
 \name{TITANIC3}
 \alias{TITANIC3}
 \title{Titanic Survival Status}
-\format{A data frame with 1309 observations on the following 14 variables: 
+\format{
+A data frame with 1309 observations on the following 14 variables: 
 \itemize{
 \item \code{pclass} (a factor with levels \code{1st}, \code{2nd}, and \code{3rd})
 \item \code{survived} (Survival where 0 = No; 1 = Yes)
@@ -20,7 +21,8 @@
 \item \code{boat} (Lifeboat Number)
 \item \code{body} (Body Identification Number)
 \item \code{home.dest} (Home/Destination)
-}}
+}
+}
 \source{
 \url{http://biostat.mc.vanderbilt.edu/twiki/pub/Main/DataSets/titanic.html}
 }

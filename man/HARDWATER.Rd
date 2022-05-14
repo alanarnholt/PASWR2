@@ -4,13 +4,15 @@
 \name{HARDWATER}
 \alias{HARDWATER}
 \title{Mortality and Water Hardness}
-\format{A data frame with 61 observations on the following 4 variables: 
+\format{
+A data frame with 61 observations on the following 4 variables: 
 \itemize{
 \item \code{location} (a factor with levels \code{North} and \code{South} indicating whether the town is as far north as Derby or further)
 \item \code{town} (the name of the town)
 \item \code{mortality} (average annual mortality per 100,000 males)
 \item \code{hardness} (calcium concentration (in parts per million))
-}}
+}
+}
 \source{
 D. J. Hand, F. Daly, A. D. Lunn, K. J. McConway and E. Ostrowski. 1994. \emph{A Handbook of Small Datasets}. Chapman and Hall/CRC, London.
 }

@@ -4,11 +4,13 @@
 \name{AGGRESSION}
 \alias{AGGRESSION}
 \title{TV and Behavior}
-\format{A data frame with 16 observations on the following two variables: 
+\format{
+A data frame with 16 observations on the following two variables: 
 \itemize{
 \item \code{violence} (an integer vector)
 \item \code{noviolence} (an integer vector)
-}}
+}
+}
 \source{
 Gibbons, J. D. (1977) \emph{Nonparametric Methods for Quantitavie Analysis}. American Science Press.
 }

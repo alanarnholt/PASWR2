@@ -4,12 +4,14 @@
 \name{SOCCER}
 \alias{SOCCER}
 \title{World Cup  Soccer}
-\format{A data frame with 575 observations on the following 3 variables: 
+\format{
+A data frame with 575 observations on the following 3 variables: 
 \itemize{
 \item \code{cgt} (cumulative goal time in minutes - total time accumulated when a particular goal is scored)
 \item \code{game} (game in which goals were scored)
 \item \code{goals} (number of goals scored in regulation period)
-}}
+}
+}
 \source{
 Chu, S. 2003. \dQuote{Using Soccer Goals to Motivate the Poisson Process.} \emph{INFORMS} Transaction on Education, \bold{3}, \bold{2}: 62-68.
 }
